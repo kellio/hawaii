@@ -1,0 +1,2408 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>하와이 가족 여행 2026 🌺</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal: #1a7a6e;
+    --teal-light: #e8f5f3;
+    --teal-mid: #5ab5a8;
+    --ocean: #1b4f72;
+    --sand: #f5e6c8;
+    --sand-dark: #e8d3a0;
+    --lava: #c0392b;
+    --sunset: #e67e22;
+    --white: #fdfcf9;
+    --gray-light: #f0ede6;
+    --gray: #888178;
+    --text: #2c2a25;
+    --text-light: #6b6560;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: var(--white);
+    color: var(--text);
+    line-height: 1.7;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(160deg, #0a3d35 0%, #1a7a6e 45%, #2196a3 100%);
+    color: white;
+    padding: 70px 40px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.6;
+  }
+  .hero-inner { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+  .hero-emoji { font-size: 52px; display: block; margin-bottom: 18px; animation: sway 3s ease-in-out infinite; }
+  @keyframes sway { 0%,100% { transform: rotate(-5deg); } 50% { transform: rotate(5deg); } }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 6vw, 52px);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+  }
+  .hero-sub {
+    font-size: 15px;
+    font-weight: 300;
+    opacity: 0.85;
+    margin-bottom: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .hero-chips { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .chip {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    backdrop-filter: blur(4px);
+  }
+
+  /* ── NAV ── */
+  .nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(253,252,249,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--sand-dark);
+    padding: 0 24px;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav { -webkit-overflow-scrolling: touch; }
+  .nav-btn {
+    padding: 14px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--text-light);
+    background: none; border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.2s, border-color 0.2s;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  .nav-btn:hover, .nav-btn.active { color: var(--teal); border-bottom-color: var(--teal); }
+
+  /* ── SECTIONS ── */
+  .section { display: none; max-width: 860px; margin: 0 auto; padding: 40px 24px; }
+  .section.active { display: block; }
+
+  /* ── OVERVIEW CARDS ── */
+  .overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    margin: 28px 0;
+  }
+  .ov-card {
+    background: var(--gray-light);
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+  }
+  .ov-card .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--teal);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .ov-card .label { font-size: 13px; color: var(--text-light); }
+
+  .info-box {
+    background: var(--teal-light);
+    border-left: 4px solid var(--teal);
+    border-radius: 0 12px 12px 0;
+    padding: 16px 20px;
+    font-size: 14px;
+    margin: 20px 0;
+    line-height: 1.8;
+  }
+  .info-box strong { color: var(--teal); }
+
+  /* ── FLIGHT TABLE ── */
+  .table-wrap { overflow-x: auto; margin: 20px 0; border-radius: 12px; border: 1px solid var(--sand-dark); }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 360px; }
+  thead { background: var(--teal); color: white; }
+  thead th { padding: 12px 16px; text-align: left; font-weight: 500; }
+  tbody tr:nth-child(even) { background: var(--gray-light); }
+  tbody td { padding: 11px 16px; border-bottom: 1px solid var(--sand-dark); }
+  tbody tr:last-child td { border-bottom: none; }
+
+  /* ── DAY CARDS ── */
+  .island-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 32px 0 16px;
+  }
+  .island-badge-lg {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+  }
+  .bi-badge { background: #d4edda; color: #155724; }
+  .oa-badge { background: #cce5ff; color: #004085; }
+  .island-line { flex: 1; height: 1px; background: var(--sand-dark); }
+
+  .day-card {
+    background: white;
+    border: 1px solid #e8e3da;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s;
+  }
+  .day-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.09); }
+
+  .day-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .day-num {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 14px;
+    flex-shrink: 0;
+  }
+  .num-bi { background: #d4edda; color: #155724; }
+  .num-oa { background: #cce5ff; color: #004085; }
+  .num-tr { background: #fff3cd; color: #856404; }
+
+  .day-meta { flex: 1; min-width: 0; }
+  .day-meta h3 { font-size: 15px; font-weight: 700; color: var(--text); }
+  .day-meta p { font-size: 12px; color: var(--text-light); margin-top: 2px; overflow: hidden; text-overflow: ellipsis; }
+  .day-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 5px; }
+
+  .badge {
+    font-size: 10px; font-weight: 600;
+    padding: 2px 8px; border-radius: 10px;
+  }
+  .b-car { background: #d4edda; color: #155724; }
+  .b-walk { background: #cce5ff; color: #004085; }
+  .b-swim { background: #d1ecf1; color: #0c5460; }
+  .b-wow { background: #e2d9f3; color: #4a2d8a; }
+  .b-food { background: #fde8d8; color: #9c3c00; }
+  .b-easy { background: #f0ede6; color: #5f5e5a; }
+  .b-tip { background: #fff3cd; color: #856404; }
+
+  .chevron { font-size: 14px; color: var(--gray); transition: transform 0.25s; flex-shrink: 0; }
+  .chevron.open { transform: rotate(180deg); }
+
+  .day-body { display: none; padding: 0 20px 20px; }
+  .day-body.open { display: block; }
+
+  .hotel-row {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--gray-light);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: var(--text);
+    margin-bottom: 14px;
+  }
+
+  .sched-list { list-style: none; }
+  .sched-item {
+    display: flex; gap: 12px;
+    padding: 7px 0;
+    border-bottom: 1px dashed #e8e3da;
+    font-size: 14px;
+    align-items: flex-start;
+  }
+  .sched-item:last-child { border-bottom: none; }
+  .sched-time {
+    min-width: 52px;
+    font-size: 12px;
+    color: var(--text-light);
+    padding-top: 3px;
+    font-variant-numeric: tabular-nums;
+  }
+  .sched-act { flex: 1; }
+  .act-tags { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px; }
+
+  .tip-box {
+    background: #fffbeb;
+    border-left: 3px solid var(--sunset);
+    border-radius: 0 10px 10px 0;
+    padding: 12px 14px;
+    font-size: 13px;
+    color: #7c4f00;
+    margin-top: 14px;
+    line-height: 1.7;
+  }
+
+  /* ── MAP SECTION ── */
+  .map-card {
+    background: white;
+    border: 1px solid #e8e3da;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .map-card-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #e8e3da;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .map-card-header h3 { font-size: 15px; font-weight: 700; }
+  .map-card-header p { font-size: 13px; color: var(--text-light); margin-top: 2px; }
+  .map-embed {
+    width: 100%;
+    height: 420px;
+    border: none;
+  }
+  .map-note {
+    padding: 12px 20px;
+    font-size: 13px;
+    color: var(--text-light);
+    background: var(--gray-light);
+    border-top: 1px solid #e8e3da;
+  }
+
+  /* ── ROUTE NOTES ── */
+  .route-check {
+    background: white;
+    border: 1px solid #e8e3da;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 16px;
+  }
+  .route-check h3 { font-size: 15px; font-weight: 700; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .check-item {
+    display: flex; gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gray-light);
+    font-size: 14px;
+  }
+  .check-item:last-child { border-bottom: none; }
+  .check-icon { font-size: 16px; flex-shrink: 0; }
+  .check-content strong { display: block; margin-bottom: 2px; }
+  .check-content span { color: var(--text-light); font-size: 13px; }
+
+  /* ── PREP SECTION ── */
+  .prep-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin: 20px 0;
+  }
+  .prep-card {
+    background: white;
+    border: 1px solid #e8e3da;
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .prep-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 12px; color: var(--teal); display: flex; align-items: center; gap: 8px; }
+  .prep-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 7px 0;
+    border-bottom: 1px dashed #e8e3da;
+    font-size: 13px;
+  }
+  .prep-item:last-child { border-bottom: none; }
+  .prep-check { width: 22px; height: 22px; border: 2px solid #d0c9bc; border-radius: 5px; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 12px; transition: all 0.15s; touch-action: manipulation; }
+  .prep-check.done { background: var(--teal); border-color: var(--teal); color: white; }
+
+  .rest-list { margin: 20px 0; }
+  .rest-item {
+    display: flex; align-items: center; gap: 14px;
+    padding: 12px 16px;
+    background: white;
+    border: 1px solid #e8e3da;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .rest-icon { font-size: 22px; }
+  .rest-info { flex: 1; }
+  .rest-info strong { display: block; }
+  .rest-info span { font-size: 12px; color: var(--text-light); }
+  .rest-loc { font-size: 12px; background: var(--gray-light); padding: 3px 10px; border-radius: 10px; color: var(--text-light); }
+
+  /* ── COST SECTION ── */
+  .cost-table-wrap { margin: 20px 0; }
+  .cost-total {
+    background: var(--teal);
+    color: white;
+    border-radius: 14px;
+    padding: 20px 24px;
+    display: flex; justify-content: space-between; align-items: center;
+    margin: 16px 0;
+  }
+  .cost-total .label { font-size: 14px; opacity: 0.85; }
+  .cost-total .amount { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center;
+    padding: 40px 24px;
+    color: var(--text-light);
+    font-size: 13px;
+    border-top: 1px solid var(--sand-dark);
+    margin-top: 40px;
+  }
+
+  /* ── SECTION TITLE ── */
+  .sec-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .sec-sub { font-size: 14px; color: var(--text-light); margin-bottom: 24px; }
+
+
+  /* ══════════════════════════════════════
+     RESPONSIVE — MOBILE FIRST
+  ══════════════════════════════════════ */
+
+  /* 태블릿 이하 */
+  @media (max-width: 768px) {
+    /* Hero */
+    .hero { padding: 44px 20px 36px; }
+    .hero-emoji { font-size: 40px; margin-bottom: 12px; }
+    .hero-sub { font-size: 12px; letter-spacing: 1px; }
+    .chip { font-size: 12px; padding: 5px 12px; }
+
+    /* Nav — 가로 스크롤 + 탭 간격 축소 */
+    .nav { padding: 0 12px; }
+    .nav-btn { padding: 12px 12px; font-size: 12px; }
+
+    /* Section */
+    .section { padding: 24px 14px; }
+    .sec-title { font-size: 22px; }
+
+    /* Overview grid: 2열 */
+    .overview-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 18px 0; }
+    .ov-card { padding: 16px 12px; }
+    .ov-card .num { font-size: 28px; }
+
+    /* Info box */
+    .info-box { font-size: 13px; padding: 13px 16px; }
+
+    /* Table — 가로 스크롤 허용, 폰트 축소 */
+    .table-wrap { border-radius: 10px; }
+    table { font-size: 12px; }
+    thead th { padding: 10px 10px; }
+    tbody td { padding: 9px 10px; }
+
+    /* Day cards */
+    .day-header { padding: 13px 14px; gap: 10px; }
+    .day-num { width: 34px; height: 34px; font-size: 12px; }
+    .day-meta h3 { font-size: 13px; }
+    .day-meta p { font-size: 11px; white-space: normal; }
+    .day-badges { gap: 4px; }
+    .badge { font-size: 9px; padding: 2px 6px; }
+    .day-body { padding: 0 14px 16px; }
+
+    /* Schedule items */
+    .sched-item { gap: 8px; padding: 8px 0; font-size: 13px; }
+    .sched-time { min-width: 44px; font-size: 11px; }
+    .act-tags { gap: 3px; }
+    .hotel-row { font-size: 12px; padding: 9px 12px; }
+    .tip-box { font-size: 12px; padding: 11px 12px; }
+
+    /* Island header */
+    .island-header { margin: 24px 0 12px; }
+    .island-badge-lg { font-size: 11px; padding: 4px 11px; }
+
+    /* Map section */
+    .map-card-header { padding: 13px 14px; }
+    .map-card-header h3 { font-size: 14px; }
+    .map-embed { height: 280px; }
+    .map-note { font-size: 11px; padding: 10px 14px; }
+
+    /* Route check */
+    .route-check { padding: 16px; }
+    .check-item { font-size: 13px; gap: 8px; }
+
+    /* Prep grid: 1열 */
+    .prep-grid { grid-template-columns: 1fr; gap: 12px; }
+    .prep-card { padding: 16px; }
+    .prep-item { font-size: 12px; }
+
+    /* Food list */
+    .rest-item { padding: 10px 12px; gap: 10px; font-size: 13px; }
+    .rest-icon { font-size: 18px; }
+    .rest-loc { font-size: 11px; padding: 2px 8px; }
+
+    /* Map tabs */
+    .map-tab-bar { gap: 6px; }
+    .map-tab { font-size: 11px; padding: 6px 11px; }
+
+    /* gmap route cards */
+    .gmap-route-card { border-radius: 12px; }
+    .gmap-route-header { padding: 13px 14px; gap: 10px; }
+    .gmap-day-badge { width: 38px; height: 38px; font-size: 12px; border-radius: 10px; }
+    .gmap-route-info h3 { font-size: 14px; }
+    .gmap-route-info p { font-size: 11px; }
+    .gmap-stops { padding: 12px 14px 6px; }
+    .gmap-stop { gap: 8px; padding-bottom: 12px; }
+    .stop-num { width: 26px; height: 26px; font-size: 11px; }
+    .stop-info strong { font-size: 13px; }
+    .stop-info span { font-size: 11px; }
+    .stop-time { font-size: 10px; min-width: 36px; }
+    .gmap-actions { padding: 8px 14px 12px; gap: 8px; }
+    .gmap-btn { font-size: 12px; padding: 9px 14px; border-radius: 8px; }
+    .gmap-distance-bar { padding: 8px 14px 10px; gap: 10px; }
+    .dist-item { font-size: 11px; }
+    .dist-item strong { font-size: 12px; }
+    .gmap-tip { margin: 0 14px 12px; font-size: 11.5px; }
+
+    /* Interactive map (livemap) */
+    .lm-wrap { flex-direction: column; min-height: unset; }
+    .lm-map-side iframe { min-height: 260px; height: 260px; }
+    .lm-panel { width: 100%; border-left: none; border-top: 1px solid #e8e3da; max-height: 380px; overflow-y: auto; }
+    .lm-tabs { padding: 10px 10px 0; gap: 5px; }
+    .lm-tab { font-size: 11px; padding: 5px 10px; }
+    .lm-day-header { padding: 12px 12px 8px; }
+    .lm-day-header h3 { font-size: 13px; }
+    .lm-day-header p { font-size: 11px; }
+    .lm-open-btn { font-size: 11px; padding: 7px 12px; margin-top: 8px; }
+    .lm-stop { padding: 7px 12px; gap: 8px; }
+    .lm-stop-num { width: 24px; height: 24px; font-size: 10px; }
+    .lm-stop-name { font-size: 12px; }
+    .lm-stop-sub { font-size: 10px; }
+    .lm-stop-time { font-size: 10px; }
+    .lm-island-divider { font-size: 12px; }
+
+    /* Bonus section cards */
+    .bonus-card { border-radius: 12px; }
+    .bonus-summary-box { padding: 16px; }
+    .bonus-table-row { font-size: 12px; }
+  }
+
+  /* 모바일 (360px~480px) */
+  @media (max-width: 480px) {
+    .hero { padding: 36px 16px 28px; }
+    .hero-emoji { font-size: 34px; }
+    .hero h1 { font-size: 26px; }
+    .hero-sub { font-size: 11px; }
+    .chip { font-size: 11px; padding: 4px 10px; }
+    .hero-chips { gap: 6px; }
+
+    .nav { padding: 0 8px; }
+    .nav-btn { padding: 11px 9px; font-size: 11px; }
+
+    .section { padding: 18px 12px; }
+    .sec-title { font-size: 20px; }
+    .sec-sub { font-size: 12px; margin-bottom: 16px; }
+
+    /* Overview: 2열 유지하되 더 작게 */
+    .overview-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .ov-card { padding: 14px 10px; }
+    .ov-card .num { font-size: 24px; }
+    .ov-card .label { font-size: 11px; }
+
+    /* 테이블: 중요 열만 보이도록 */
+    .table-wrap { font-size: 11px; }
+    thead th, tbody td { padding: 8px 8px; }
+
+    /* Day cards 더 compact */
+    .day-header { padding: 11px 12px; gap: 8px; }
+    .day-num { width: 30px; height: 30px; font-size: 11px; }
+    .day-meta h3 { font-size: 12.5px; line-height: 1.3; }
+    .day-body { padding: 0 12px 14px; }
+    .sched-item { font-size: 12.5px; }
+    .sched-time { min-width: 40px; font-size: 10.5px; }
+
+    /* 지도 높이 축소 */
+    .map-embed { height: 240px; }
+    .lm-map-side iframe { min-height: 220px; height: 220px; }
+    .lm-panel { max-height: 340px; }
+
+    /* 버튼 full width on very small screens */
+    .gmap-actions { flex-direction: column; }
+    .gmap-btn { justify-content: center; }
+
+    /* 준비물: 체크 영역 더 크게 (터치) */
+    .prep-check { width: 22px; height: 22px; font-size: 13px; }
+    .prep-item { padding: 9px 0; }
+
+    .route-check { padding: 14px; }
+    .gmap-route-header { padding: 11px 12px; }
+    .gmap-stops { padding: 10px 12px 4px; }
+    .gmap-actions { padding: 6px 12px 10px; }
+    .gmap-distance-bar { padding: 7px 12px 8px; }
+  }
+
+  /* 아주 작은 화면 (320px) */
+  @media (max-width: 360px) {
+    .nav-btn { padding: 10px 7px; font-size: 10px; }
+    .day-meta h3 { font-size: 12px; }
+    .hero h1 { font-size: 22px; }
+    .overview-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* 터치 기기 탭 피드백 */
+  @media (hover: none) {
+    .day-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .nav-btn:active { color: var(--teal); }
+    .day-header:active { background: var(--gray-light); }
+    .lm-tab:active { background: var(--teal); color: white; }
+    .map-tab:active { background: var(--teal); color: white; }
+    .prep-check:active { transform: scale(0.92); }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <span class="hero-emoji">🌺</span>
+    <h1>하와이 가족 여행</h1>
+    <p class="hero-sub">Hawaii Family Trip · 2026</p>
+    <div class="hero-chips">
+      <span class="chip">📅 7월 8일 ~ 18일</span>
+      <span class="chip">🌋 빅아일랜드 4박</span>
+      <span class="chip">🏖️ 오아후 6박</span>
+      <span class="chip">✈️ 10박 11일</span>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <button class="nav-btn active" onclick="showSection('overview', this)">📋 개요</button>
+  <button class="nav-btn" onclick="showSection('bigisland', this)">🌋 빅아일랜드</button>
+  <button class="nav-btn" onclick="showSection('oahu', this)">🏖️ 오아후</button>
+  <button class="nav-btn" onclick="showSection('map', this)">🗺️ 지도 & 동선</button>
+  <button class="nav-btn" onclick="showSection('prep', this)">🎒 준비물</button>
+  <button class="nav-btn" onclick="showSection('food', this)">🍽️ 맛집</button>
+  <button class="nav-btn" onclick="showSection('bonus', this)">✨ 추가 추천</button>
+  <button class="nav-btn" onclick="showSection('livemap', this)">🗺️ 인터랙티브 지도</button>
+</nav>
+
+<!-- ═══════════════════════════════════════ OVERVIEW ═══ -->
+<section class="section active" id="overview">
+  <h2 class="sec-title">여행 개요</h2>
+  <p class="sec-sub">2026년 7월, 노인·어린이 포함 가족 여행</p>
+
+  <div class="overview-grid">
+    <div class="ov-card">
+      <div class="num">11</div>
+      <div class="label">총 여행 일수</div>
+    </div>
+    <div class="ov-card">
+      <div class="num">4</div>
+      <div class="label">빅아일랜드 숙박</div>
+    </div>
+    <div class="ov-card">
+      <div class="num">6</div>
+      <div class="label">오아후 숙박</div>
+    </div>
+    <div class="ov-card">
+      <div class="num">2</div>
+      <div class="label">오아후 렌터카 일수</div>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <strong>항공편 (Team A)</strong><br>
+    ✈️ 출발: 인천 → 호놀룰루 &nbsp;|&nbsp; 7/8(수) 20:20 출발 → 7/8(수) 10:40 하와이 도착 &nbsp;|&nbsp; OZ232 B777<br>
+    ✈️ 귀국: 호놀룰루 → 인천 &nbsp;|&nbsp; 7/18(토) 12:20 출발 → 7/19(일) 17:10 인천 도착 &nbsp;|&nbsp; OZ231 B777
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>날짜</th><th>섬</th><th>숙소</th></tr></thead>
+      <tbody>
+        <tr><td>7/8 ~ 7/12</td><td>🌋 빅아일랜드</td><td>🌺 LUXURY IN PARADISE (코나 콘도 3BR)</td></tr>
+        <tr><td>7/12 ~ 7/15</td><td>🏖️ 오아후</td><td>힐튼 하와이안 빌리지 (Tapa 오션뷰 2퀸)</td></tr>
+        <tr><td>7/15 ~ 7/18</td><td>🏖️ 오아후</td><td>쉐라톤 와이키키 비치 리조트</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="info-box" style="border-color: var(--sunset); background: #fff8f0;">
+    <strong>⚠️ 사전 예약 필수</strong><br>
+    다이아몬드헤드 (온라인 예약, 주말 휴무) &nbsp;·&nbsp;
+    PCC 폴리네시안 문화센터 (수·일 휴무) &nbsp;·&nbsp;
+    헬리콥터 투어 &nbsp;·&nbsp;
+    프라이빗 야경 투어 (한국어 가이드)
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ BIG ISLAND ═══ -->
+<section class="section" id="bigisland">
+  <h2 class="sec-title">빅아일랜드 일정</h2>
+  <p class="sec-sub">7월 8일 ~ 12일 · 코나 콘도 거점 · 렌터카 이용</p>
+
+  <div class="island-header">
+    <span class="island-badge-lg bi-badge">빅아일랜드 4박</span>
+    <div class="island-line"></div>
+    <span style="font-size:13px;color:var(--text-light)">코나 LUXURY IN PARADISE</span>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num num-tr">D1</div>
+      <div class="day-meta">
+        <h3>7/8 (수) — 빅아일랜드 도착</h3>
+        <p>인천 출발 → 호놀룰루 경유 → 코나 도착</p>
+        <div class="day-badges"><span class="badge b-tip">이동일</span></div>
+      </div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="day-body">
+      <div class="hotel-row">🏠 LUXURY IN PARADISE — 코나 콘도 (3베드/3욕실)</div>
+      <ul class="sched-list">
+        <li class="sched-item"><span class="sched-time">20:20</span><span class="sched-act">인천 출발 (OZ232, B777)<div class="act-tags"><span class="badge b-tip">한국 시각</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">10:40</span><span class="sched-act">호놀룰루 도착 (하와이 시각, 같은 날)<div class="act-tags"><span class="badge b-tip">시차 19시간 · 약 9시간 비행</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">11:30~</span><span class="sched-act">수하물 찾기 · 렌터카 픽업 (1~1.5시간 소요 예상)<div class="act-tags"><span class="badge b-tip">공항 혼잡 감안 · 아이들 대기 시간 길 수 있음</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">13:00~</span><span class="sched-act">코나 방향 이동 (호놀룰루 → 코나 직항 또는 렌터카 픽업 후 코나까지 약 1.5시간 드라이브)</span></li>
+        <li class="sched-item"><span class="sched-time">15:00~</span><span class="sched-act">코나 콘도 체크인 · 짐 풀기 · 아이들 자유 시간</span></li>
+        <li class="sched-item"><span class="sched-time">17:00~</span><span class="sched-act">KTA Super Stores 마트 방문 — 식재료 & 간식 구입<div class="act-tags"><span class="badge b-tip">코나 알리이 드라이브 근처</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">18:30~</span><span class="sched-act">콘도에서 저녁 식사 · 이른 취침 (시차 적응)</span></li>
+      </ul>
+      <div class="tip-box">🕐 <strong>첫날은 진짜 쉬는 날로!</strong> 약 9시간 비행 후 시차 19시간을 넘어온 가족이에요. 공항 수속·렌터카 픽업만 해도 체력이 많이 소모됩니다. 저녁은 간단하게 콘도에서 해결하고 일찍 자는 게 남은 여행을 위한 최선의 선택입니다.</div>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num num-bi">D2</div>
+      <div class="day-meta">
+        <h3>7/9 (목) — 코나 적응 & 가까운 해변</h3>
+        <p>시차 적응 · 카할루우 비치 스노클링 · 코나 시내 산책</p>
+        <div class="day-badges"><span class="badge b-swim">물놀이</span><span class="badge b-easy">여유 일정</span><span class="badge b-tip">시차 적응</span></div>
+      </div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="day-body">
+      <div class="hotel-row">🏠 LUXURY IN PARADISE — 코나 콘도</div>
+      <ul class="sched-list">
+        <li class="sched-item"><span class="sched-time">09:00~</span><span class="sched-act">느긋한 아침 · 콘도에서 직접 조식 준비 · 시차 적응 휴식<div class="act-tags"><span class="badge b-easy">서두르지 않아도 OK</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">10:30~</span><span class="sched-act">카할루우 비치 파크 — 콘도에서 차로 10분, 얕고 잔잔한 스노클링 명소<div class="act-tags"><span class="badge b-wow">바다거북 &amp; 열대어</span><span class="badge b-easy">초보자·어린이·노인 모두 OK</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">12:30~</span><span class="sched-act">카할루우 비치 그늘에서 휴식 · 간식 타임 (2시간 내외 여유있게)<div class="act-tags"><span class="badge b-swim">아이들 물놀이</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">14:00~</span><span class="sched-act">다포케쉑 점심 (코나 알리이 드라이브 · 카할루우에서 차로 10분)<div class="act-tags"><span class="badge b-food">코나 최고 포케 맛집</span><span class="badge b-tip">월~금 영업 · 조기 마감 주의</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">15:30~</span><span class="sched-act">코나 알리이 드라이브 산책 · 기념품 가게 구경 · 커피숍 방문<div class="act-tags"><span class="badge b-easy">평지 산책 · 노인 편안</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">17:00~</span><span class="sched-act">콘도 복귀 · 수영장 자유 시간 · 아이들 저녁 물놀이<div class="act-tags"><span class="badge b-swim">콘도 수영장</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">19:00~</span><span class="sched-act">콘도에서 저녁 식사 · 이른 취침 (내일 화산 탐험 대비)<div class="act-tags"><span class="badge b-tip">D4 장거리 이동 대비 충분한 수면</span></div></span></li>
+      </ul>
+      <div class="tip-box">😴 <strong>시차가 19시간!</strong> 전날 밤 비행기를 타고 왔으니 몸이 아직 한국 새벽 시간대입니다. 오전에 늦잠을 자도 괜찮고, 카할루우 비치는 콘도 바로 옆이라 이동 부담이 전혀 없어요. 아이들이 물에 들어가 신나게 노는 것만으로 완벽한 하루입니다.<br><br>🐢 카할루우 비치는 하와이 최고의 입문용 스노클링 포인트 — 수심이 얕고 바다거북이 자주 나타나요!</div>
+    </div>
+  </div>
+
+<!-- DAY 3 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num num-bi">D3</div>
+      <div class="day-meta">
+        <h3>7/10 (금) — 남부 해변 + 마우나케아 별보기</h3>
+        <p>블랙샌드비치 · 투스텝 · 마우나케아 VIS</p>
+        <div class="day-badges"><span class="badge b-wow">별보기</span><span class="badge b-easy">노약자 고려</span></div>
+      </div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="day-body">
+      <div class="hotel-row">🏠 LUXURY IN PARADISE — 코나 콘도</div>
+      <ul class="sched-list">
+        <li class="sched-item"><span class="sched-time">09:00~</span><span class="sched-act">콘도 출발 — 남쪽 방향 (코나 → 블랙샌드비치 약 1.5시간)<div class="act-tags"><span class="badge b-tip">도로 중간중간 경치 구경하며 여유있게</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">10:30~</span><span class="sched-act">푸날루우 블랙샌드비치 도착 — 검은 모래 산책 & 바다거북 관찰 (약 1시간)<div class="act-tags"><span class="badge b-wow">검은 모래 & 바다거북</span><span class="badge b-easy">모래사장이라 아이들이 자유롭게</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">12:00~</span><span class="sched-act">투스텝 비치 이동 (블랙샌드에서 약 30분) · 스노클링 준비 · 입수<div class="act-tags"><span class="badge b-wow">열대어 스노클링</span><span class="badge b-tip">아이들과 느긋하게 1.5~2시간</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">14:00~</span><span class="sched-act">클로버앤머그 카페 점심 (코나 방향 복귀 도중 약 20분)<div class="act-tags"><span class="badge b-food">불고기 파니니 · 여유있게 쉬며 식사</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">15:30~</span><span class="sched-act">콘도 귀환 — 아이들 낮잠 & 충분한 휴식 (약 1.5시간)<div class="act-tags"><span class="badge b-easy">마우나케아 야간 대비 체력 비축 필수</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">17:00~</span><span class="sched-act">방한복·담요 챙겨 마우나케아 VIS 출발 (약 1시간 20분)<div class="act-tags"><span class="badge b-tip">기온 0~10°C · 아이 여분 옷 꼭 챙기기</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">18:20~</span><span class="sched-act">마우나케아 VIS 도착 — 고산 적응 & 일몰 감상 (30분 이상 적응)<div class="act-tags"><span class="badge b-tip">해발 2,800m · 급하게 오르면 고산증</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">19:00~</span><span class="sched-act">마우나케아 별보기 — 은하수 & 별자리 관측<div class="act-tags"><span class="badge b-wow">하와이 여행 최고 하이라이트!</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">21:00~</span><span class="sched-act">하산 · 콘도 귀환 (약 1시간 20분 드라이브)</span></li>
+      </ul>
+      <div class="tip-box">⭐ <strong>이날이 가장 긴 하루입니다.</strong> 오전 남부 해변과 오후 별보기를 분리해 중간에 1.5시간 낮잠을 넣었어요. 이 휴식이 없으면 아이들이 마우나케아에서 너무 힘들어해요.<br><br>🌡️ 마우나케아는 진짜 춥습니다. 차에서 내리는 순간 바람과 함께 체감 온도가 뚝 떨어져요. 아이들 방한복·핫팩·담요를 출발 전 반드시 확인하세요!</div>
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num num-bi">D4</div>
+      <div class="day-meta">
+        <h3>7/11 (토) — 화산 국립공원 탐험</h3>
+        <p>킬라우에아 이키 트레일 · 칼데라 전망대 · 체인 오브 크레이터스 드라이브</p>
+        <div class="day-badges"><span class="badge b-wow">하이라이트</span><span class="badge b-tip">장거리 이동</span><span class="badge b-easy">아이 페이스</span></div>
+      </div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="day-body">
+      <div class="hotel-row">🏠 LUXURY IN PARADISE — 코나 콘도</div>
+      <ul class="sched-list">
+        <li class="sched-item"><span class="sched-time">08:00~</span><span class="sched-act">콘도 출발 — 화산 국립공원 방향 (코나에서 약 1.5시간)<div class="act-tags"><span class="badge b-tip">킬라우에아 이키 주차장 협소 · 이른 출발이 유리</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">09:30~</span><span class="sched-act">킬라우에아 이키 트레일 도착 · 준비 · 트레킹 시작<div class="act-tags"><span class="badge b-wow">화산 분화구 트레킹</span><span class="badge b-tip">4km 루프 · 아이 페이스로 3~3.5시간 예상</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">13:00~</span><span class="sched-act">트레킹 마무리 · 간식·휴식 (30~40분)<div class="act-tags"><span class="badge b-easy">벤치 있음 · 물·과자 보충</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">14:00~</span><span class="sched-act">킬라우에아 칼데라 전망대 — 분화구 전경 감상<div class="act-tags"><span class="badge b-wow">칼데라 뷰</span><span class="badge b-easy">주차장 바로 앞 · 이동 최소</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">14:30~</span><span class="sched-act">체인 오브 크레이터스 로드 드라이브 (약 1시간 코스)<div class="act-tags"><span class="badge b-wow">용암 지형 드라이브</span><span class="badge b-easy">차 안에서 편하게</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">16:00~</span><span class="sched-act">볼케이노 하우스 또는 인근 카페에서 늦은 점심·이른 저녁<div class="act-tags"><span class="badge b-food">허기 채우고 여유있게</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">17:30~</span><span class="sched-act">코나 콘도 귀환 출발 (약 1.5시간 드라이브)<div class="act-tags"><span class="badge b-tip">다포케쉑 들를 경우 코나 도착 직전 · 월~금 16:00까지 영업</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">19:00~</span><span class="sched-act">콘도 귀환 · 아이들 목욕 · 저녁 식사 · 취침</span></li>
+      </ul>
+      <div class="tip-box">🌋 <strong>아이 페이스로 가면 4km 트레일이 3시간 넘게 걸릴 수도 있어요.</strong> 중간에 쉬고, 용암돌 구경하고, 사진 찍다 보면 금방입니다. 서두르지 않아도 칼데라 뷰 + 드라이브만으로 충분히 압도적인 하루예요.<br><br>💡 D2(7/9)에 카할루우 비치에서 시차 적응을 마쳤으니 이날은 체력이 한결 좋을 거예요!</div>
+    </div>
+  </div>
+
+<!-- DAY 5 이동일 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num num-tr">D5</div>
+      <div class="day-meta">
+        <h3>7/12 (일) — 빅아일랜드 → 오아후 이동</h3>
+        <p>코나 공항 → 호놀룰루 → 힐튼 체크인</p>
+        <div class="day-badges"><span class="badge b-tip">이동일</span><span class="badge b-swim">힐튼 라군</span></div>
+      </div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="day-body">
+      <div class="hotel-row">🏨 힐튼 하와이안 빌리지 와이키키 비치 리조트</div>
+      <ul class="sched-list">
+        <li class="sched-item"><span class="sched-time">09:00~</span><span class="sched-act">콘도 체크아웃 준비 · 짐 정리 (아이들과 함께라 시간 여유있게)<div class="act-tags"><span class="badge b-tip">체크아웃 10:00~11:00 목표</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">10:30~</span><span class="sched-act">렌터카 반납 · 코나 공항 이동 (공항까지 약 20분)</span></li>
+        <li class="sched-item"><span class="sched-time">오후</span><span class="sched-act">코나 → 호놀룰루 항공편 탑승 (약 45분 비행)<div class="act-tags"><span class="badge b-tip">하와이안항공 또는 사우스웨스트</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">오후</span><span class="sched-act">호놀룰루 공항 도착 · 수하물 · 택시·우버로 힐튼 이동 (약 30분)</span></li>
+        <li class="sched-item"><span class="sched-time">14:00~</span><span class="sched-act">힐튼 하와이안 빌리지 체크인 · 짐 맡기기 (얼리 체크인 안 될 수도 있음)</span></li>
+        <li class="sched-item"><span class="sched-time">15:00~</span><span class="sched-act">힐튼 라군 & 수영장 — 아이들과 느긋하게 물놀이<div class="act-tags"><span class="badge b-swim">파도 없는 인공 라군 · 어린이·노인 최적</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">18:00~</span><span class="sched-act">알라모아나 쇼핑센터 산책 & 저녁 식사 (힐튼에서 도보 약 10분)</span></li>
+        <li class="sched-item"><span class="sched-time">20:00~</span><span class="sched-act">호텔 복귀 · 이른 취침 (내일 다이아몬드헤드 이른 출발 대비)</span></li>
+      </ul>
+      <div class="tip-box">💧 이동일이라 예상보다 체력 소모가 클 수 있어요. 힐튼 라군은 파도가 없어 어린 아이도 안전하게 물놀이할 수 있는 최고의 장소입니다. 저녁은 간단히 하고 내일을 위해 일찍 쉬세요!</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ OAHU ═══ -->
+<section class="section" id="oahu">
+  <h2 class="sec-title">오아후 일정</h2>
+  <p class="sec-sub">7월 12일 ~ 18일 · 와이키키 거점 · 렌터카 2일 이용</p>
+
+  <div class="info-box">
+    <strong>🚗 렌터카 이용일:</strong> 7/13(월), 7/14(화) — 이동이 필요한 코스 집중<br>
+    <strong>🚶 도보·투어 중심:</strong> 7/15(수) ~ 7/17(금) — 와이키키 반경 내 이동
+  </div>
+
+  <div class="island-header">
+    <span class="island-badge-lg oa-badge">오아후 6박</span>
+    <div class="island-line"></div>
+    <span style="font-size:13px;color:var(--text-light)">힐튼 3박 → 쉐라톤 3박</span>
+  </div>
+
+  <!-- DAY 6 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num num-oa">D6</div>
+      <div class="day-meta">
+        <h3>7/13 (월) — 렌터카 · 동쪽 해안 드라이브</h3>
+        <p>다이아몬드헤드 → 72번 국도 → 마카푸우 → 라니아케아 → 샥스코브</p>
+        <div class="day-badges"><span class="badge b-car">렌터카</span><span class="badge b-wow">72번 국도</span><span class="badge b-easy">노인 포함 OK</span></div>
+      </div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="day-body">
+      <div class="hotel-row">🏨 힐튼 하와이안 빌리지 와이키키 비치 리조트</div>
+      <ul class="sched-list">
+        <li class="sched-item"><span class="sched-time">08:00~</span><span class="sched-act">렌터카 픽업 & 출발 — 다이아몬드헤드는 아침 일찍이 유리<div class="act-tags"><span class="badge b-tip">이날만 예외적으로 8시 출발 · 더워지기 전에 트레킹</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">08:30~</span><span class="sched-act">다이아몬드헤드 트레킹 (왕복 약 1.5~2시간)<div class="act-tags"><span class="badge b-tip">사전 예약 필수 · 월~금만 운영</span><span class="badge b-tip">노인은 입구 공원에서 대기 · 아이 페이스로 천천히</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">11:00~</span><span class="sched-act">72번 국도 드라이브 — 오아후 동쪽 해안 절경<div class="act-tags"><span class="badge b-wow">하얀 파도 & 절벽 해안 드라이브</span><span class="badge b-tip">차 안에서 감상 · 눈에 띄는 뷰포인트 있으면 세워서 구경</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">11:30~</span><span class="sched-act">마카푸우 전망대 — 포장도로 산책 (30~40분)<div class="act-tags"><span class="badge b-wow">압도적 해안 뷰</span><span class="badge b-easy">완만한 포장도로 · 노인 OK</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">12:30~</span><span class="sched-act">카일루아 or 라니카이 비치 도착 · 점심 식사 (약 1시간)<div class="act-tags"><span class="badge b-food">카일루아 타운 내 식당 이용</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">14:00~</span><span class="sched-act">라니카이 비치 & 카일루아 비치 — 해변 물놀이<div class="act-tags"><span class="badge b-swim">잔잔한 파도 · 어린이 안전</span><span class="badge b-tip">아이들과 넉넉히 1.5~2시간</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">16:00~</span><span class="sched-act">라니아케아 비치 — 바다거북 관찰 (20~30분)<div class="act-tags"><span class="badge b-wow">거북이 만남</span><span class="badge b-tip">2m 거리 유지 · 이동 5분</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">16:30~</span><span class="sched-act">샥스코브 스노클링 (라니아케아 옆 5분 · 체력·시간 여유 있으면)<div class="act-tags"><span class="badge b-wow">스노클링 명소</span><span class="badge b-tip">피곤하면 생략해도 OK</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">18:00~</span><span class="sched-act">와이키키 복귀 (약 1시간 드라이브) · 힐튼 수영장 저녁 물놀이<div class="act-tags"><span class="badge b-swim">호텔 수영장</span></div></span></li>
+      </ul>
+      <div class="tip-box">🚗 <strong>동선 최적화:</strong> 와이키키 → 다이아몬드헤드(5분) → 동쪽 해안 → 북쪽 라니아케아/샥스코브 → 복귀 순서가 가장 효율적입니다. 역주행 없이 자연스러운 루프!</div>
+    </div>
+  </div>
+
+  <!-- DAY 7 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num num-oa">D7</div>
+      <div class="day-meta">
+        <h3>7/14 (화) — 렌터카 · 북서쪽 루프</h3>
+        <p>와이켈레 아울렛 → 돌 파인애플 → 노스쇼어 점심 → PCC</p>
+        <div class="day-badges"><span class="badge b-car">렌터카</span><span class="badge b-wow">아울렛 4~5시간</span><span class="badge b-wow">PCC</span><span class="badge b-easy">가족 최적</span></div>
+      </div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="day-body">
+      <div class="hotel-row">🏨 힐튼 하와이안 빌리지 와이키키 비치 리조트 (마지막 밤)</div>
+      <ul class="sched-list">
+        <li class="sched-item"><span class="sched-time">08:00</span><span class="sched-act">와이키키 출발 → 와이켈레 프리미엄 아울렛 (차로 약 30분)<div class="act-tags"><span class="badge b-wow">4~5시간 쇼핑</span><span class="badge b-easy">노인 편안한 야외 단층</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">08:30</span><span class="sched-act">와이켈레 프리미엄 아울렛 쇼핑 시작<div class="act-tags"><span class="badge b-tip">코치·폴로·갭·나이키 등 50+ 브랜드</span><span class="badge b-tip">와이키키보다 20~40% 저렴</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">13:00</span><span class="sched-act">아울렛 내 푸드코트 점심 식사<div class="act-tags"><span class="badge b-food">쇼핑 중 간편 식사</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">14:00</span><span class="sched-act">돌 파인애플 농장 (아울렛에서 북쪽 20분)<div class="act-tags"><span class="badge b-wow">미로·기차·파인애플 아이스크림</span><span class="badge b-easy">전연령 OK</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">15:30</span><span class="sched-act">PCC 폴리네시안 문화센터 입장<div class="act-tags"><span class="badge b-wow">가족 만족도 최고</span><span class="badge b-easy">앉아서 관람</span><span class="badge b-tip">수·일 휴무 — 7/14 화요일 OK</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">19:30</span><span class="sched-act">와이키키 복귀 & 렌터카 반납</span></li>
+        <li class="sched-item"><span class="sched-time">저녁</span><span class="sched-act">힐튼 라군 & 수영장 마지막 저녁 물놀이<div class="act-tags"><span class="badge b-swim">호텔 수영장</span></div></span></li>
+      </ul>
+      <div class="tip-box">🛍️ <strong>와이켈레 아울렛은 9:00 오픈</strong>이니 8:30 도착하면 주차·입장 여유 있게 시작할 수 있어요. 4~5시간은 넉넉히 잡아야 코치·폴로·나이키 등 50개 이상 매장을 돌 수 있습니다.<br><br>🎭 PCC 나이트쇼(HA: Breath of Life)는 저녁 7~8시에 시작하므로 15:30 입장하면 낮 공연 체험 + 저녁 쇼 모두 관람 가능합니다.</div>
+    </div>
+  </div>
+
+  <!-- DAY 8 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num num-oa">D8</div>
+      <div class="day-meta">
+        <h3>7/15 (수) — 쉐라톤 이동 & 와이키키 여유</h3>
+        <p>힐튼 → 쉐라톤 체크인 · Infinity 수영장 · 알라모아나</p>
+        <div class="day-badges"><span class="badge b-walk">도보</span><span class="badge b-swim">Infinity 수영장</span></div>
+      </div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="day-body">
+      <div class="hotel-row">🏨 쉐라톤 와이키키 비치 리조트 (체크인)</div>
+      <ul class="sched-list">
+        <li class="sched-item"><span class="sched-time">09:00~</span><span class="sched-act">힐튼 조식 & 느긋한 아침 · 짐 정리<div class="act-tags"><span class="badge b-tip">체크아웃 11:00까지</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">11:00~</span><span class="sched-act">힐튼 체크아웃 → 쉐라톤 이동 (도보 약 10분) · 짐 맡기기</span></li>
+        <li class="sched-item"><span class="sched-time">11:30~</span><span class="sched-act">쉐라톤 Infinity 수영장 & 와이키키 해변 물놀이 (2~3시간)<div class="act-tags"><span class="badge b-swim">오션뷰 포토스팟 · 슬라이드 있음</span><span class="badge b-tip">체크인 전이어도 수영장 이용 가능 여부 확인</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">14:00~</span><span class="sched-act">쉐라톤 체크인 (정식 체크인 시간 보통 15:00) · 객실 정리</span></li>
+        <li class="sched-item"><span class="sched-time">15:00~</span><span class="sched-act">야드 하우스 또는 Orchids 늦은 점심·이른 저녁 (여유있게 1.5시간)<div class="act-tags"><span class="badge b-food">와이키키 대표 맛집</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">17:00~</span><span class="sched-act">알라모아나 쇼핑센터 — 기념품 & 쇼핑 (셔틀 또는 도보 20분)<div class="act-tags"><span class="badge b-easy">노약자 편안한 야외 쇼핑몰</span><span class="badge b-tip">알라모아나 일요일 휴무 확인!</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">19:30~</span><span class="sched-act">와이키키 해변 저녁 산책 & 노을 감상 · 호텔 복귀</span></li>
+      </ul>
+      <div class="tip-box">🏊 쉐라톤 Infinity 수영장은 와이키키 최고 포토스팟 중 하나예요. 체크인 전에도 프런트에 짐 맡겨두고 수영장 먼저 이용할 수 있는지 확인해보세요. 이날은 이동과 체크인이 있으니 너무 빡빡하게 짜지 않는 게 좋아요!</div>
+    </div>
+  </div>
+
+  <!-- DAY 9 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num num-oa">D9</div>
+      <div class="day-meta">
+        <h3>7/16 (목) — 와이키키 자유일 & 야경 투어</h3>
+        <p>수영장 · 쇼핑 · 프라이빗 야경 투어</p>
+        <div class="day-badges"><span class="badge b-walk">도보</span><span class="badge b-wow">야경 투어</span><span class="badge b-swim">수영장</span></div>
+      </div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="day-body">
+      <div class="hotel-row">🏨 쉐라톤 와이키키 비치 리조트</div>
+      <ul class="sched-list">
+        <li class="sched-item"><span class="sched-time">09:00~</span><span class="sched-act">느긋한 아침 식사 · 호텔 조식 또는 근처 카페<div class="act-tags"><span class="badge b-easy">여행 중 가장 여유로운 아침</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">10:00~</span><span class="sched-act">쉐라톤 수영장 & 와이키키 해변 — 오전 물놀이 (2~3시간)<div class="act-tags"><span class="badge b-swim">가족 물놀이</span><span class="badge b-tip">아이들 마음껏 놀게 하기</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">13:00~</span><span class="sched-act">El CIELO 레스토랑 또는 루스크리스 스테이크 (1.5~2시간)<div class="act-tags"><span class="badge b-food">하와이 3대 스테이크</span><span class="badge b-tip">예약 추천</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">15:00~</span><span class="sched-act">와이키키 칼라카우아 거리 산책 & 쇼핑 (1.5~2시간)<div class="act-tags"><span class="badge b-easy">평지 · 노인 친화 산책</span><span class="badge b-tip">ABC스토어 기념품 쇼핑도 이때</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">17:30~</span><span class="sched-act">호텔 복귀 · 수영장 저녁 물놀이 or 낮잠 · 야경 투어 전 휴식<div class="act-tags"><span class="badge b-swim">저녁 수영장</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">저녁</span><span class="sched-act">프라이빗 야경 투어 출발 — 한국어 가이드, 차량 탑승 중심<div class="act-tags"><span class="badge b-wow">한국어 야경 투어</span><span class="badge b-easy">차량 이동이라 체력 부담 없음</span><span class="badge b-tip">사전 예약 필수 · 픽업 장소 확인</span></div></span></li>
+      </ul>
+      <div class="tip-box">🌃 이날은 일정을 억지로 채우지 않고 <strong>아이들이 원하는 걸 중심으로</strong> 흘러가도 좋아요. 수영장에서 3시간 있고 싶으면 그래도 됩니다. 야경 투어는 차량 탑승 중심이라 노인·어린이 모두 편하게 즐길 수 있어요.</div>
+    </div>
+  </div>
+
+  <!-- DAY 10 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num num-oa">D10</div>
+      <div class="day-meta">
+        <h3>7/17 (금) — 마지막 와이키키 & 불꽃놀이 🎆</h3>
+        <p>마지막 수영 · 쇼핑 마무리 · 힐튼 금요 불꽃놀이</p>
+        <div class="day-badges"><span class="badge b-walk">도보</span><span class="badge b-wow">불꽃놀이</span><span class="badge b-swim">마지막 수영</span></div>
+      </div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="day-body">
+      <div class="hotel-row">🏨 쉐라톤 와이키키 비치 리조트 (마지막 밤)</div>
+      <ul class="sched-list">
+        <li class="sched-item"><span class="sched-time">09:00~</span><span class="sched-act">느긋한 아침 식사 · 마지막 아침을 천천히</span></li>
+        <li class="sched-item"><span class="sched-time">10:00~</span><span class="sched-act">와이키키 해변 마지막 물놀이 & 가족 기념사진 (2시간)<div class="act-tags"><span class="badge b-swim">여행의 마지막 바다</span><span class="badge b-tip">아이들 실컷 놀게 하기</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">12:30~</span><span class="sched-act">샤워 & 점심 식사 (1.5시간)<div class="act-tags"><span class="badge b-food">야드 하우스 또는 포케바 추천</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">14:00~</span><span class="sched-act">알라모아나 쇼핑 마무리 & 기념품 구입 (2시간)<div class="act-tags"><span class="badge b-tip">셔틀 또는 도보 20분</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">16:30~</span><span class="sched-act">호텔 복귀 · 짐 정리 & 수하물 패킹<div class="act-tags"><span class="badge b-tip">불꽃놀이 전에 짐 미리 정리</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">18:30~</span><span class="sched-act">루스크리스 또는 Orchids — 여행 마지막 저녁 만찬 (약 1.5시간)<div class="act-tags"><span class="badge b-food">특별한 마지막 만찬 · 예약 추천</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">19:20~</span><span class="sched-act">힐튼 앞 해변 이동 · 돗자리·의자 자리 잡기<div class="act-tags"><span class="badge b-tip">자리 미리 잡기 · 20분 전 도착 권장</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">19:40~</span><span class="sched-act">힐튼 금요 불꽃놀이 🎆 — 하와이 여행의 완벽한 마무리<div class="act-tags"><span class="badge b-wow">여행 클라이맥스!</span></div></span></li>
+      </ul>
+      <div class="tip-box">🎆 힐튼 불꽃놀이는 약 10~15분간 진행됩니다. 와이키키 해변 어디서나 잘 보이니 너무 서두르지 않아도 돼요. 돗자리·접이식 의자 준비하면 노인분들도 편하게 앉아서 관람할 수 있어요!</div>
+    </div>
+  </div>
+
+  <!-- DAY 11 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num num-tr">D11</div>
+      <div class="day-meta">
+        <h3>7/18 (토) — 호놀룰루 출국</h3>
+        <p>OZ231 · 12:20 출발 → 인천 7/19 17:10 도착</p>
+        <div class="day-badges"><span class="badge b-tip">귀국일</span></div>
+      </div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="day-body">
+      <ul class="sched-list">
+        <li class="sched-item"><span class="sched-time">오전</span><span class="sched-act">호텔 체크아웃 & 짐 정리</span></li>
+        <li class="sched-item"><span class="sched-time">09:00</span><span class="sched-act">공항 이동 (쉐라톤 → 공항 약 20~25분, 택시/우버)<div class="act-tags"><span class="badge b-tip">국제선 3시간 전 도착 권장</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">12:20</span><span class="sched-act">호놀룰루 출발 (OZ231, B777)</span></li>
+        <li class="sched-item"><span class="sched-time">+1일</span><span class="sched-act">인천 도착 (7/19 일요일 17:10)</span></li>
+      </ul>
+      <div class="tip-box">✈️ 수하물이 많은 가족 여행이므로 넉넉하게 3시간 전 출발을 권장합니다.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ MAP ═══ -->
+<section class="section" id="map">
+  <h2 class="sec-title">지도 & 동선</h2>
+  <p class="sec-sub">일별 상세 경로 · 구글맵 바로가기</p>
+
+  <style>
+    .map-tab-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+    .map-tab{padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;border:1.5px solid #d0cac0;background:white;color:var(--text-light);cursor:pointer;transition:all 0.18s;font-family:'Noto Sans KR',sans-serif;}
+    .map-tab:hover{border-color:var(--teal);color:var(--teal);}
+    .map-tab.active{background:var(--teal);border-color:var(--teal);color:white;}
+    .day-map-block{display:none;}
+    .day-map-block.active{display:block;}
+    .gmap-route-card{background:white;border:1px solid #e8e3da;border-radius:16px;overflow:hidden;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,0.06);}
+    .gmap-route-header{display:flex;align-items:center;gap:14px;padding:16px 20px;border-bottom:1px solid #eee;}
+    .gmap-day-badge{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;flex-shrink:0;}
+    .gmap-route-info{flex:1;}
+    .gmap-route-info h3{font-size:15px;font-weight:700;margin-bottom:3px;}
+    .gmap-route-info p{font-size:12px;color:var(--text-light);}
+    .gmap-stops{padding:16px 20px 8px;display:flex;flex-direction:column;gap:0;}
+    .gmap-stop{display:flex;gap:12px;align-items:flex-start;padding-bottom:14px;position:relative;}
+    .gmap-stop:not(:last-child)::before{content:'';position:absolute;left:15px;top:32px;width:2px;height:calc(100% - 8px);background:repeating-linear-gradient(to bottom,#ccc 0,#ccc 4px,transparent 4px,transparent 8px);}
+    .stop-num{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;z-index:1;}
+    .stop-info{flex:1;padding-top:5px;}
+    .stop-info strong{font-size:14px;display:block;line-height:1.4;}
+    .stop-info span{font-size:12px;color:var(--text-light);}
+    .stop-time{font-size:11px;font-weight:600;color:var(--text-light);padding-top:8px;min-width:48px;text-align:right;}
+    .gmap-actions{padding:10px 20px 14px;display:flex;gap:10px;flex-wrap:wrap;}
+    .gmap-btn{display:inline-flex;align-items:center;gap:7px;padding:10px 20px;border-radius:10px;font-size:13px;font-weight:600;text-decoration:none;cursor:pointer;font-family:'Noto Sans KR',sans-serif;transition:all 0.15s;border:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
+    .gmap-btn-primary{background:#1a73e8;color:white;}
+    .gmap-btn-primary:hover{background:#1557b0;}
+    .gmap-btn-secondary{background:white;color:#1a73e8;border:1.5px solid #1a73e8;}
+    .gmap-btn-secondary:hover{background:#e8f0fe;}
+    .gmap-distance-bar{padding:10px 20px 12px;display:flex;gap:20px;flex-wrap:wrap;border-top:1px solid #f0ede6;background:var(--gray-light);}
+    .dist-item{font-size:12px;color:var(--text-light);display:flex;align-items:center;gap:5px;}
+    .dist-item strong{color:var(--text);font-size:13px;}
+    .gmap-tip{margin:0 20px 14px;padding:10px 14px;background:#fffbeb;border-left:3px solid #f59e0b;border-radius:0 8px 8px 0;font-size:12.5px;color:#7c4f00;line-height:1.6;}
+    .island-sep{margin:28px 0 16px;display:flex;align-items:center;gap:12px;}
+    .island-sep span{font-size:13px;font-weight:700;white-space:nowrap;}
+    .island-sep::after{content:'';flex:1;height:1px;background:var(--sand-dark);}
+    .route-check{background:white;border:1px solid #e8e3da;border-radius:16px;padding:24px;margin-top:8px;}
+    .route-check h3{font-size:15px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+    .check-item{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--gray-light);font-size:14px;}
+    .check-item:last-child{border-bottom:none;}
+    .check-icon{font-size:16px;flex-shrink:0;}
+    .check-content strong{display:block;margin-bottom:2px;}
+    .check-content span{color:var(--text-light);font-size:13px;}
+  </style>
+
+  <!-- 탭 바 -->
+  <div class="map-tab-bar">
+    <button class="map-tab active" onclick="switchMapTab('bi-all', this)">🌋 빅아일랜드 전체</button>
+    <button class="map-tab" onclick="switchMapTab('bi-d2', this)">D2 코나 적응 7/9</button>
+    <button class="map-tab" onclick="switchMapTab('bi-d3', this)">D3 해변+별 7/10</button>
+    <button class="map-tab" onclick="switchMapTab('bi-d4', this)">D4 화산탐험 7/11</button>
+    <button class="map-tab" onclick="switchMapTab('oa-all', this)">🏖️ 오아후 전체</button>
+    <button class="map-tab" onclick="switchMapTab('oa-d6', this)">D6 동쪽루프 7/13</button>
+    <button class="map-tab" onclick="switchMapTab('oa-d7', this)">D7 북서루프 7/14</button>
+    <button class="map-tab" onclick="switchMapTab('oa-walk', this)">D8~10 도보</button>
+  </div>
+
+  <!-- ─── 빅아일랜드 전체 개요 ─── -->
+  <div class="day-map-block active" id="block-bi-all">
+    <div class="gmap-route-card">
+      <div class="gmap-route-header">
+        <div class="gmap-day-badge" style="background:#d4edda;color:#155724;">🌋</div>
+        <div class="gmap-route-info">
+          <h3>빅아일랜드 전체 동선 개요 (7/8~7/12)</h3>
+          <p>코나 콘도 거점 · 3방향 루프 · 렌터카 필수</p>
+        </div>
+      </div>
+      <div class="gmap-stops">
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#1a7a6e;color:white;">🏠</div>
+          <div class="stop-info"><strong>코나 콘도 (LUXURY IN PARADISE)</strong><span>Waikoloa Beach Resort 단지 · 4박 거점</span></div>
+          <div class="stop-time">거점</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#c0392b;color:white;">D2</div>
+          <div class="stop-info"><strong>화산 국립공원 루프 (7/9)</strong><span>킬라우에아 이키 트레일 → 체인 오브 크레이터스 → 야간 글로우 · 편도 약 1.5시간</span></div>
+          <div class="stop-time">남동쪽</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#e67e22;color:white;">D3</div>
+          <div class="stop-info"><strong>남부 해변 + 마우나케아 루프 (7/10)</strong><span>블랙샌드비치 → 투스텝 → 마우나케아 VIS 별보기 · 가장 긴 이동일</span></div>
+          <div class="stop-time">남→북동</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#2196a3;color:white;">D4</div>
+          <div class="stop-info"><strong>코나 북부 해변 루프 (7/11)</strong><span>하푸나 비치 → 쿠아베이 선셋 · 숙소 바로 인근, 이동 최소</span></div>
+          <div class="stop-time">북서쪽</div>
+        </div>
+      </div>
+      <div class="gmap-actions">
+        <a class="gmap-btn gmap-btn-primary" href="https://maps.app.goo.gl/Kona2025BigIsland" onclick="openGmap('https://www.google.com/maps/dir/Waikoloa,+HI+96738/Hawaii+Volcanoes+National+Park,+Hawaii+96718/Punaluu+Black+Sand+Beach,+Hawaii+96777/Mauna+Kea+Visitor+Information+Station/Hapuna+Beach,+Hawaii+96743/Kua+Bay,+Kalaoa,+HI+96740/Waikoloa,+HI+96738');return false;" target="_blank">
+          📍 구글맵에서 전체 경로 보기
+        </a>
+      </div>
+      <div class="gmap-distance-bar">
+        <div class="dist-item">🚗 <strong>최장 이동일</strong> D3 — 약 250km</div>
+        <div class="dist-item">⏱️ <strong>최단 이동일</strong> D4 — 약 30km</div>
+        <div class="dist-item">🏠 <strong>거점</strong> 코나 → 매일 복귀</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── D2 화산 ─── -->
+  <div class="day-map-block" id="block-bi-d2">
+    <div class="gmap-route-card">
+      <div class="gmap-route-header">
+        <div class="gmap-day-badge" style="background:#fde8e8;color:#c0392b;">D2</div>
+        <div class="gmap-route-info">
+          <h3>7/9 (목) — 코나 적응 & 카할루우 비치</h3>
+          <p>시차 적응 · 콘도에서 10분 · 여유로운 첫 하루</p>
+        </div>
+      </div>
+      <div class="gmap-stops">
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#1a7a6e;color:white;">S</div>
+          <div class="stop-info"><strong>코나 콘도 출발</strong><span>08:00 출발 · 주차장 일찍 도착 목표</span></div>
+          <div class="stop-time">08:00</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#c0392b;color:white;">1</div>
+          <div class="stop-info"><strong>킬라우에아 이키 트레일</strong><span>Crater Rim Dr, Hawaii Volcanoes NP · 코나에서 약 1.5시간 · 아이들 페이스로 2.5~3시간</span></div>
+          <div class="stop-time">09:30</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#c0392b;color:white;">2</div>
+          <div class="stop-info"><strong>킬라우에아 칼데라 전망대</strong><span>주차장 바로 앞 · 분화구 전경 감상 & 간식 휴식</span></div>
+          <div class="stop-time">12:00</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#c0392b;color:white;">3</div>
+          <div class="stop-info"><strong>체인 오브 크레이터스 로드 드라이브</strong><span>차에 탄 채로 용암 지형 감상 · 어린이·노인 모두 편안</span></div>
+          <div class="stop-time">13:00</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#c0392b;color:white;">4</div>
+          <div class="stop-info"><strong>점심 식사</strong><span>볼케이노 하우스 또는 인근 카페 · 여유있게 휴식</span></div>
+          <div class="stop-time">14:30</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#1a7a6e;color:white;">E</div>
+          <div class="stop-info"><strong>코나 콘도 귀환</strong><span>약 1.5시간 드라이브 · 콘도 수영장 & 저녁</span></div>
+          <div class="stop-time">16:00</div>
+        </div>
+      </div>
+      <div class="gmap-actions">
+        <a class="gmap-btn gmap-btn-primary" href="https://www.google.com/maps/dir/Waikoloa+Beach+Resort,+HI/Kilauea+Iki+Trail,+Hawaii+96778/Chain+of+Craters+Road,+Hawaii/Kilauea+Overlook,+Hawaii+Volcanoes+National+Park/Waikoloa+Beach+Resort,+HI" target="_blank">
+          📍 구글맵에서 D2 경로 열기
+        </a>
+        <a class="gmap-btn gmap-btn-secondary" href="https://www.google.com/maps/place/Kilauea+Iki+Trail,+Hawaii+96778" target="_blank">
+          킬라우에아 이키 위치
+        </a>
+      </div>
+      <div class="gmap-distance-bar">
+        <div class="dist-item">🚗 <strong>총 이동</strong> 약 20km</div>
+        <div class="dist-item">⏱️ <strong>운전 시간</strong> 약 30분</div>
+        <div class="dist-item">🏖️ <strong>비치</strong> 카할루우 2~3시간</div>
+        <div class="dist-item">😴 <strong>시차 적응</strong> 여유 일정</div>
+      </div>
+      <div class="gmap-tip">💡 <strong>시차 19시간!</strong> 도착 다음날은 무리하지 않는 게 최선이에요. 카할루우 비치는 콘도 바로 옆이라 이동 부담이 없고, 얕은 물에서 바다거북을 만날 수 있어 아이들이 특히 좋아합니다.</div>
+    </div>
+  </div>
+
+  <!-- ─── D3 해변+별 ─── -->
+  <div class="day-map-block" id="block-bi-d3">
+    <div class="gmap-route-card">
+      <div class="gmap-route-header">
+        <div class="gmap-day-badge" style="background:#fef3e2;color:#e67e22;">D3</div>
+        <div class="gmap-route-info">
+          <h3>7/10 (금) — 남부 해변 + 마우나케아 별보기</h3>
+          <p>코나 출발 · 총 이동 약 250km · 당일 최대 이동일</p>
+        </div>
+      </div>
+      <div class="gmap-stops">
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#1a7a6e;color:white;">S</div>
+          <div class="stop-info"><strong>코나 콘도 출발</strong><span>08:00 출발 — 남쪽으로 이동</span></div>
+          <div class="stop-time">08:00</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#e67e22;color:white;">1</div>
+          <div class="stop-info"><strong>푸날루우 블랙샌드비치</strong><span>Punalu'u Beach Park, Pahala, HI · 코나에서 약 1시간 30분</span></div>
+          <div class="stop-time">09:30</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#e67e22;color:white;">2</div>
+          <div class="stop-info"><strong>투스텝 비치 (호나우나우 베이)</strong><span>Honaunau Bay, Captain Cook, HI · 블랙샌드에서 약 50분 (북쪽 이동)</span></div>
+          <div class="stop-time">11:30</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#e67e22;color:white;">3</div>
+          <div class="stop-info"><strong>클로버앤머그 카페 (점심)</strong><span>75-5744 Alii Dr, Kailua-Kona · 투스텝에서 코나 방향 약 20분</span></div>
+          <div class="stop-time">13:30</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#e67e22;color:white;">4</div>
+          <div class="stop-info"><strong>마우나케아 VIS (Onizuka Center)</strong><span>Mauna Kea Access Rd, Hilo, HI · 코나에서 북동쪽 약 1시간 20분 · 해발 2,800m</span></div>
+          <div class="stop-time">17:00</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#1a7a6e;color:white;">E</div>
+          <div class="stop-info"><strong>코나 콘도 복귀</strong><span>마우나케아에서 약 1시간 20분</span></div>
+          <div class="stop-time">21:00</div>
+        </div>
+      </div>
+      <div class="gmap-actions">
+        <a class="gmap-btn gmap-btn-primary" href="https://www.google.com/maps/dir/Waikoloa+Beach+Resort,+Hawaii/Punaluu+Black+Sand+Beach/Honaunau+Bay+Two+Step/Kailua-Kona+HI/Mauna+Kea+Visitor+Information+Station/Waikoloa+Beach+Resort,+Hawaii" target="_blank">
+          📍 구글맵에서 D3 경로 열기
+        </a>
+        <a class="gmap-btn gmap-btn-secondary" href="https://www.google.com/maps/place/Maunakea+Visitor+Information+Station" target="_blank">
+          마우나케아 VIS 위치
+        </a>
+      </div>
+      <div class="gmap-distance-bar">
+        <div class="dist-item">🚗 <strong>총 이동</strong> 약 250km</div>
+        <div class="dist-item">⏱️ <strong>운전 시간</strong> 약 5시간</div>
+        <div class="dist-item">🌡️ <strong>마우나케아</strong> 0~10°C — 방한복 필수</div>
+      </div>
+      <div class="gmap-tip">💡 <strong>동선 팁:</strong> 남쪽(블랙샌드·투스텝) → 코나 복귀 도중 점심 → 북동쪽(마우나케아) 순으로 S자 루프. 역주행 최소화. 별보기 후 야간 산악도로 하산 주의.</div>
+    </div>
+  </div>
+
+  <!-- ─── D4 북부해변 ─── -->
+  <div class="day-map-block" id="block-bi-d4">
+    <div class="gmap-route-card">
+      <div class="gmap-route-header">
+        <div class="gmap-day-badge" style="background:#d1ecf1;color:#0c5460;">D4</div>
+        <div class="gmap-route-info">
+          <h3>7/11 (토) — 화산 국립공원 탐험</h3>
+          <p>코나 출발 · 총 이동 약 200km · 아이 페이스 여유 일정</p>
+        </div>
+      </div>
+      <div class="gmap-stops">
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#1a7a6e;color:white;">S</div>
+          <div class="stop-info"><strong>코나 공항 인근 헬리콥터 투어 출발</strong><span>Blue Hawaiian / Paradise Helicopters (사전 예약 필수)</span></div>
+          <div class="stop-time">08:00</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#2196a3;color:white;">1</div>
+          <div class="stop-info"><strong>하푸나 비치 (Hapuna Beach State Park)</strong><span>62-100 Kauna'oa Dr, Waimea · 숙소에서 북쪽 약 15분 · 빅아일랜드 최대 화이트샌드</span></div>
+          <div class="stop-time">10:30</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#2196a3;color:white;">2</div>
+          <div class="stop-info"><strong>하푸나 비치 리조트 레스토랑 (점심)</strong><span>하푸나 비치 바로 옆 — 이동 없이 편하게 식사</span></div>
+          <div class="stop-time">12:30</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#2196a3;color:white;">3</div>
+          <div class="stop-info"><strong>콘도 수영장 & 휴식</strong><span>하푸나에서 숙소 복귀 약 10분 — 오후 휴식</span></div>
+          <div class="stop-time">14:00</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#2196a3;color:white;">4</div>
+          <div class="stop-info"><strong>쿠아베이 (Manini'owali Beach / Kua Bay)</strong><span>Kalaoa, HI 96740 · 숙소에서 남서쪽 약 20분 · 대표 선셋 포인트</span></div>
+          <div class="stop-time">17:30</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#1a7a6e;color:white;">E</div>
+          <div class="stop-info"><strong>코나 콘도 복귀 & 짐 정리</strong><span>내일 오전 체크아웃 준비</span></div>
+          <div class="stop-time">19:30</div>
+        </div>
+      </div>
+      <div class="gmap-actions">
+        <a class="gmap-btn gmap-btn-primary" href="https://www.google.com/maps/dir/Waikoloa+Beach+Resort,+Hawaii/Hapuna+Beach+State+Park,+HI/Waikoloa+Beach+Resort,+Hawaii/Maniniowali+Beach+Kua+Bay,+Kalaoa+HI" target="_blank">
+          📍 구글맵에서 D4 경로 열기
+        </a>
+        <a class="gmap-btn gmap-btn-secondary" href="https://www.google.com/maps/place/Manini'owali+Beach+(Kua+Bay)" target="_blank">
+          쿠아베이 선셋 위치
+        </a>
+      </div>
+      <div class="gmap-distance-bar">
+        <div class="dist-item">🚗 <strong>총 이동</strong> 약 200km</div>
+        <div class="dist-item">⏱️ <strong>운전 시간</strong> 약 3시간</div>
+        <div class="dist-item">🥾 <strong>트레킹</strong> 아이 페이스 3~3.5시간</div>
+        <div class="dist-item">🏠 <strong>귀환</strong> 오후 7시 목표</div>
+      </div>
+      <div class="gmap-tip">💡 D2(7/9)에 시차 적응을 마쳤으니 이날은 체력이 한결 나아요. 4km 트레킹이지만 아이 페이스로 천천히 즐기면 됩니다. 칼데라 뷰 + 드라이브만으로도 충분히 압도적!</div>
+    </div>
+  </div>
+
+  <!-- ─── 오아후 전체 ─── -->
+  <div class="day-map-block" id="block-oa-all">
+    <div class="gmap-route-card">
+      <div class="gmap-route-header">
+        <div class="gmap-day-badge" style="background:#cce5ff;color:#004085;">🏖️</div>
+        <div class="gmap-route-info">
+          <h3>오아후 전체 동선 개요 (7/12~7/18)</h3>
+          <p>와이키키 거점 · 렌터카 7/13~14 · 이후 도보·투어</p>
+        </div>
+      </div>
+      <div class="gmap-stops">
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#1a7a6e;color:white;">🏨</div>
+          <div class="stop-info"><strong>와이키키 (힐튼 3박 → 쉐라톤 3박)</strong><span>힐튼 하와이안 빌리지 · 쉐라톤 와이키키 · 전 일정 거점</span></div>
+          <div class="stop-time">거점</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#c0392b;color:white;">D6</div>
+          <div class="stop-info"><strong>동쪽 해안 루프 (7/13 · 렌터카)</strong><span>다이아몬드헤드 → 72번 국도 → 마카푸우 → 라니카이 → 라니아케아 → 샥스코브</span></div>
+          <div class="stop-time">동쪽</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#2196a3;color:white;">D7</div>
+          <div class="stop-info"><strong>북서쪽 루프 (7/14 · 렌터카)</strong><span>돌 파인애플 농장 → PCC 폴리네시안 문화센터</span></div>
+          <div class="stop-time">북서</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#888;color:white;">D8~10</div>
+          <div class="stop-info"><strong>와이키키 반경 도보·투어 (7/15~17)</strong><span>알라모아나 · 쉐라톤 수영장 · 야경 투어 · 금요 불꽃놀이</span></div>
+          <div class="stop-time">도보</div>
+        </div>
+      </div>
+      <div class="gmap-actions">
+        <a class="gmap-btn gmap-btn-primary" href="https://www.google.com/maps/dir/Hilton+Hawaiian+Village,+Honolulu/Diamond+Head+State+Monument/Makapuu+Point+Lighthouse+Trail/Lanikai+Beach/Laniakea+Beach/Sharks+Cove+Oahu/Dole+Plantation/Polynesian+Cultural+Center/Hilton+Hawaiian+Village" target="_blank">
+          📍 구글맵에서 오아후 전체 경로 보기
+        </a>
+      </div>
+      <div class="gmap-distance-bar">
+        <div class="dist-item">🚗 <strong>렌터카</strong> 7/13, 7/14 이틀만</div>
+        <div class="dist-item">🚶 <strong>도보</strong> 7/15~17 와이키키 반경</div>
+        <div class="dist-item">🏨 <strong>거점</strong> 와이키키 중심부</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── D6 동쪽 루프 ─── -->
+  <div class="day-map-block" id="block-oa-d6">
+    <div class="gmap-route-card">
+      <div class="gmap-route-header">
+        <div class="gmap-day-badge" style="background:#fde8e8;color:#c0392b;">D6</div>
+        <div class="gmap-route-info">
+          <h3>7/13 (월) — 동쪽 해안 드라이브 루프</h3>
+          <p>와이키키 출발 · 총 이동 약 120km · 반시계 루프</p>
+        </div>
+      </div>
+      <div class="gmap-stops">
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#1a7a6e;color:white;">S</div>
+          <div class="stop-info"><strong>힐튼 하와이안 빌리지 출발</strong><span>2005 Kalia Rd, Honolulu, HI 96815</span></div>
+          <div class="stop-time">08:00</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#c0392b;color:white;">1</div>
+          <div class="stop-info"><strong>다이아몬드헤드 주차장</strong><span>Diamond Head Rd, Honolulu · 힐튼에서 차로 10분 · 사전 온라인 예약 필수 (월~금만 운영)</span></div>
+          <div class="stop-time">08:15</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#c0392b;color:white;">2</div>
+          <div class="stop-info"><strong>마카푸우 전망대 (72번 국도 경유)</strong><span>Makapu'u Point Lighthouse Trail, Waimanalo · 다이아몬드헤드에서 약 30분 · 포장도로 전망대</span></div>
+          <div class="stop-time">10:00</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#c0392b;color:white;">3</div>
+          <div class="stop-info"><strong>라니카이 비치</strong><span>Lanikai Beach, Kailua, HI · 마카푸우에서 북쪽 15분 · 투명한 에메랄드 바다</span></div>
+          <div class="stop-time">11:30</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#c0392b;color:white;">4</div>
+          <div class="stop-info"><strong>라니아케아 비치 (거북이)</strong><span>Laniakea Beach, Haleiwa, HI · 라니카이에서 북쪽 약 45분 · 바다거북 서식지</span></div>
+          <div class="stop-time">13:30</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#c0392b;color:white;">5</div>
+          <div class="stop-info"><strong>샥스코브 스노클링</strong><span>Shark's Cove, Pupukea, HI · 라니아케아 바로 옆 5분 · 오아후 최고 스노클링</span></div>
+          <div class="stop-time">14:30</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#1a7a6e;color:white;">E</div>
+          <div class="stop-info"><strong>와이키키 복귀 & 힐튼 수영장</strong><span>샥스코브에서 와이키키까지 약 1시간</span></div>
+          <div class="stop-time">17:00</div>
+        </div>
+      </div>
+      <div class="gmap-actions">
+        <a class="gmap-btn gmap-btn-primary" href="https://www.google.com/maps/dir/Hilton+Hawaiian+Village+Waikiki/Diamond+Head+State+Monument+Honolulu/Makapu'u+Point+Lighthouse+Trail+Waimanalo/Lanikai+Beach+Kailua+HI/Laniakea+Beach+Haleiwa/Sharks+Cove+Pupukea+HI/Hilton+Hawaiian+Village+Waikiki" target="_blank">
+          📍 구글맵에서 D6 전체 경로 열기
+        </a>
+        <a class="gmap-btn gmap-btn-secondary" href="https://www.google.com/maps/place/Shark's+Cove,+Haleiwa,+HI+96712" target="_blank">
+          샥스코브 위치
+        </a>
+      </div>
+      <div class="gmap-distance-bar">
+        <div class="dist-item">🚗 <strong>총 이동</strong> 약 120km</div>
+        <div class="dist-item">⏱️ <strong>운전 시간</strong> 약 3시간</div>
+        <div class="dist-item">🔄 <strong>루프 방향</strong> 시계방향 (동→북→복귀)</div>
+      </div>
+      <div class="gmap-tip">💡 <strong>동선 최적화:</strong> 다이아몬드헤드(힐튼 바로 옆 10분) → 72번 국도 따라 동쪽 → 북쪽으로 올라가는 흐름이 가장 자연스럽습니다. 역주행 없는 완벽한 반시계 루프!</div>
+    </div>
+  </div>
+
+  <!-- ─── D7 북서 루프 ─── -->
+  <div class="day-map-block" id="block-oa-d7">
+    <div class="gmap-route-card">
+      <div class="gmap-route-header">
+        <div class="gmap-day-badge" style="background:#d1ecf1;color:#0c5460;">D7</div>
+        <div class="gmap-route-info">
+          <h3>7/14 (화) — 아울렛 + 돌 파인애플 + PCC 북서 루프</h3>
+          <p>와이키키 출발 · 총 이동 약 150km · 아울렛 4~5시간 포함</p>
+        </div>
+      </div>
+      <div class="gmap-stops">
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#1a7a6e;color:white;">S</div>
+          <div class="stop-info"><strong>힐튼 하와이안 빌리지 출발</strong><span>2005 Kalia Rd, Honolulu, HI · 08:00 출발</span></div>
+          <div class="stop-time">08:00</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#8b5cf6;color:white;">1</div>
+          <div class="stop-info"><strong>와이켈레 프리미엄 아울렛</strong><span>94-790 Lumiaina St, Waipahu, HI 96797 · 와이키키에서 약 30분 · 4~5시간 쇼핑 · 코치·폴로·나이키 등 50+ 브랜드</span></div>
+          <div class="stop-time">08:30</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#8b5cf6;color:white;">🍽️</div>
+          <div class="stop-info"><strong>아울렛 푸드코트 점심</strong><span>쇼핑 중 간편 식사 · 별도 이동 없음</span></div>
+          <div class="stop-time">13:00</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#2196a3;color:white;">2</div>
+          <div class="stop-info"><strong>돌 파인애플 농장</strong><span>64-1550 Kamehameha Hwy, Wahiawa, HI 96786 · 아울렛에서 북쪽 약 20분 · 미로·기차·파인애플 아이스크림</span></div>
+          <div class="stop-time">14:00</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#2196a3;color:white;">3</div>
+          <div class="stop-info"><strong>PCC 폴리네시안 문화센터</strong><span>55-370 Kamehameha Hwy, Laie, HI 96762 · 돌 파인애플에서 동쪽 약 30분 · 화요일 정상 운영</span></div>
+          <div class="stop-time">15:30</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#1a7a6e;color:white;">E</div>
+          <div class="stop-info"><strong>와이키키 복귀 & 렌터카 반납</strong><span>PCC에서 와이키키까지 약 1시간</span></div>
+          <div class="stop-time">19:30</div>
+        </div>
+      </div>
+      <div class="gmap-actions">
+        <a class="gmap-btn gmap-btn-primary" href="https://www.google.com/maps/dir/Hilton+Hawaiian+Village+Waikiki/Waikele+Premium+Outlets+Waipahu+HI/Dole+Plantation+Wahiawa+HI/Polynesian+Cultural+Center+Laie+HI/Hilton+Hawaiian+Village+Waikiki" target="_blank">
+          📍 구글맵에서 D7 전체 경로 열기
+        </a>
+        <a class="gmap-btn gmap-btn-secondary" href="https://www.google.com/maps/place/Polynesian+Cultural+Center" target="_blank">
+          PCC 위치
+        </a>
+      </div>
+      <div class="gmap-distance-bar">
+        <div class="dist-item">🚗 <strong>총 이동</strong> 약 150km</div>
+        <div class="dist-item">⏱️ <strong>운전 시간</strong> 약 3.5시간</div>
+        <div class="dist-item">🛍️ <strong>아울렛</strong> 4~5시간 쇼핑</div>
+        <div class="dist-item">🎭 <strong>PCC</strong> 15:30 입장 · 수·일 휴무</div>
+      </div>
+      <div class="gmap-tip">💡 <strong>동선 팁:</strong> 와이키키 → 와이켈레 아울렛(서쪽, 30분) → 돌 파인애플(북쪽, 20분) → PCC(동쪽, 30분) → 복귀. 아울렛이 가는 길목에 있어 역주행 없이 자연스러운 서→북→동 루프!</div>
+    </div>
+  </div>
+
+  <!-- ─── D8~10 도보 ─── -->
+  <div class="day-map-block" id="block-oa-walk">
+    <div class="gmap-route-card">
+      <div class="gmap-route-header">
+        <div class="gmap-day-badge" style="background:#e2d9f3;color:#4a2d8a;">D8~10</div>
+        <div class="gmap-route-info">
+          <h3>7/15~17 — 와이키키 도보 & 투어 중심</h3>
+          <p>쉐라톤 거점 · 렌터카 불필요 · 모든 장소 도보 또는 셔틀</p>
+        </div>
+      </div>
+      <div class="gmap-stops">
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#1a7a6e;color:white;">🏨</div>
+          <div class="stop-info"><strong>쉐라톤 와이키키 (7/15 체크인)</strong><span>2255 Kalakaua Ave, Honolulu, HI · 힐튼에서 도보 10분</span></div>
+          <div class="stop-time">거점</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#888;color:white;">①</div>
+          <div class="stop-info"><strong>쉐라톤 Infinity 수영장</strong><span>도보 0분 · 오션뷰 포토스팟 · 슬라이드 있음</span></div>
+          <div class="stop-time">매일 오전</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#888;color:white;">②</div>
+          <div class="stop-info"><strong>알라모아나 쇼핑센터</strong><span>1450 Ala Moana Blvd · 쉐라톤에서 셔틀 또는 도보 20분 · 일요일 휴무 확인</span></div>
+          <div class="stop-time">오후</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#888;color:white;">③</div>
+          <div class="stop-info"><strong>와이키키 칼라카우아 거리 산책</strong><span>평지 쇼핑 거리 · 노인 친화적 · 루스크리스·야드하우스 인근</span></div>
+          <div class="stop-time">오후</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#888;color:white;">④</div>
+          <div class="stop-info"><strong>프라이빗 야경 투어 (7/16)</strong><span>한국어 가이드 · 차량 탑승 중심 · 픽업 장소 투어사 확인</span></div>
+          <div class="stop-time">7/16 저녁</div>
+        </div>
+        <div class="gmap-stop">
+          <div class="stop-num" style="background:#e67e22;color:white;">🎆</div>
+          <div class="stop-info"><strong>힐튼 앞 금요 불꽃놀이 (7/17)</strong><span>힐튼 해변 또는 와이키키 어디서나 관람 가능 · 19:40</span></div>
+          <div class="stop-time">7/17 19:40</div>
+        </div>
+      </div>
+      <div class="gmap-actions">
+        <a class="gmap-btn gmap-btn-primary" href="https://www.google.com/maps/dir/Sheraton+Waikiki/Ala+Moana+Center+Honolulu/Kalakaua+Ave+Waikiki/Hilton+Hawaiian+Village+Waikiki" target="_blank">
+          📍 구글맵에서 와이키키 주변 보기
+        </a>
+        <a class="gmap-btn gmap-btn-secondary" href="https://www.google.com/maps/place/Sheraton+Waikiki" target="_blank">
+          쉐라톤 위치
+        </a>
+      </div>
+      <div class="gmap-distance-bar">
+        <div class="dist-item">🚶 <strong>이동 수단</strong> 도보 · 셔틀 · 투어 차량</div>
+        <div class="dist-item">📍 <strong>알라모아나</strong> 셔틀 또는 도보 20분</div>
+        <div class="dist-item">🎆 <strong>불꽃놀이</strong> 7/17 금 19:40</div>
+      </div>
+      <div class="gmap-tip">💡 7/15~17은 렌터카 없이 모두 해결 가능합니다. 와이키키~알라모아나 구간은 호텔 무료 셔틀 또는 더버스(TheBus) 이용 가능.</div>
+    </div>
+  </div>
+
+  <!-- 동선 효율성 점검 -->
+  <div class="route-check">
+    <h3>✅ 동선 효율성 점검 결과</h3>
+    <div class="check-item">
+      <span class="check-icon">🟢</span>
+      <div class="check-content">
+        <strong>빅아일랜드 — 코나 거점 3방향 루프</strong>
+        <span>화산(남동), 별보기(북동), 해변(북서)을 각각 하루씩 배치. 동선 중복 없음.</span>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-icon">🟡</span>
+      <div class="check-content">
+        <strong>빅아일랜드 DAY2 — 점심 위치 조정 권장</strong>
+        <span>화산 남부에서 코나로 복귀 도중 다포케쉑 점심 후 전망대 재방문 시 약간의 역이동 발생. 남부에서 점심·전망대 모두 해결 후 귀환하면 더 효율적.</span>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-icon">🟢</span>
+      <div class="check-content">
+        <strong>오아후 7/13 — 다이아몬드헤드 → 동쪽 → 북쪽 반시계 루프</strong>
+        <span>와이키키 출발 후 다이아몬드헤드(10분) → 동쪽 → 북쪽 → 복귀. 역주행 없는 완벽한 루프.</span>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-icon">🟢</span>
+      <div class="check-content">
+        <strong>오아후 7/14 — 돌 파인애플 → PCC 시계방향 루프</strong>
+        <span>와이키키 → 북서(돌 농장) → 북쪽(노스쇼어 점심) → 북동(PCC) → 복귀. 한 방향으로 연속 이동.</span>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-icon">⚠️</span>
+      <div class="check-content">
+        <strong>다이아몬드헤드 — 주말 휴무 + 사전 예약 필수</strong>
+        <span>토·일 휴무. 7/13은 월요일로 정상 운영. 예약 사이트: gostateparks.hawaii.gov</span>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-icon">✅</span>
+      <div class="check-content">
+        <strong>PCC — 7/14 화요일 정상 운영 확인</strong>
+        <span>수·일 휴무. 7/14 화요일 정상 운영. 예약: polynesia.com</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function switchMapTab(id, btn) {
+    document.querySelectorAll('.map-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.day-map-block').forEach(b => b.classList.remove('active'));
+    if (btn) btn.classList.add('active');
+    var block = document.getElementById('block-' + id);
+    if (block) block.classList.add('active');
+  }
+  </script>
+</section>
+
+<!-- ═══════════════════════════════════════ PREP ═══ -->
+<section class="section" id="prep">
+  <h2 class="sec-title">준비물 체크리스트</h2>
+  <p class="sec-sub">항목을 클릭하면 체크됩니다</p>
+
+  <div class="prep-grid">
+    <div class="prep-card">
+      <h3>👙 해변·수영</h3>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>수영복 (1인 2~3벌)</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>아쿠아슈즈 (투스텝·샥스코브 암초용)</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>스노클 마스크 (현지 구매 가능)</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>슬리퍼 또는 샌달</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>래쉬가드 (자외선 차단)</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>선크림 (SPF50+, 리프세이프)</div>
+    </div>
+    <div class="prep-card">
+      <h3>🥾 트레킹·야외</h3>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>운동화 (킬라우에아 이키 필수)</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>경량 패딩 (마우나케아용 필수)</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>담요 또는 두꺼운 스카프</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>우비 또는 방수 재킷</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>보조 배터리</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>물통 (재사용)</div>
+    </div>
+    <div class="prep-card">
+      <h3>💊 건강·응급</h3>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>상비약 (소화제, 두통약)</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>모기기피제</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>알로에 젤 (선번 대비)</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>노인 처방약 (충분한 양)</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>멀미약 (헬리콥터·배 탑승 시)</div>
+    </div>
+    <div class="prep-card">
+      <h3>🏠 숙소·생활</h3>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>필터 샤워기 (추천)</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>라면·비상식량</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>멀티 어댑터 (미국형 Type A)</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>국제 운전면허증</div>
+      <div class="prep-item"><div class="prep-check" onclick="toggleCheck(this)"></div>여행자 보험 가입 확인</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ FOOD ═══ -->
+<section class="section" id="food">
+  <h2 class="sec-title">맛집 & 레스토랑</h2>
+  <p class="sec-sub">엑셀 파일에서 선별한 추천 식당</p>
+
+  <div style="margin: 16px 0 8px; font-size: 13px; font-weight: 700; color: var(--text-light); letter-spacing: 1px; text-transform: uppercase;">🌋 빅아일랜드</div>
+  <div class="rest-list">
+    <div class="rest-item">
+      <span class="rest-icon">🐟</span>
+      <div class="rest-info">
+        <strong>Da Poké Shack (다포케쉑)</strong>
+        <span>코나 최고 포케 맛집. 초신선 참치. 줄 서서 먹는 곳. 월~금 영업 (토·일 휴무 주의)</span>
+      </div>
+      <span class="rest-loc">코나 알리이Dr</span>
+    </div>
+    <div class="rest-item">
+      <span class="rest-icon">☕</span>
+      <div class="rest-info">
+        <strong>클로버앤머그 카페</strong>
+        <span>불고기 파니니, 우베 라떼. 바다 뷰 카페. 한식 퓨전 메뉴</span>
+      </div>
+      <span class="rest-loc">코나 이나쇼핑빌리지</span>
+    </div>
+  </div>
+
+  <div style="margin: 20px 0 8px; font-size: 13px; font-weight: 700; color: var(--text-light); letter-spacing: 1px; text-transform: uppercase;">🏖️ 오아후 — 와이키키</div>
+  <div class="rest-list">
+    <div class="rest-item">
+      <span class="rest-icon">🌅</span>
+      <div class="rest-info">
+        <strong>Orchids</strong>
+        <span>일몰 레스토랑. 와이키키 오션뷰 다이닝. 저녁 추천</span>
+      </div>
+      <span class="rest-loc">와이키키</span>
+    </div>
+    <div class="rest-item">
+      <span class="rest-icon">🍺</span>
+      <div class="rest-info">
+        <strong>야드 하우스 (Yard House)</strong>
+        <span>와이키키 대형 레스토랑. 다양한 메뉴, 가족 식사 적합</span>
+      </div>
+      <span class="rest-loc">와이키키</span>
+    </div>
+    <div class="rest-item">
+      <span class="rest-icon">🥩</span>
+      <div class="rest-info">
+        <strong>루스크리스 스테이크 하우스</strong>
+        <span>하와이 3대 스테이크. 특별한 날 저녁으로 추천. 예약 권장</span>
+      </div>
+      <span class="rest-loc">와이키키</span>
+    </div>
+    <div class="rest-item">
+      <span class="rest-icon">🐟</span>
+      <div class="rest-info">
+        <strong>포케바</strong>
+        <span>와이키키 포케볼 전문점. 가성비 좋음</span>
+      </div>
+      <span class="rest-loc">와이키키</span>
+    </div>
+    <div class="rest-item">
+      <span class="rest-icon">🍽️</span>
+      <div class="rest-info">
+        <strong>El CIELO</strong>
+        <span>독특한 분위기의 레스토랑</span>
+      </div>
+      <span class="rest-loc">와이키키</span>
+    </div>
+    <div class="rest-item">
+      <span class="rest-icon">🛒</span>
+      <div class="rest-info">
+        <strong>알라모아나 쇼핑센터 푸드랜드</strong>
+        <span>도시락·과일·간식. 간편하게 식사 해결. 마트+푸드코트</span>
+      </div>
+      <span class="rest-loc">알라모아나</span>
+    </div>
+  </div>
+
+  <div style="margin: 20px 0 8px; font-size: 13px; font-weight: 700; color: var(--text-light); letter-spacing: 1px; text-transform: uppercase;">🌊 노스쇼어</div>
+  <div class="rest-list">
+    <div class="rest-item">
+      <span class="rest-icon">🍤</span>
+      <div class="rest-info">
+        <strong>갈릭쉬림프 트럭</strong>
+        <span>노스쇼어 대표 먹거리. Giovanni's 또는 Romy's 추천. 현금 지참</span>
+      </div>
+      <span class="rest-loc">노스쇼어</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ BONUS ═══ -->
+<section class="section" id="bonus">
+  <h2 class="sec-title">✨ 추가 추천 여행지</h2>
+  <p class="sec-sub">현재 일정에 없지만 가족 여행에 잘 맞는 숨은 명소들</p>
+
+  <style>
+    .bonus-island-label {
+      display:flex; align-items:center; gap:12px;
+      margin: 28px 0 16px;
+    }
+    .bonus-island-label span {
+      font-size:13px; font-weight:700; white-space:nowrap;
+      padding: 4px 14px; border-radius:20px;
+    }
+    .bonus-island-label::after {
+      content:''; flex:1; height:1px; background:var(--sand-dark);
+    }
+
+    .bonus-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 14px;
+      margin-bottom: 8px;
+    }
+
+    .bonus-card {
+      background: white;
+      border: 1px solid #e8e3da;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: box-shadow 0.2s, transform 0.2s;
+      cursor: pointer;
+    }
+    .bonus-card:hover {
+      box-shadow: 0 6px 24px rgba(0,0,0,0.11);
+      transform: translateY(-2px);
+    }
+
+    .bonus-card-img {
+      width:100%; height:140px;
+      display:flex; align-items:center; justify-content:center;
+      font-size:52px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bonus-card-body { padding: 16px; }
+    .bonus-card-body h3 { font-size:15px; font-weight:700; margin-bottom:5px; }
+    .bonus-card-body .bonus-desc { font-size:13px; color:var(--text-light); line-height:1.6; margin-bottom:10px; }
+
+    .bonus-tags { display:flex; gap:5px; flex-wrap:wrap; margin-bottom:10px; }
+    .bonus-tag {
+      font-size:10px; font-weight:600; padding:2px 8px;
+      border-radius:10px;
+    }
+    .bt-easy { background:#d4edda; color:#155724; }
+    .bt-kids { background:#cce5ff; color:#004085; }
+    .bt-senior { background:#e2d9f3; color:#4a2d8a; }
+    .bt-nature { background:#d1ecf1; color:#0c5460; }
+    .bt-history { background:#fff3cd; color:#856404; }
+    .bt-food { background:#fde8d8; color:#9c3c00; }
+    .bt-shop { background:#f0ede6; color:#5f5e5a; }
+    .bt-wow { background:#fde8e8; color:#c0392b; }
+
+    .bonus-meta {
+      display:flex; justify-content:space-between; align-items:center;
+      padding-top:10px; border-top:1px solid #f0ede6;
+      font-size:12px; color:var(--text-light);
+    }
+    .bonus-add-btn {
+      font-size:11px; font-weight:600;
+      padding: 5px 12px; border-radius:8px;
+      background: var(--teal-light); color: var(--teal);
+      border:none; cursor:pointer; font-family:inherit;
+      transition: background 0.15s;
+      text-decoration:none; display:inline-block;
+    }
+    .bonus-add-btn:hover { background:#c0e8e0; }
+
+    .bonus-summary-box {
+      background: white;
+      border: 1px solid #e8e3da;
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 32px;
+    }
+    .bonus-summary-box h3 {
+      font-size:15px; font-weight:700; margin-bottom:16px;
+    }
+    .bonus-table-row {
+      display:grid;
+      grid-template-columns: 1fr 80px 120px 80px;
+      gap:8px; padding:10px 0;
+      border-bottom:1px solid var(--gray-light);
+      font-size:13px; align-items:center;
+    }
+    .bonus-table-row:last-child { border-bottom:none; }
+    .bonus-table-header {
+      font-size:11px; font-weight:700; color:var(--text-light);
+      text-transform:uppercase; letter-spacing:0.05em;
+      padding-bottom:8px; border-bottom:2px solid var(--sand-dark);
+    }
+    .diff-easy { color:#155724; font-weight:600; }
+    .diff-medium { color:#856404; font-weight:600; }
+    .diff-hard { color:#c0392b; font-weight:600; }
+  </style>
+
+  <!-- 빅아일랜드 추천 -->
+  <div class="bonus-island-label">
+    <span style="background:#d4edda;color:#155724;">🌋 빅아일랜드 추가 추천</span>
+  </div>
+
+  <div class="bonus-grid">
+
+    <!-- 카할루우 비치 -->
+    <div class="bonus-card">
+      <div class="bonus-card-img" style="background:linear-gradient(135deg,#a8d8ea,#48b0c8);">🐢</div>
+      <div class="bonus-card-body">
+        <h3>카할루우 비치 파크</h3>
+        <div class="bonus-tags">
+          <span class="bonus-tag bt-easy">쉬움</span>
+          <span class="bonus-tag bt-kids">어린이 최고</span>
+          <span class="bonus-tag bt-senior">노인 OK</span>
+          <span class="bonus-tag bt-nature">스노클링</span>
+        </div>
+        <p class="bonus-desc">코나에서 차로 10분 거리의 얕고 잔잔한 스노클링 명소. 바다거북과 열대어가 풍부하고 초보자도 쉽게 즐길 수 있어요. 투스텝보다 접근성이 훨씬 좋고, 노인분들도 모래사장에 앉아 거북이를 구경할 수 있습니다.</p>
+        <div class="bonus-meta">
+          <span>📍 Kahaluu Beach Park, Kailua-Kona</span>
+          <a class="bonus-add-btn" href="https://www.google.com/maps/place/Kahaluu+Beach+Park" target="_blank">지도 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 코나 커피 농장 -->
+    <div class="bonus-card">
+      <div class="bonus-card-img" style="background:linear-gradient(135deg,#c8b89a,#8b6340);">☕</div>
+      <div class="bonus-card-body">
+        <h3>코나 커피 농장 투어</h3>
+        <div class="bonus-tags">
+          <span class="bonus-tag bt-easy">쉬움</span>
+          <span class="bonus-tag bt-senior">노인 추천</span>
+          <span class="bonus-tag bt-history">문화 체험</span>
+          <span class="bonus-tag bt-food">무료 시음</span>
+        </div>
+        <p class="bonus-desc">세계 최고급 코나 커피의 본고장에서 진행하는 농장 투어. 1920~30년대 커피 재배자 삶을 체험하고 무료 시음까지 즐길 수 있어요. Kona Coffee Living History Farm 또는 Mountain Thunder Plantation 추천. 코나 숙소 인근이라 이동 최소.</p>
+        <div class="bonus-meta">
+          <span>📍 코나 인근 · 1~2시간 소요</span>
+          <a class="bonus-add-btn" href="https://www.google.com/maps/place/Kona+Coffee+Living+History+Farm" target="_blank">지도 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 와이피오 밸리 전망대 -->
+    <div class="bonus-card">
+      <div class="bonus-card-img" style="background:linear-gradient(135deg,#6ab187,#2d6a4f);">🏞️</div>
+      <div class="bonus-card-body">
+        <h3>와이피오 밸리 전망대</h3>
+        <div class="bonus-tags">
+          <span class="bonus-tag bt-easy">전망대 쉬움</span>
+          <span class="bonus-tag bt-senior">노인 OK</span>
+          <span class="bonus-tag bt-nature">절경</span>
+          <span class="bonus-tag bt-wow">강력 추천</span>
+        </div>
+        <p class="bonus-desc">깊은 협곡과 폭포, 검은 모래 해변이 어우러진 압도적인 뷰. 전망대 자체는 주차장 바로 앞이라 체력 부담 없이 감상 가능합니다. 마우나케아 가는 D3 북동쪽 경로와 방향이 겹쳐 경유지로 추가하기 좋아요.</p>
+        <div class="bonus-meta">
+          <span>📍 Waipio Valley Lookout, Honokaa</span>
+          <a class="bonus-add-btn" href="https://www.google.com/maps/place/Waipio+Valley+Lookout" target="_blank">지도 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 그린샌드비치 -->
+    <div class="bonus-card">
+      <div class="bonus-card-img" style="background:linear-gradient(135deg,#a8d5b5,#4a9e6e);">🟢</div>
+      <div class="bonus-card-body">
+        <h3>그린샌드비치 (파파코레아)</h3>
+        <div class="bonus-tags">
+          <span class="bonus-tag bt-wow">세계 희귀</span>
+          <span class="bonus-tag bt-nature">자연 경관</span>
+          <span class="bonus-tag" style="background:#fde8e8;color:#c0392b;">체력 필요</span>
+        </div>
+        <p class="bonus-desc">올리빈 광물로 만들어진 세계 희귀 초록 모래 해변. 단, 주차장에서 왕복 5km 이상 도보가 필요해 노인분들은 어렵습니다. 체력 되는 가족 구성원만 선택적으로 방문하고, 나머지는 근처에서 대기하는 방식도 좋아요.</p>
+        <div class="bonus-meta">
+          <span>📍 Papakolea Beach, Ka'u · 왕복 약 2시간</span>
+          <a class="bonus-add-btn" href="https://www.google.com/maps/place/Papakolea+Green+Sand+Beach" target="_blank">지도 보기</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 오아후 추천 -->
+  <div class="bonus-island-label" style="margin-top:32px;">
+    <span style="background:#cce5ff;color:#004085;">🏖️ 오아후 추가 추천</span>
+  </div>
+
+  <div class="bonus-grid">
+
+    <!-- 진주만 -->
+    <div class="bonus-card">
+      <div class="bonus-card-img" style="background:linear-gradient(135deg,#b0c4de,#4a6fa5);">⚓</div>
+      <div class="bonus-card-body">
+        <h3>진주만 (Pearl Harbor)</h3>
+        <div class="bonus-tags">
+          <span class="bonus-tag bt-easy">이동 편함</span>
+          <span class="bonus-tag bt-history">역사 교육</span>
+          <span class="bonus-tag bt-senior">노인 추천</span>
+        </div>
+        <p class="bonus-desc">1941년 일본 공습의 역사적 현장. 아리조나 메모리얼은 무료이며 역사적 의미가 깊습니다. 와이키키에서 차로 20분 거리로 렌터카 없이 투어 버스로도 접근 가능해요. 세대 간 공감대를 형성하기 좋은 장소입니다.</p>
+        <div class="bonus-meta">
+          <span>📍 Pearl Harbor, Honolulu · 반나절 소요</span>
+          <a class="bonus-add-btn" href="https://www.google.com/maps/place/Pearl+Harbor+National+Memorial" target="_blank">지도 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 카일루아 비치 -->
+    <div class="bonus-card">
+      <div class="bonus-card-img" style="background:linear-gradient(135deg,#93d5e8,#27aac8);">🏄</div>
+      <div class="bonus-card-body">
+        <h3>카일루아 비치</h3>
+        <div class="bonus-tags">
+          <span class="bonus-tag bt-easy">쉬움</span>
+          <span class="bonus-tag bt-kids">어린이 최고</span>
+          <span class="bonus-tag bt-senior">노인 OK</span>
+          <span class="bonus-tag bt-nature">잔잔한 파도</span>
+        </div>
+        <p class="bonus-desc">오아후 최고의 해변 중 하나. 모래가 매우 곱고 파도가 완만해 어린이와 노인 모두 편하게 즐길 수 있어요. 라니카이 비치 바로 옆이라 D6 일정에서 추가 이동 없이 연계 방문 가능합니다.</p>
+        <div class="bonus-meta">
+          <span>📍 Kailua Beach, Kailua · 라니카이 옆</span>
+          <a class="bonus-add-btn" href="https://www.google.com/maps/place/Kailua+Beach+Park" target="_blank">지도 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 와이메아 비치 -->
+    <div class="bonus-card">
+      <div class="bonus-card-img" style="background:linear-gradient(135deg,#f0c080,#e8902a);">🌅</div>
+      <div class="bonus-card-body">
+        <h3>와이메아 비치 파크</h3>
+        <div class="bonus-tags">
+          <span class="bonus-tag bt-easy">쉬움</span>
+          <span class="bonus-tag bt-kids">어린이 인기</span>
+          <span class="bonus-tag bt-senior">선셋 감상</span>
+          <span class="bonus-tag bt-nature">조용한 해변</span>
+        </div>
+        <p class="bonus-desc">노스쇼어의 넓고 조용한 해변. 아이들이 특히 좋아하고, 노인분과 조용히 선셋을 즐기기에도 완벽합니다. 샥스코브·라니아케아 바로 옆에 위치해 D6 북쪽 코스에 자연스럽게 추가할 수 있어요.</p>
+        <div class="bonus-meta">
+          <span>📍 Waimea Bay, Haleiwa · 샥스코브 옆</span>
+          <a class="bonus-add-btn" href="https://www.google.com/maps/place/Waimea+Bay+Beach+Park" target="_blank">지도 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 쿠알로아 랜치 -->
+    <div class="bonus-card">
+      <div class="bonus-card-img" style="background:linear-gradient(135deg,#b8d4a0,#5a8a3c);">🦕</div>
+      <div class="bonus-card-body">
+        <h3>쿠알로아 랜치</h3>
+        <div class="bonus-tags">
+          <span class="bonus-tag bt-easy">차량 탑승</span>
+          <span class="bonus-tag bt-senior">노인 만족 높음</span>
+          <span class="bonus-tag bt-kids">어린이 신남</span>
+          <span class="bonus-tag bt-history">주라기공원 촬영지</span>
+        </div>
+        <p class="bonus-desc">주라기공원 등 헐리우드 영화 촬영지. 엑셀에 "비추"로 표시됐지만 실제 70대 이상 노인을 모신 가족 여행자들 후기에서 만족도가 매우 높습니다. 차량 탑승 방식의 헐리우드 무비 사이트 투어(90분)는 체력 부담이 적어 어르신들께 잘 맞아요.</p>
+        <div class="bonus-meta">
+          <span>📍 Kualoa Ranch, Kaneohe · D8~10 도보일 추천</span>
+          <a class="bonus-add-btn" href="https://www.google.com/maps/place/Kualoa+Ranch" target="_blank">지도 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 와이켈레 아울렛 -->
+    <div class="bonus-card">
+      <div class="bonus-card-img" style="background:linear-gradient(135deg,#e8d5f0,#a070c0);">🛍️</div>
+      <div class="bonus-card-body">
+        <h3>와이켈레 프리미엄 아울렛</h3>
+        <div class="bonus-tags">
+          <span class="bonus-tag bt-easy">쉬움</span>
+          <span class="bonus-tag bt-shop">쇼핑</span>
+          <span class="bonus-tag bt-senior">노인 편안</span>
+        </div>
+        <p class="bonus-desc">하와이 최대 아울렛으로 명품부터 스포츠 브랜드까지 다양합니다. 와이키키에서 차로 약 30분이며, D7 렌터카 이용일에 돌 파인애플 가는 길목에 위치해 경유하기 좋아요. 실내가 아닌 야외 단층 구조라 노인분들도 편하게 쇼핑할 수 있습니다.</p>
+        <div class="bonus-meta">
+          <span>📍 Waikele Premium Outlets, Waipahu · D7 경유</span>
+          <a class="bonus-add-btn" href="https://www.google.com/maps/place/Waikele+Premium+Outlets" target="_blank">지도 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 카일루아 한인 스냅 -->
+    <div class="bonus-card">
+      <div class="bonus-card-img" style="background:linear-gradient(135deg,#ffd6e0,#e8789a);">📸</div>
+      <div class="bonus-card-body">
+        <h3>카일루아 해변 스냅 사진</h3>
+        <div class="bonus-tags">
+          <span class="bonus-tag bt-easy">체력 무관</span>
+          <span class="bonus-tag bt-senior">노인 추천</span>
+          <span class="bonus-tag bt-kids">가족 추억</span>
+          <span class="bonus-tag bt-wow">강력 추천</span>
+        </div>
+        <p class="bonus-desc">카일루아 비치에는 한인 스냅 사진 작가가 활동합니다. 70~80대 노인분도 "평생 이런 사진 처음 찍어봤다"며 찍는 과정 자체를 즐거워하셨다는 실제 후기가 많아요. 하와이 여행의 최고 기념품이 될 수 있습니다. 사전 예약 필수.</p>
+        <div class="bonus-meta">
+          <span>📍 카일루아 비치 · 사전 예약 필수</span>
+          <a class="bonus-add-btn" href="https://www.google.com/search?q=카일루아+한인+스냅+사진+하와이" target="_blank">검색 보기</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 일정 배치 요약표 -->
+  <div class="bonus-summary-box">
+    <h3>📅 현재 일정에 추가하기 좋은 시점</h3>
+    <div class="bonus-table-row bonus-table-header">
+      <div>장소</div>
+      <div>섬</div>
+      <div>추가 추천 시점</div>
+      <div>난이도</div>
+    </div>
+    <div class="bonus-table-row">
+      <div><strong>카할루우 비치</strong></div>
+      <div>🌋 빅아일랜드</div>
+      <div>D1 저녁 or D4 오전</div>
+      <div class="diff-easy">⭐ 쉬움</div>
+    </div>
+    <div class="bonus-table-row">
+      <div><strong>코나 커피 농장</strong></div>
+      <div>🌋 빅아일랜드</div>
+      <div>D1 저녁 or D4 아침</div>
+      <div class="diff-easy">⭐ 쉬움</div>
+    </div>
+    <div class="bonus-table-row">
+      <div><strong>와이피오 밸리 전망대</strong></div>
+      <div>🌋 빅아일랜드</div>
+      <div>D3 마우나케아 경유</div>
+      <div class="diff-easy">⭐ 쉬움</div>
+    </div>
+    <div class="bonus-table-row">
+      <div><strong>그린샌드비치</strong></div>
+      <div>🌋 빅아일랜드</div>
+      <div>D3 남부 코스 추가</div>
+      <div class="diff-hard">⭐⭐⭐ 체력 필요</div>
+    </div>
+    <div class="bonus-table-row">
+      <div><strong>진주만</strong></div>
+      <div>🏖️ 오아후</div>
+      <div>D8~10 도보일 (투어 버스)</div>
+      <div class="diff-easy">⭐ 쉬움</div>
+    </div>
+    <div class="bonus-table-row">
+      <div><strong>카일루아 비치 + 스냅</strong></div>
+      <div>🏖️ 오아후</div>
+      <div>D6 라니카이 연계</div>
+      <div class="diff-easy">⭐ 쉬움</div>
+    </div>
+    <div class="bonus-table-row">
+      <div><strong>와이메아 비치</strong></div>
+      <div>🏖️ 오아후</div>
+      <div>D6 샥스코브 연계</div>
+      <div class="diff-easy">⭐ 쉬움</div>
+    </div>
+    <div class="bonus-table-row">
+      <div><strong>와이켈레 아울렛</strong></div>
+      <div>🏖️ 오아후</div>
+      <div>D7 돌 파인애플 경유</div>
+      <div class="diff-easy">⭐ 쉬움</div>
+    </div>
+    <div class="bonus-table-row">
+      <div><strong>쿠알로아 랜치</strong></div>
+      <div>🏖️ 오아후</div>
+      <div>D8~10 여유일 투어</div>
+      <div class="diff-easy">⭐ 쉬움</div>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  🌺 하와이 가족 여행 2026 · 7월 8일 ~ 18일 · 즐거운 여행 되세요!<br>
+  <span style="font-size:12px; opacity:0.6; margin-top:6px; display:block;">생성일: 2026년 4월</span>
+</footer>
+
+<script>
+function showSection(id, btn) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  var sec = document.getElementById(id);
+  if (sec) sec.classList.add('active');
+  if (btn) btn.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function toggleDay(header) {
+  var body = header.nextElementSibling;
+  var chev = header.querySelector('.chevron');
+  if (body) body.classList.toggle('open');
+  if (chev) chev.classList.toggle('open');
+}
+
+function toggleCheck(el) {
+  if (!el) return;
+  el.classList.toggle('done');
+  el.textContent = el.classList.contains('done') ? '✓' : '';
+}
+
+// Open first card in each section by default
+document.querySelectorAll('.day-card').forEach((card, i) => {
+  if (i === 0 || i === 5) {
+    const body = card.querySelector('.day-body');
+    const chev = card.querySelector('.chevron');
+    if (body) body.classList.add('open');
+    if (chev) chev.classList.add('open');
+  }
+});
+</script>
+
+<!-- ═══════════════════════════════════════ LIVEMAP ═══ -->
+<section class="section" id="livemap">
+  <h2 class="sec-title">🗺️ 인터랙티브 지도</h2>
+  <p class="sec-sub">일차별 탭으로 보는 구글맵 · 실시간 경로 확인</p>
+
+  <style>
+    .lm-wrap { display:flex; gap:0; border:1px solid #e8e3da; border-radius:16px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.08); margin-bottom:24px; min-height:520px; }
+    .lm-map-side { flex:1; min-width:0; position:relative; }
+    .lm-map-side iframe { width:100%; height:100%; min-height:520px; border:none; display:block; }
+    .lm-panel { width:320px; flex-shrink:0; background:white; border-left:1px solid #e8e3da; display:flex; flex-direction:column; overflow:hidden; }
+    .lm-tabs { display:flex; gap:0; padding:12px 12px 0; overflow-x:auto; scrollbar-width:none; flex-wrap:wrap; gap:6px; }
+    .lm-tabs::-webkit-scrollbar { display:none; }
+    .lm-tab { padding:6px 13px; border-radius:20px; font-size:12px; font-weight:600; border:1.5px solid #d0cac0; background:white; color:#6b6560; cursor:pointer; white-space:nowrap; transition:all 0.15s; font-family:inherit; }
+    .lm-tab.active { background:#1a7a6e; border-color:#1a7a6e; color:white; }
+    .lm-tab.active.oa { background:#1b4f72; border-color:#1b4f72; }
+    .lm-day-panel { display:none; flex-direction:column; flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch; }
+    .lm-day-panel.active { display:flex; }
+    .lm-day-header { padding:16px 16px 10px; border-bottom:1px solid #f0ede6; }
+    .lm-day-header .day-label { font-size:11px; color:#1a7a6e; font-weight:700; text-transform:uppercase; letter-spacing:.08em; margin-bottom:4px; }
+    .lm-day-header h3 { font-size:15px; font-weight:700; color:#2c2a25; line-height:1.3; margin-bottom:6px; }
+    .lm-day-header p { font-size:12px; color:#6b6560; line-height:1.55; }
+    .lm-open-btn { display:inline-flex; align-items:center; gap:6px; margin-top:10px; padding:8px 14px; background:#1a73e8; color:white; border:none; border-radius:8px; font-size:12px; font-weight:600; cursor:pointer; font-family:inherit; text-decoration:none; transition:background .15s; }
+    .lm-open-btn:hover { background:#1557b0; }
+    .lm-stops { padding:10px 0 16px; }
+    .lm-stop { display:flex; gap:10px; padding:9px 16px; align-items:flex-start; border-bottom:1px solid #f8f5f0; position:relative; }
+    .lm-stop:last-child { border-bottom:none; }
+    .lm-stop-num { width:26px; height:26px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:800; flex-shrink:0; margin-top:2px; z-index:1; }
+    .lm-stop-info { flex:1; }
+    .lm-stop-name { font-size:13px; font-weight:600; line-height:1.3; color:#2c2a25; margin-bottom:2px; }
+    .lm-stop-sub { font-size:11px; color:#888; line-height:1.4; }
+    .lm-stop-time { font-size:11px; color:#aaa; font-weight:500; min-width:38px; text-align:right; padding-top:4px; }
+    .lm-island-divider { font-size:13px; font-weight:700; padding:10px 0 6px; color:#888; border-bottom:1px solid #e8e3da; margin-bottom:4px; }
+
+    @media (max-width:700px) {
+      .lm-wrap { flex-direction:column; }
+      .lm-panel { width:100%; border-left:none; border-top:1px solid #e8e3da; }
+      .lm-map-side iframe { min-height:300px; }
+    }
+  </style>
+
+  <!-- ─────────── 빅아일랜드 ─────────── -->
+  <p class="lm-island-divider">🌋 빅아일랜드 (7/8 ~ 7/12)</p>
+
+  <div class="lm-wrap" id="lm-bi">
+    <!-- 지도 -->
+    <div class="lm-map-side">
+      <iframe id="bi-mapframe" allowfullscreen loading="lazy"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d312000!2d-155.89!3d19.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1700000001">
+      </iframe>
+    </div>
+    <!-- 패널 -->
+    <div class="lm-panel">
+      <div class="lm-tabs" id="bi-tabs">
+        <button class="lm-tab active" onclick="switchLmTab('bi',0,this)">1일차</button>
+        <button class="lm-tab" onclick="switchLmTab('bi',1,this)">2일차</button>
+        <button class="lm-tab" onclick="switchLmTab('bi',2,this)">3일차</button>
+        <button class="lm-tab" onclick="switchLmTab('bi',3,this)">4일차</button>
+        <button class="lm-tab" onclick="switchLmTab('bi',4,this)">5일차</button>
+      </div>
+
+      <!-- D1 -->
+      <div class="lm-day-panel active" id="bi-panel-0">
+        <div class="lm-day-header">
+          <div class="day-label">1일차</div>
+          <h3>DAY 1 — 도착 (7/8)</h3>
+          <p>인천 출발 → 코나 도착. 체크인 후 휴식.</p>
+          <a class="lm-open-btn" href="https://www.google.com/maps/place/Waikoloa+Beach+Resort,+HI" target="_blank">▶ 경로 열기</a>
+        </div>
+        <div class="lm-stops">
+          <div class="lm-stop">
+            <div class="lm-stop-num" style="background:#1a7a6e;color:white;">✈</div>
+            <div class="lm-stop-info"><div class="lm-stop-name">코나 국제공항 (KOA)</div><div class="lm-stop-sub">인천 출발 OZ232 · 현지 오전 도착</div></div>
+            <div class="lm-stop-time">오전</div>
+          </div>
+          <div class="lm-stop">
+            <div class="lm-stop-num" style="background:#e67e22;color:white;">1</div>
+            <div class="lm-stop-info"><div class="lm-stop-name">렌터카 픽업</div><div class="lm-stop-sub">Premium SUV · 공항 렌터카 센터</div></div>
+            <div class="lm-stop-time">오후</div>
+          </div>
+          <div class="lm-stop">
+            <div class="lm-stop-num" style="background:#1a7a6e;color:white;">🏠</div>
+            <div class="lm-stop-info"><div class="lm-stop-name">숙소 거점 — 코나 콘도</div><div class="lm-stop-sub">4박 거점. 와이콜로아 리조트 단지 내 위치</div></div>
+            <div class="lm-stop-time">저녁</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- D2 -->
+      <div class="lm-day-panel" id="bi-panel-1">
+        <div class="lm-day-header">
+          <div class="day-label">2일차</div>
+          <h3>DAY 2 — 화산 탐험 (7/9)</h3>
+          <p>킬라우에아 이키 트레일 → 칼데라 전망대 → 체인 오브 크레이터스 드라이브 → 여유로운 귀환.</p>
+          <a class="lm-open-btn" href="https://www.google.com/maps/dir/Waikoloa+Beach+Resort+HI/Kahaluu+Beach+Park+Kailua-Kona+HI/Kailua-Kona+Alii+Drive+HI/Waikoloa+Beach+Resort+HI" target="_blank">▶ 경로 열기</a>
+        </div>
+        <div class="lm-stops">
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1a7a6e;color:white;">S</div><div class="lm-stop-info"><div class="lm-stop-name">코나 콘도 출발</div><div class="lm-stop-sub">08:00 출발 · 주차장 조기 도착 목표</div></div><div class="lm-stop-time">08:00</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#c0392b;color:white;">1</div><div class="lm-stop-info"><div class="lm-stop-name">킬라우에아 이키 트레일</div><div class="lm-stop-sub">아이 페이스 2.5~3시간 · 중간 간식·휴식 넉넉히</div></div><div class="lm-stop-time">09:30</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#c0392b;color:white;">2</div><div class="lm-stop-info"><div class="lm-stop-name">칼데라 전망대 & 휴식</div><div class="lm-stop-sub">주차장 바로 앞 · 분화구 뷰 감상 · 간식 타임</div></div><div class="lm-stop-time">12:00</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#c0392b;color:white;">3</div><div class="lm-stop-info"><div class="lm-stop-name">체인 오브 크레이터스 로드 드라이브</div><div class="lm-stop-sub">차 안에서 용암 지형 감상 · 어린이도 편안</div></div><div class="lm-stop-time">13:00</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#c0392b;color:white;">4</div><div class="lm-stop-info"><div class="lm-stop-name">점심 식사 (볼케이노 하우스)</div><div class="lm-stop-sub">여유있게 휴식 · 복귀 전 에너지 충전</div></div><div class="lm-stop-time">14:30</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1a7a6e;color:white;">E</div><div class="lm-stop-info"><div class="lm-stop-name">코나 콘도 귀환</div><div class="lm-stop-sub">약 1.5시간 · 콘도 수영장 & 저녁 식사</div></div><div class="lm-stop-time">16:00</div></div>
+        </div>
+      </div>
+
+      <!-- D3 -->
+      <div class="lm-day-panel" id="bi-panel-2">
+        <div class="lm-day-header">
+          <div class="day-label">3일차</div>
+          <h3>DAY 3 — 남부 해변 + 별보기 (7/10)</h3>
+          <p>블랙샌드비치 → 투스텝 → 마우나케아 VIS 별관측.</p>
+          <a class="lm-open-btn" href="https://www.google.com/maps/dir/Waikoloa+Beach+Resort+Hawaii/Punaluu+Black+Sand+Beach/Honaunau+Bay+Two+Step+HI/Kailua-Kona+HI/Mauna+Kea+Visitor+Information+Station/Waikoloa+Beach+Resort+Hawaii" target="_blank">▶ 경로 열기</a>
+        </div>
+        <div class="lm-stops">
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1a7a6e;color:white;">S</div><div class="lm-stop-info"><div class="lm-stop-name">코나 콘도 출발</div><div class="lm-stop-sub">08:00 남쪽 방향</div></div><div class="lm-stop-time">08:00</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#e67e22;color:white;">1</div><div class="lm-stop-info"><div class="lm-stop-name">푸날루우 블랙샌드비치</div><div class="lm-stop-sub">검은 모래 & 바다거북 · 코나에서 약 1.5시간</div></div><div class="lm-stop-time">09:30</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#e67e22;color:white;">2</div><div class="lm-stop-info"><div class="lm-stop-name">투스텝 비치 스노클링</div><div class="lm-stop-sub">호나우나우 베이 · 열대어 풍부</div></div><div class="lm-stop-time">11:30</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#e67e22;color:white;">3</div><div class="lm-stop-info"><div class="lm-stop-name">클로버앤머그 카페 (점심)</div><div class="lm-stop-sub">코나 복귀 도중 · 불고기 파니니</div></div><div class="lm-stop-time">13:30</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#e67e22;color:white;">4</div><div class="lm-stop-info"><div class="lm-stop-name">마우나케아 VIS 별보기</div><div class="lm-stop-sub">해발 2,800m · 경량 패딩 필수 · 0~10°C</div></div><div class="lm-stop-time">17:00</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1a7a6e;color:white;">E</div><div class="lm-stop-info"><div class="lm-stop-name">코나 콘도 복귀</div><div class="lm-stop-sub">야간 산악도로 하산 주의</div></div><div class="lm-stop-time">21:00</div></div>
+        </div>
+      </div>
+
+      <!-- D4 -->
+      <div class="lm-day-panel" id="bi-panel-3">
+        <div class="lm-day-header">
+          <div class="day-label">4일차</div>
+          <h3>DAY 4 — 북부 해변 & 선셋 (7/11)</h3>
+          <p>헬리콥터 투어 → 하푸나 비치 → 쿠아베이 선셋.</p>
+          <a class="lm-open-btn" href="https://www.google.com/maps/dir/Waikoloa+Beach+Resort+HI/Kilauea+Iki+Trail+Hawaii/Chain+of+Craters+Road+Hawaii/Waikoloa+Beach+Resort+HI" target="_blank">▶ 경로 열기</a>
+        </div>
+        <div class="lm-stops">
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1a7a6e;color:white;">S</div><div class="lm-stop-info"><div class="lm-stop-name">헬리콥터 투어 출발</div><div class="lm-stop-sub">코나 공항 인근 · 사전 예약 필수</div></div><div class="lm-stop-time">08:00</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#2196a3;color:white;">1</div><div class="lm-stop-info"><div class="lm-stop-name">하푸나 비치</div><div class="lm-stop-sub">빅아일랜드 최대 화이트샌드 · 숙소 북쪽 15분</div></div><div class="lm-stop-time">10:30</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#2196a3;color:white;">2</div><div class="lm-stop-info"><div class="lm-stop-name">콘도 복귀 & 수영장 휴식</div><div class="lm-stop-sub">오후 낮잠 & 풀장 물놀이</div></div><div class="lm-stop-time">14:00</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#2196a3;color:white;">3</div><div class="lm-stop-info"><div class="lm-stop-name">쿠아베이 선셋</div><div class="lm-stop-sub">대표 선셋 포인트 · 숙소 남서쪽 20분</div></div><div class="lm-stop-time">17:30</div></div>
+        </div>
+      </div>
+
+      <!-- D5 이동 -->
+      <div class="lm-day-panel" id="bi-panel-4">
+        <div class="lm-day-header">
+          <div class="day-label">5일차</div>
+          <h3>DAY 5 — 오아후 이동 (7/12)</h3>
+          <p>코나 체크아웃 → 호놀룰루 → 힐튼 체크인.</p>
+          <a class="lm-open-btn" href="https://www.google.com/maps/place/Hilton+Hawaiian+Village+Waikiki+Beach+Resort" target="_blank">▶ 힐튼 위치 열기</a>
+        </div>
+        <div class="lm-stops">
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#e67e22;color:white;">1</div><div class="lm-stop-info"><div class="lm-stop-name">코나 콘도 체크아웃</div><div class="lm-stop-sub">렌터카 반납 후 공항 이동</div></div><div class="lm-stop-time">오전</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#e67e22;color:white;">✈</div><div class="lm-stop-info"><div class="lm-stop-name">코나 → 호놀룰루 항공편</div><div class="lm-stop-sub">하와이안항공 또는 사우스웨스트</div></div><div class="lm-stop-time">오후</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1b4f72;color:white;">🏨</div><div class="lm-stop-info"><div class="lm-stop-name">힐튼 하와이안 빌리지 체크인</div><div class="lm-stop-sub">라군 수영 · 파도 없어 어린이·노인 안전</div></div><div class="lm-stop-time">저녁</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─────────── 오아후 ─────────── -->
+  <p class="lm-island-divider" style="margin-top:32px;">🏖️ 오아후 (7/12 ~ 7/18)</p>
+
+  <div class="lm-wrap" id="lm-oa">
+    <!-- 지도 -->
+    <div class="lm-map-side">
+      <iframe id="oa-mapframe" allowfullscreen loading="lazy"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d95000!2d-157.87!3d21.31!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1700000002">
+      </iframe>
+    </div>
+    <!-- 패널 -->
+    <div class="lm-panel">
+      <div class="lm-tabs" id="oa-tabs">
+        <button class="lm-tab active oa" onclick="switchLmTab('oa',0,this)">1일차</button>
+        <button class="lm-tab oa" onclick="switchLmTab('oa',1,this)">2일차</button>
+        <button class="lm-tab oa" onclick="switchLmTab('oa',2,this)">3일차</button>
+        <button class="lm-tab oa" onclick="switchLmTab('oa',3,this)">4일차</button>
+        <button class="lm-tab oa" onclick="switchLmTab('oa',4,this)">5일차</button>
+        <button class="lm-tab oa" onclick="switchLmTab('oa',5,this)">6일차</button>
+      </div>
+
+      <!-- OA D1 -->
+      <div class="lm-day-panel active" id="oa-panel-0">
+        <div class="lm-day-header">
+          <div class="day-label" style="color:#1b4f72;">1일차</div>
+          <h3>오아후 DAY 1 — 이동·체크인 (7/12)</h3>
+          <p>렌터카 이용일(7/13, 7/14)은 루프 동선으로 구성. 동쪽 해안(72번 국도)과 북서쪽(돌 농장·PCC)을 각각 하루씩 분리해 역주행 없이 효율적으로 이동.</p>
+          <a class="lm-open-btn" style="background:#1b4f72;" href="https://www.google.com/maps/dir/Hilton+Hawaiian+Village+Waikiki/Ala+Moana+Center+Honolulu" target="_blank">▶ 경로 열기</a>
+        </div>
+        <div class="lm-stops">
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1b4f72;color:white;">🏨</div><div class="lm-stop-info"><div class="lm-stop-name">힐튼 하와이안 빌리지</div><div class="lm-stop-sub">체크인 후 라군 수영 · 파도 없어 어린이·노인 안전</div></div><div class="lm-stop-time">오후</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1b4f72;color:white;">2</div><div class="lm-stop-info"><div class="lm-stop-name">알라모아나 센터</div><div class="lm-stop-sub">힐튼에서 도보 10분 · 쇼핑 & 저녁 식사</div></div><div class="lm-stop-time">저녁</div></div>
+        </div>
+      </div>
+
+      <!-- OA D2 -->
+      <div class="lm-day-panel" id="oa-panel-1">
+        <div class="lm-day-header">
+          <div class="day-label" style="color:#c0392b;">2일차 🚗 렌터카</div>
+          <h3>오아후 DAY 2 — 동쪽 루프 (7/13)</h3>
+          <p>다이아몬드헤드 → 72번 국도 → 마카푸우 → 라니카이 → 라니아케아 → 샥스코브.</p>
+          <a class="lm-open-btn" href="https://www.google.com/maps/dir/Hilton+Hawaiian+Village+Waikiki/Diamond+Head+State+Monument/Makapuu+Point+Lighthouse+Trail+Waimanalo/Lanikai+Beach+Kailua+HI/Laniakea+Beach+Haleiwa/Sharks+Cove+Pupukea+HI/Hilton+Hawaiian+Village+Waikiki" target="_blank">▶ 경로 열기</a>
+        </div>
+        <div class="lm-stops">
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1b4f72;color:white;">S</div><div class="lm-stop-info"><div class="lm-stop-name">힐튼 출발</div><div class="lm-stop-sub">08:00 렌터카 픽업 후 출발</div></div><div class="lm-stop-time">08:00</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#c0392b;color:white;">1</div><div class="lm-stop-info"><div class="lm-stop-name">다이아몬드헤드</div><div class="lm-stop-sub">온라인 예약 필수 · 월~금 운영 · 힐튼 10분</div></div><div class="lm-stop-time">08:15</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#c0392b;color:white;">2</div><div class="lm-stop-info"><div class="lm-stop-name">마카푸우 전망대</div><div class="lm-stop-sub">72번 국도 경유 · 포장도로 · 노인 OK</div></div><div class="lm-stop-time">10:00</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#c0392b;color:white;">3</div><div class="lm-stop-info"><div class="lm-stop-name">라니카이 비치</div><div class="lm-stop-sub">투명 에메랄드 바다 · 카약 대여</div></div><div class="lm-stop-time">11:30</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#c0392b;color:white;">4</div><div class="lm-stop-info"><div class="lm-stop-name">라니아케아 비치 (거북이)</div><div class="lm-stop-sub">노스쇼어 바다거북 서식지</div></div><div class="lm-stop-time">13:30</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#c0392b;color:white;">5</div><div class="lm-stop-info"><div class="lm-stop-name">샥스코브 스노클링</div><div class="lm-stop-sub">라니아케아 옆 5분 · 오아후 최고 스노클</div></div><div class="lm-stop-time">14:30</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1b4f72;color:white;">E</div><div class="lm-stop-info"><div class="lm-stop-name">힐튼 복귀 & 수영장</div><div class="lm-stop-sub">노스쇼어에서 약 1시간</div></div><div class="lm-stop-time">17:00</div></div>
+        </div>
+      </div>
+
+      <!-- OA D3 -->
+      <div class="lm-day-panel" id="oa-panel-2">
+        <div class="lm-day-header">
+          <div class="day-label" style="color:#2196a3;">3일차 🚗 렌터카</div>
+          <h3>오아후 DAY 3 — 북서 루프 (7/14)</h3>
+          <p>돌 파인애플 농장 → 노스쇼어 점심 → PCC 폴리네시안 문화센터.</p>
+          <a class="lm-open-btn" style="background:#2196a3;" href="https://www.google.com/maps/dir/Hilton+Hawaiian+Village+Waikiki/Waikele+Premium+Outlets+Waipahu+HI/Dole+Plantation+Wahiawa+HI/Polynesian+Cultural+Center+Laie+HI/Hilton+Hawaiian+Village+Waikiki" target="_blank">▶ 경로 열기</a>
+        </div>
+        <div class="lm-stops">
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1b4f72;color:white;">S</div><div class="lm-stop-info"><div class="lm-stop-name">힐튼 출발</div><div class="lm-stop-sub">08:30 북서쪽 방향</div></div><div class="lm-stop-time">08:30</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#2196a3;color:white;">1</div><div class="lm-stop-info"><div class="lm-stop-name">돌 파인애플 농장</div><div class="lm-stop-sub">미로·기차·소프트 아이스크림 · 아이들 환호</div></div><div class="lm-stop-time">09:30</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#2196a3;color:white;">2</div><div class="lm-stop-info"><div class="lm-stop-name">노스쇼어 갈릭쉬림프 (점심)</div><div class="lm-stop-sub">Giovanni's 또는 Romy's · 현금 지참</div></div><div class="lm-stop-time">11:30</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#2196a3;color:white;">3</div><div class="lm-stop-info"><div class="lm-stop-name">PCC 폴리네시안 문화센터</div><div class="lm-stop-sub">12:15 오픈 · 화요일 정상 운영 · 가족 최고 만족</div></div><div class="lm-stop-time">12:30</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1b4f72;color:white;">E</div><div class="lm-stop-info"><div class="lm-stop-name">힐튼 복귀 & 렌터카 반납</div><div class="lm-stop-sub">PCC에서 약 1시간 · 저녁 수영장</div></div><div class="lm-stop-time">18:00</div></div>
+        </div>
+      </div>
+
+      <!-- OA D4 -->
+      <div class="lm-day-panel" id="oa-panel-3">
+        <div class="lm-day-header">
+          <div class="day-label" style="color:#1b4f72;">4일차 🚶 도보</div>
+          <h3>오아후 DAY 4 — 쉐라톤 이동 (7/15)</h3>
+          <p>힐튼 → 쉐라톤 체크인 · Infinity 수영장 · 알라모아나 쇼핑.</p>
+          <a class="lm-open-btn" style="background:#1b4f72;" href="https://www.google.com/maps/dir/Hilton+Hawaiian+Village/Sheraton+Waikiki/Ala+Moana+Center+Honolulu" target="_blank">▶ 경로 열기</a>
+        </div>
+        <div class="lm-stops">
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1b4f72;color:white;">1</div><div class="lm-stop-info"><div class="lm-stop-name">쉐라톤 와이키키 체크인</div><div class="lm-stop-sub">힐튼에서 도보 10분 · Infinity 수영장</div></div><div class="lm-stop-time">오전</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1b4f72;color:white;">2</div><div class="lm-stop-info"><div class="lm-stop-name">쉐라톤 Infinity 수영장</div><div class="lm-stop-sub">오션뷰 포토스팟 · 슬라이드 있음</div></div><div class="lm-stop-time">오전</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1b4f72;color:white;">3</div><div class="lm-stop-info"><div class="lm-stop-name">알라모아나 쇼핑센터</div><div class="lm-stop-sub">셔틀 또는 도보 20분 · 일요일 휴무 확인</div></div><div class="lm-stop-time">오후</div></div>
+        </div>
+      </div>
+
+      <!-- OA D5 -->
+      <div class="lm-day-panel" id="oa-panel-4">
+        <div class="lm-day-header">
+          <div class="day-label" style="color:#1b4f72;">5일차 🚶 도보</div>
+          <h3>오아후 DAY 5 — 자유일 & 야경 투어 (7/16)</h3>
+          <p>수영장 · 쇼핑 · 프라이빗 야경 투어.</p>
+          <a class="lm-open-btn" style="background:#1b4f72;" href="https://www.google.com/maps/dir/Sheraton+Waikiki/Ala+Moana+Center+Honolulu/Sheraton+Waikiki" target="_blank">▶ 경로 열기</a>
+        </div>
+        <div class="lm-stops">
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1b4f72;color:white;">1</div><div class="lm-stop-info"><div class="lm-stop-name">쉐라톤 수영장 & 해변</div><div class="lm-stop-sub">오전 가족 물놀이</div></div><div class="lm-stop-time">오전</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1b4f72;color:white;">2</div><div class="lm-stop-info"><div class="lm-stop-name">칼라카우아 거리 쇼핑</div><div class="lm-stop-sub">평지 산책 · 노인 친화적</div></div><div class="lm-stop-time">오후</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#8b5cf6;color:white;">★</div><div class="lm-stop-info"><div class="lm-stop-name">프라이빗 야경 투어</div><div class="lm-stop-sub">한국어 가이드 · 차량 탑승 · 체력 부담 없음</div></div><div class="lm-stop-time">저녁</div></div>
+        </div>
+      </div>
+
+      <!-- OA D6 -->
+      <div class="lm-day-panel" id="oa-panel-5">
+        <div class="lm-day-header">
+          <div class="day-label" style="color:#e67e22;">6일차 🎆 마지막 날</div>
+          <h3>오아후 DAY 6 — 불꽃놀이 (7/17)</h3>
+          <p>마지막 수영 · 쇼핑 마무리 · 힐튼 금요 불꽃놀이.</p>
+          <a class="lm-open-btn" style="background:#e67e22;" href="https://www.google.com/maps/place/Hilton+Hawaiian+Village+Waikiki+Beach+Resort" target="_blank">▶ 불꽃놀이 위치</a>
+        </div>
+        <div class="lm-stops">
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1b4f72;color:white;">1</div><div class="lm-stop-info"><div class="lm-stop-name">와이키키 해변 마지막 수영</div><div class="lm-stop-sub">가족 기념사진</div></div><div class="lm-stop-time">오전</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#1b4f72;color:white;">2</div><div class="lm-stop-info"><div class="lm-stop-name">알라모아나 쇼핑 마무리</div><div class="lm-stop-sub">기념품 · 짐 정리</div></div><div class="lm-stop-time">오후</div></div>
+          <div class="lm-stop"><div class="lm-stop-num" style="background:#e67e22;color:white;">🎆</div><div class="lm-stop-info"><div class="lm-stop-name">힐튼 금요 불꽃놀이</div><div class="lm-stop-sub">19:40 · 와이키키 해변 어디서나 관람</div></div><div class="lm-stop-time">19:40</div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+  var biMaps = [
+    "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d105000!2d-155.89!3d19.93!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1",
+    "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d630000!2d-155.5!3d19.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m3!3m2!1d19.92!2d-155.89!4m3!3m2!1d19.413!2d-155.248!4m3!3m2!1d19.413!2d-155.235!5e0!3m2!1sko!2skr!4v1",
+    "https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d830000!2d-155.6!3d19.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m3!3m2!1d19.92!2d-155.89!4m3!3m2!1d19.135!2d-155.505!4m3!3m2!1d19.423!2d-155.911!4m3!3m2!1d19.638!2d-155.994!4m3!3m2!1d19.759!2d-155.456!5e0!3m2!1sko!2skr!4v1",
+    "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d210000!2d-155.9!3d19.92!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m3!3m2!1d19.92!2d-155.89!4m3!3m2!1d19.992!2d-155.826!4m3!3m2!1d19.81!2d-156.006!5e0!3m2!1sko!2skr!4v1",
+    "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d95000!2d-157.87!3d21.31!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1"
+  ];
+  var oaMaps = [
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d-157.843!3d21.285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1",
+    "https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d190000!2d-157.75!3d21.43!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m3!3m2!1d21.282!2d-157.837!4m3!3m2!1d21.263!2d-157.804!4m3!3m2!1d21.309!2d-157.651!4m3!3m2!1d21.392!2d-157.715!4m3!3m2!1d21.641!2d-158.062!4m3!3m2!1d21.65!2d-158.063!4m3!3m2!1d21.282!2d-157.837!5e0!3m2!1sko!2skr!4v1",
+    "https://www.google.com/maps/embed?pb=!1m38!1m12!1m3!1d260000!2d-157.96!3d21.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m23!3e0!4m3!3m2!1d21.282!2d-157.837!4m3!3m2!1d21.526!2d-158.038!4m3!3m2!1d21.59!2d-158.1!4m3!3m2!1d21.64!2d-157.921!4m3!3m2!1d21.282!2d-157.837!5e0!3m2!1sko!2skr!4v1",
+    "https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d28000!2d-157.84!3d21.285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e2!4m3!3m2!1d21.282!2d-157.837!4m3!3m2!1d21.278!2d-157.83!5e0!3m2!1sko!2skr!4v1",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d-157.843!3d21.285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20000!2d-157.843!3d21.28!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1"
+  ];
+
+  function switchLmTab(island, idx, btn) {
+    var prefix = island === 'bi' ? 'bi' : 'oa';
+    var maps = island === 'bi' ? biMaps : oaMaps;
+    document.querySelectorAll('#' + prefix + '-tabs .lm-tab').forEach(function(t) { t.classList.remove('active'); });
+    document.querySelectorAll('[id^="' + prefix + '-panel-"]').forEach(function(p) { p.classList.remove('active'); });
+    if (btn) btn.classList.add('active');
+    var panel = document.getElementById(prefix + '-panel-' + idx);
+    if (panel) panel.classList.add('active');
+    var frame = document.getElementById(prefix + '-mapframe');
+    if (frame && maps && maps[idx]) frame.src = maps[idx];
+  }
+  </script>
+</section>
+
+</body>
+</html>
