@@ -605,6 +605,7 @@
   <button class="nav-btn" onclick="showSection('map', this)">🗺️ 지도 & 동선</button>
   <button class="nav-btn" onclick="showSection('prep', this)">🎒 준비물</button>
   <button class="nav-btn" onclick="showSection('food', this)">🍽️ 맛집</button>
+  <button class="nav-btn" onclick="showSection('spots', this)">📍 여행지</button>
   <button class="nav-btn" onclick="showSection('bonus', this)">✨ 추가 추천</button>
   <button class="nav-btn" onclick="showSection('livemap', this)">🗺️ 인터랙티브 지도</button>
 </nav>
@@ -808,11 +809,11 @@
 <!-- ═══════════════════════════════════════ OAHU ═══ -->
 <section class="section" id="oahu">
   <h2 class="sec-title">오아후 일정</h2>
-  <p class="sec-sub">7월 12일 ~ 18일 · 와이키키 거점 · 렌터카 2일 이용</p>
+  <p class="sec-sub">7월 12일 ~ 18일 · 와이키키 거점 · 렌터카 4일 이용</p>
 
   <div class="info-box">
-    <strong>🚗 렌터카 이용일:</strong> 7/13(월), 7/14(화) — 이동이 필요한 코스 집중<br>
-    <strong>🚶 도보·투어 중심:</strong> 7/15(수) ~ 7/17(금) — 와이키키 반경 내 이동
+    <strong>🚗 렌터카 이용일:</strong> 7/13(월), 7/14(화), 7/15(수), 7/16(목) — 이동이 필요한 코스 집중<br>
+    <strong>🚶 도보 중심:</strong> 7/17(금) — 와이키키 반경 내 이동
   </div>
 
   <div class="island-header">
@@ -826,26 +827,23 @@
     <div class="day-header" onclick="toggleDay(this)">
       <div class="day-num num-oa">D6</div>
       <div class="day-meta">
-        <h3>7/13 (월) — 렌터카 · 동쪽 해안 드라이브</h3>
-        <p>다이아몬드헤드 → 72번 국도 → 마카푸우 → 라니아케아 → 샥스코브</p>
-        <div class="day-badges"><span class="badge b-car">렌터카</span><span class="badge b-wow">72번 국도</span><span class="badge b-easy">노인 포함 OK</span></div>
+        <h3>7/13 (월) — 다이아몬드헤드 & 동쪽 해안 드라이브</h3>
+        <p>다이아몬드헤드 → 카피올라니 공원 → 마카푸우 전망대 → 카일루아 비치</p>
+        <div class="day-badges"><span class="badge b-car">렌터카</span><span class="badge b-wow">해안 드라이브</span><span class="badge b-swim">카일루아 비치</span></div>
       </div>
       <span class="chevron">▼</span>
     </div>
     <div class="day-body">
       <div class="hotel-row">🏨 힐튼 하와이안 빌리지 와이키키 비치 리조트</div>
       <ul class="sched-list">
-        <li class="sched-item"><span class="sched-time">08:00~</span><span class="sched-act">렌터카 픽업 & 출발 — 다이아몬드헤드는 아침 일찍이 유리<div class="act-tags"><span class="badge b-tip">이날만 예외적으로 8시 출발 · 더워지기 전에 트레킹</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">08:30~</span><span class="sched-act">다이아몬드헤드 트레킹 (왕복 약 1.5~2시간)<div class="act-tags"><span class="badge b-tip">사전 예약 필수 · 월~금만 운영</span><span class="badge b-tip">노인은 입구 공원에서 대기 · 아이 페이스로 천천히</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">11:00~</span><span class="sched-act">72번 국도 드라이브 — 오아후 동쪽 해안 절경<div class="act-tags"><span class="badge b-wow">하얀 파도 & 절벽 해안 드라이브</span><span class="badge b-tip">차 안에서 감상 · 눈에 띄는 뷰포인트 있으면 세워서 구경</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">11:30~</span><span class="sched-act">마카푸우 전망대 — 포장도로 산책 (30~40분)<div class="act-tags"><span class="badge b-wow">압도적 해안 뷰</span><span class="badge b-easy">완만한 포장도로 · 노인 OK</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">12:30~</span><span class="sched-act">카일루아 or 라니카이 비치 도착 · 점심 식사 (약 1시간)<div class="act-tags"><span class="badge b-food">카일루아 타운 내 식당 이용</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">14:00~</span><span class="sched-act">라니카이 비치 & 카일루아 비치 — 해변 물놀이<div class="act-tags"><span class="badge b-swim">잔잔한 파도 · 어린이 안전</span><span class="badge b-tip">아이들과 넉넉히 1.5~2시간</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">16:00~</span><span class="sched-act">라니아케아 비치 — 바다거북 관찰 (20~30분)<div class="act-tags"><span class="badge b-wow">거북이 만남</span><span class="badge b-tip">2m 거리 유지 · 이동 5분</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">16:30~</span><span class="sched-act">샥스코브 스노클링 (라니아케아 옆 5분 · 체력·시간 여유 있으면)<div class="act-tags"><span class="badge b-wow">스노클링 명소</span><span class="badge b-tip">피곤하면 생략해도 OK</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">18:00~</span><span class="sched-act">와이키키 복귀 (약 1시간 드라이브) · 힐튼 수영장 저녁 물놀이<div class="act-tags"><span class="badge b-swim">호텔 수영장</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">09:00~</span><span class="sched-act">다이아몬드헤드 크레이터 입구 사진 → 카이마나 비치 → 카피올라니 공원 피크닉<div class="act-tags"><span class="badge b-tip">사전 예약 필수 · 월~금만 운영</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">11:00~</span><span class="sched-act">마카푸우 전망대 — 차에서 내려 전망 감상, 사진, 드라이브 코스<div class="act-tags"><span class="badge b-wow">압도적 해안 뷰</span><span class="badge b-easy">완만한 포장도로 · 노인 OK</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">13:00~</span><span class="sched-act">카일루아 이동 — 현지 식당 점심<div class="act-tags"><span class="badge b-food">카일루아 타운 내 식당 이용</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">14:30~</span><span class="sched-act">카일루아 비치 물놀이 & 드라이브<div class="act-tags"><span class="badge b-swim">잔잔한 파도 · 에메랄드빛 바다</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">18:00~</span><span class="sched-act">와이키키 복귀</span></li>
+        <li class="sched-item"><span class="sched-time">18:00~</span><span class="sched-act">저녁 식사 & 휴식<div class="act-tags"><span class="badge b-food">와이키키 인근 식당</span></div></span></li>
       </ul>
-      <div class="tip-box">🚗 <strong>동선 최적화:</strong> 와이키키 → 다이아몬드헤드(5분) → 동쪽 해안 → 북쪽 라니아케아/샥스코브 → 복귀 순서가 가장 효율적입니다. 역주행 없이 자연스러운 루프!</div>
+      <div class="tip-box">🚗 <strong>동선:</strong> 와이키키 → 다이아몬드헤드(바로 옆) → 동쪽 해안 따라 마카푸우 → 카일루아 → 복귀. 자연스러운 동쪽 루프!<br><br>⚠️ 다이아몬드헤드는 사전 온라인 예약 필수 (gostateparks.hawaii.gov)</div>
     </div>
   </div>
 
@@ -854,24 +852,24 @@
     <div class="day-header" onclick="toggleDay(this)">
       <div class="day-num num-oa">D7</div>
       <div class="day-meta">
-        <h3>7/14 (화) — 렌터카 · 북서쪽 루프</h3>
-        <p>와이켈레 아울렛 → 돌 파인애플 → 노스쇼어 점심 → PCC</p>
-        <div class="day-badges"><span class="badge b-car">렌터카</span><span class="badge b-wow">아울렛 4~5시간</span><span class="badge b-wow">PCC</span><span class="badge b-easy">가족 최적</span></div>
+        <h3>7/14 (화) — 노스쇼어 루프</h3>
+        <p>쿠알로아 랜치 → 샥스코브 스노클링 → 라니아케아 비치 → 할레이와 새우 트럭</p>
+        <div class="day-badges"><span class="badge b-car">렌터카</span><span class="badge b-wow">쿠알로아 랜치</span><span class="badge b-wow">노스쇼어</span><span class="badge b-swim">스노클링</span></div>
       </div>
       <span class="chevron">▼</span>
     </div>
     <div class="day-body">
       <div class="hotel-row">🏨 힐튼 하와이안 빌리지 와이키키 비치 리조트 (마지막 밤)</div>
       <ul class="sched-list">
-        <li class="sched-item"><span class="sched-time">08:00</span><span class="sched-act">와이키키 출발 → 와이켈레 프리미엄 아울렛 (차로 약 30분)<div class="act-tags"><span class="badge b-wow">4~5시간 쇼핑</span><span class="badge b-easy">노인 편안한 야외 단층</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">08:30</span><span class="sched-act">와이켈레 프리미엄 아울렛 쇼핑 시작<div class="act-tags"><span class="badge b-tip">코치·폴로·갭·나이키 등 50+ 브랜드</span><span class="badge b-tip">와이키키보다 20~40% 저렴</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">13:00</span><span class="sched-act">아울렛 내 푸드코트 점심 식사<div class="act-tags"><span class="badge b-food">쇼핑 중 간편 식사</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">14:00</span><span class="sched-act">돌 파인애플 농장 (아울렛에서 북쪽 20분)<div class="act-tags"><span class="badge b-wow">미로·기차·파인애플 아이스크림</span><span class="badge b-easy">전연령 OK</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">15:30</span><span class="sched-act">PCC 폴리네시안 문화센터 입장<div class="act-tags"><span class="badge b-wow">가족 만족도 최고</span><span class="badge b-easy">앉아서 관람</span><span class="badge b-tip">수·일 휴무 — 7/14 화요일 OK</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">19:30</span><span class="sched-act">와이키키 복귀 & 렌터카 반납</span></li>
-        <li class="sched-item"><span class="sched-time">저녁</span><span class="sched-act">힐튼 라군 & 수영장 마지막 저녁 물놀이<div class="act-tags"><span class="badge b-swim">호텔 수영장</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">08:00</span><span class="sched-act">출발 → 쿠알로아 랜치 이동<div class="act-tags"><span class="badge b-tip">와이키키에서 약 40분</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">09:30</span><span class="sched-act">쿠알로아 랜치 쥬라기 어드벤처 투어 시작<div class="act-tags"><span class="badge b-wow">영화 촬영지 · 전연령 OK</span><span class="badge b-tip">사전 예약 필수</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">12:00</span><span class="sched-act">기념품샵 & 간단 식사<div class="act-tags"><span class="badge b-food">랜치 내 간식·식사</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">13:00</span><span class="sched-act">샥스코브 스노클링<div class="act-tags"><span class="badge b-wow">오아후 최고 스노클링 명소</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">16:00</span><span class="sched-act">라니아케아 비치 이동 — 바다거북 관찰 (1시간)<div class="act-tags"><span class="badge b-wow">거북이 서식지</span><span class="badge b-tip">오후 2~4시가 거북 타이밍</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">18:00</span><span class="sched-act">할레이와 마을 — 새우 트럭 저녁<div class="act-tags"><span class="badge b-food">노스쇼어 명물 갈릭 새우</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">19:00</span><span class="sched-act">와이키키 복귀 (약 1시간 드라이브)</span></li>
       </ul>
-      <div class="tip-box">🛍️ <strong>와이켈레 아울렛은 9:00 오픈</strong>이니 8:30 도착하면 주차·입장 여유 있게 시작할 수 있어요. 4~5시간은 넉넉히 잡아야 코치·폴로·나이키 등 50개 이상 매장을 돌 수 있습니다.<br><br>🎭 PCC 나이트쇼(HA: Breath of Life)는 저녁 7~8시에 시작하므로 15:30 입장하면 낮 공연 체험 + 저녁 쇼 모두 관람 가능합니다.</div>
+      <div class="tip-box">🦕 <strong>쿠알로아 랜치</strong>는 쥬라기 공원, 아바타 등 영화 촬영지로 유명해요. 다양한 투어 중 쥬라기 어드벤처가 아이들에게 가장 인기 있습니다. 사전 예약 필수!<br><br>🐢 라니아케아 거북 타이밍은 오후 2~4시가 최적. 2m 거리 유지 규정 준수!</div>
     </div>
   </div>
 
@@ -880,24 +878,22 @@
     <div class="day-header" onclick="toggleDay(this)">
       <div class="day-num num-oa">D8</div>
       <div class="day-meta">
-        <h3>7/15 (수) — 쉐라톤 이동 & 와이키키 여유</h3>
-        <p>힐튼 → 쉐라톤 체크인 · Infinity 수영장 · 알라모아나</p>
-        <div class="day-badges"><span class="badge b-walk">도보</span><span class="badge b-swim">Infinity 수영장</span></div>
+        <h3>7/15 (수) — 와이켈레 아울렛 쇼핑 & 쉐라톤 체크인</h3>
+        <p>와이켈레 프리미엄 아울렛 → 쉐라톤 체크인 → 와이키키 자유시간</p>
+        <div class="day-badges"><span class="badge b-car">렌터카</span><span class="badge b-wow">아울렛 쇼핑</span><span class="badge b-swim">자유시간</span></div>
       </div>
       <span class="chevron">▼</span>
     </div>
     <div class="day-body">
       <div class="hotel-row">🏨 쉐라톤 와이키키 비치 리조트 (체크인)</div>
       <ul class="sched-list">
-        <li class="sched-item"><span class="sched-time">09:00~</span><span class="sched-act">힐튼 조식 & 느긋한 아침 · 짐 정리<div class="act-tags"><span class="badge b-tip">체크아웃 11:00까지</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">11:00~</span><span class="sched-act">힐튼 체크아웃 → 쉐라톤 이동 (도보 약 10분) · 짐 맡기기</span></li>
-        <li class="sched-item"><span class="sched-time">11:30~</span><span class="sched-act">쉐라톤 Infinity 수영장 & 와이키키 해변 물놀이 (2~3시간)<div class="act-tags"><span class="badge b-swim">오션뷰 포토스팟 · 슬라이드 있음</span><span class="badge b-tip">체크인 전이어도 수영장 이용 가능 여부 확인</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">14:00~</span><span class="sched-act">쉐라톤 체크인 (정식 체크인 시간 보통 15:00) · 객실 정리</span></li>
-        <li class="sched-item"><span class="sched-time">15:00~</span><span class="sched-act">야드 하우스 또는 Orchids 늦은 점심·이른 저녁 (여유있게 1.5시간)<div class="act-tags"><span class="badge b-food">와이키키 대표 맛집</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">17:00~</span><span class="sched-act">알라모아나 쇼핑센터 — 기념품 & 쇼핑 (셔틀 또는 도보 20분)<div class="act-tags"><span class="badge b-easy">노약자 편안한 야외 쇼핑몰</span><span class="badge b-tip">알라모아나 일요일 휴무 확인!</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">19:30~</span><span class="sched-act">와이키키 해변 저녁 산책 & 노을 감상 · 호텔 복귀</span></li>
+        <li class="sched-item"><span class="sched-time">09:00~</span><span class="sched-act">힐튼 체크아웃 준비 · 짐 정리<div class="act-tags"><span class="badge b-tip">짐은 쉐라톤에 먼저 맡겨두고 아울렛 이동 가능</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">10:00~</span><span class="sched-act">와이켈레 프리미엄 아울렛 쇼핑 (의류·신발·기념품)<div class="act-tags"><span class="badge b-wow">코치·폴로·나이키 등 50+ 브랜드</span><span class="badge b-tip">와이키키보다 20~40% 저렴 · 차로 30분</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">13:00~</span><span class="sched-act">와이키키 복귀</span></li>
+        <li class="sched-item"><span class="sched-time">13:30~</span><span class="sched-act">쉐라톤 체크인 · 객실 정리<div class="act-tags"><span class="badge b-tip">힐튼에서 도보 10분</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">오후</span><span class="sched-act">자유시간 — 와이키키 해변 물놀이 or 알라모아나 추가 쇼핑 or 스노클링 보트 or 석양 보트<div class="act-tags"><span class="badge b-swim">오후 자유 선택</span></div></span></li>
       </ul>
-      <div class="tip-box">🏊 쉐라톤 Infinity 수영장은 와이키키 최고 포토스팟 중 하나예요. 체크인 전에도 프런트에 짐 맡겨두고 수영장 먼저 이용할 수 있는지 확인해보세요. 이날은 이동과 체크인이 있으니 너무 빡빡하게 짜지 않는 게 좋아요!</div>
+      <div class="tip-box">🛍️ <strong>와이켈레 아울렛은 10:00 오픈</strong>. 의류·신발을 와이키키보다 훨씬 저렴하게 구매할 수 있어요.<br><br>💡 힐튼 체크아웃 후 짐을 쉐라톤 프런트에 먼저 맡겨두고 아울렛에 가면 더 편리합니다!</div>
     </div>
   </div>
 
@@ -906,23 +902,22 @@
     <div class="day-header" onclick="toggleDay(this)">
       <div class="day-num num-oa">D9</div>
       <div class="day-meta">
-        <h3>7/16 (목) — 와이키키 자유일 & 야경 투어</h3>
-        <p>수영장 · 쇼핑 · 프라이빗 야경 투어</p>
-        <div class="day-badges"><span class="badge b-walk">도보</span><span class="badge b-wow">야경 투어</span><span class="badge b-swim">수영장</span></div>
+        <h3>7/16 (목) — PCC 폴리네시안 문화센터</h3>
+        <p>오전 자유시간 → PCC 마을 체험 + 카누 투어 → 와이키키 저녁</p>
+        <div class="day-badges"><span class="badge b-car">렌터카</span><span class="badge b-wow">PCC</span><span class="badge b-swim">오전 수영장</span></div>
       </div>
       <span class="chevron">▼</span>
     </div>
     <div class="day-body">
       <div class="hotel-row">🏨 쉐라톤 와이키키 비치 리조트</div>
       <ul class="sched-list">
-        <li class="sched-item"><span class="sched-time">09:00~</span><span class="sched-act">느긋한 아침 식사 · 호텔 조식 또는 근처 카페<div class="act-tags"><span class="badge b-easy">여행 중 가장 여유로운 아침</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">10:00~</span><span class="sched-act">쉐라톤 수영장 & 와이키키 해변 — 오전 물놀이 (2~3시간)<div class="act-tags"><span class="badge b-swim">가족 물놀이</span><span class="badge b-tip">아이들 마음껏 놀게 하기</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">13:00~</span><span class="sched-act">El CIELO 레스토랑 또는 루스크리스 스테이크 (1.5~2시간)<div class="act-tags"><span class="badge b-food">하와이 3대 스테이크</span><span class="badge b-tip">예약 추천</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">15:00~</span><span class="sched-act">와이키키 칼라카우아 거리 산책 & 쇼핑 (1.5~2시간)<div class="act-tags"><span class="badge b-easy">평지 · 노인 친화 산책</span><span class="badge b-tip">ABC스토어 기념품 쇼핑도 이때</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">17:30~</span><span class="sched-act">호텔 복귀 · 수영장 저녁 물놀이 or 낮잠 · 야경 투어 전 휴식<div class="act-tags"><span class="badge b-swim">저녁 수영장</span></div></span></li>
-        <li class="sched-item"><span class="sched-time">저녁</span><span class="sched-act">프라이빗 야경 투어 출발 — 한국어 가이드, 차량 탑승 중심<div class="act-tags"><span class="badge b-wow">한국어 야경 투어</span><span class="badge b-easy">차량 이동이라 체력 부담 없음</span><span class="badge b-tip">사전 예약 필수 · 픽업 장소 확인</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">오전</span><span class="sched-act">숙소 자유시간 — 수영장 or 와이키키 해변<div class="act-tags"><span class="badge b-swim">느긋한 아침</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">11:30</span><span class="sched-act">출발 (차로 약 1시간)<div class="act-tags"><span class="badge b-tip">와이키키에서 북동쪽 약 1시간</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">12:30</span><span class="sched-act">PCC 폴리네시안 문화센터 입장 → 마을 체험 + 카누 투어<div class="act-tags"><span class="badge b-wow">가족 만족도 최고</span><span class="badge b-easy">앉아서 관람 · 노인 OK</span><span class="badge b-tip">목요일 정상 운영 (수·일 휴무)</span></div></span></li>
+        <li class="sched-item"><span class="sched-time">18:00</span><span class="sched-act">숙소 복귀</span></li>
+        <li class="sched-item"><span class="sched-time">저녁</span><span class="sched-act">와이키키 저녁 외식 & 쇼핑센터 or 야경 투어<div class="act-tags"><span class="badge b-food">와이키키 인근 레스토랑</span></div></span></li>
       </ul>
-      <div class="tip-box">🌃 이날은 일정을 억지로 채우지 않고 <strong>아이들이 원하는 걸 중심으로</strong> 흘러가도 좋아요. 수영장에서 3시간 있고 싶으면 그래도 됩니다. 야경 투어는 차량 탑승 중심이라 노인·어린이 모두 편하게 즐길 수 있어요.</div>
+      <div class="tip-box">🎭 <strong>PCC 폴리네시안 문화센터</strong>는 하와이·통가·피지·사모아 등 폴리네시아 6개 섬 문화를 체험할 수 있어요. 카누 퍼레이드와 야간 나이트쇼까지 즐기면 더욱 풍성합니다.<br><br>⚠️ PCC는 수·일 휴무 — 7/16 목요일 정상 운영 OK!</div>
     </div>
   </div>
 
@@ -1592,91 +1587,1103 @@
 <!-- ═══════════════════════════════════════ FOOD ═══ -->
 <section class="section" id="food">
   <h2 class="sec-title">맛집 & 레스토랑</h2>
-  <p class="sec-sub">엑셀 파일에서 선별한 추천 식당</p>
+  <p class="sec-sub">지역별 추천 식당 · 현지 경험 리스트 통합</p>
 
-  <div style="margin: 16px 0 8px; font-size: 13px; font-weight: 700; color: var(--text-light); letter-spacing: 1px; text-transform: uppercase;">🌋 빅아일랜드</div>
-  <div class="rest-list">
-    <div class="rest-item">
-      <span class="rest-icon">🐟</span>
-      <div class="rest-info">
-        <strong>Da Poké Shack (다포케쉑)</strong>
-        <span>코나 최고 포케 맛집. 초신선 참치. 줄 서서 먹는 곳. 월~금 영업 (토·일 휴무 주의)</span>
+  <style>
+    .food-tab-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+    .food-tab{padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;border:1.5px solid #d0cac0;background:white;color:var(--text-light);cursor:pointer;transition:all 0.18s;font-family:'Noto Sans KR',sans-serif;-webkit-tap-highlight-color:transparent;}
+    .food-tab:hover{border-color:var(--teal);color:var(--teal);}
+    .food-tab.active{background:var(--teal);border-color:var(--teal);color:white;}
+    .food-region-block{display:none;}
+    .food-region-block.active{display:block;}
+    .food-sub-label{font-size:12px;font-weight:700;color:var(--text-light);letter-spacing:1px;text-transform:uppercase;margin:20px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--sand-dark);}
+    .rest-tags{display:flex;gap:4px;flex-wrap:wrap;margin-top:5px;}
+    .rest-menu{font-size:11px;background:#e8f5f3;color:#1a7a6e;padding:2px 8px;border-radius:10px;font-weight:600;}
+    .rest-warn{font-size:11px;background:#fff3cd;color:#856404;padding:2px 8px;border-radius:10px;font-weight:600;}
+    .rest-cash{font-size:11px;background:#fde8e8;color:#c0392b;padding:2px 8px;border-radius:10px;font-weight:600;}
+    .rest-star{font-size:11px;background:var(--sunset);color:white;padding:2px 8px;border-radius:10px;font-weight:700;}
+    @media(max-width:768px){.food-tab{font-size:11px;padding:6px 11px;}}
+  </style>
+
+  <div class="food-tab-bar">
+    <button class="food-tab active" onclick="switchFoodTab('bigisland',this)">🌋 빅아일랜드</button>
+    <button class="food-tab" onclick="switchFoodTab('waikiki',this)">🏖️ 와이키키</button>
+    <button class="food-tab" onclick="switchFoodTab('alamoana',this)">🛍️ 알라모아나</button>
+    <button class="food-tab" onclick="switchFoodTab('kakaako',this)">🏙️ 카카아코</button>
+    <button class="food-tab" onclick="switchFoodTab('northshore',this)">🌊 노스쇼어</button>
+    <button class="food-tab" onclick="switchFoodTab('mart',this)">🛒 마트</button>
+  </div>
+
+  <!-- ─── 빅아일랜드 ─── -->
+  <div class="food-region-block active" id="food-bigisland">
+    <div class="rest-list">
+      <div class="rest-item">
+        <span class="rest-icon">🐟</span>
+        <div class="rest-info">
+          <strong>Da Poké Shack (다포케쉑)</strong>
+          <span>코나 최고 포케 맛집. 초신선 참치. 줄 서서 먹는 현지 핫플</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : 참치 포케볼</span><span class="rest-warn">⚠️ 월~금만 영업 · 조기 마감</span></div>
+        </div>
+        <span class="rest-loc">코나 알리이Dr</span>
       </div>
-      <span class="rest-loc">코나 알리이Dr</span>
-    </div>
-    <div class="rest-item">
-      <span class="rest-icon">☕</span>
-      <div class="rest-info">
-        <strong>클로버앤머그 카페</strong>
-        <span>불고기 파니니, 우베 라떼. 바다 뷰 카페. 한식 퓨전 메뉴</span>
+      <div class="rest-item">
+        <span class="rest-icon">☕</span>
+        <div class="rest-info">
+          <strong>클로버앤머그 카페</strong>
+          <span>바다 뷰 카페. 한식 퓨전 메뉴가 맛있는 곳</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : 불고기 파니니, 우베 라떼</span></div>
+        </div>
+        <span class="rest-loc">코나 이나쇼핑빌리지</span>
       </div>
-      <span class="rest-loc">코나 이나쇼핑빌리지</span>
     </div>
   </div>
 
-  <div style="margin: 20px 0 8px; font-size: 13px; font-weight: 700; color: var(--text-light); letter-spacing: 1px; text-transform: uppercase;">🏖️ 오아후 — 와이키키</div>
-  <div class="rest-list">
-    <div class="rest-item">
-      <span class="rest-icon">🌅</span>
-      <div class="rest-info">
-        <strong>Orchids</strong>
-        <span>일몰 레스토랑. 와이키키 오션뷰 다이닝. 저녁 추천</span>
+  <!-- ─── 와이키키 ─── -->
+  <div class="food-region-block" id="food-waikiki">
+    <div class="food-sub-label">🍽️ 식사</div>
+    <div class="rest-list">
+      <div class="rest-item">
+        <span class="rest-icon">🍺</span>
+        <div class="rest-info">
+          <strong>Yard House</strong>
+          <span>와이키키의 밤을 느낄 수 있는 대형 펍 레스토랑. 하프 야드잔 맥주가 포인트. 가족 식사 적합</span>
+          <div class="rest-tags"><span class="rest-star">★ 강추</span><span class="rest-menu">추천 : 포케나초, 햄버거</span></div>
+        </div>
+        <span class="rest-loc">와이키키</span>
       </div>
-      <span class="rest-loc">와이키키</span>
+      <div class="rest-item">
+        <span class="rest-icon">🌅</span>
+        <div class="rest-info">
+          <strong>Orchids</strong>
+          <span>와이키키 오션뷰 다이닝. 일몰과 함께하는 저녁 식사로 최고</span>
+          <div class="rest-tags"><span class="rest-menu">저녁 추천</span></div>
+        </div>
+        <span class="rest-loc">와이키키</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🥩</span>
+        <div class="rest-info">
+          <strong>루스크리스 스테이크 하우스</strong>
+          <span>하와이 3대 스테이크. 특별한 날 저녁으로 추천</span>
+          <div class="rest-tags"><span class="rest-menu">스테이크</span><span class="rest-warn">예약 권장</span></div>
+        </div>
+        <span class="rest-loc">와이키키</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🥩</span>
+        <div class="rest-info">
+          <strong>Wolfgang's Steakhouse</strong>
+          <span>런치 메뉴로 먹으면 합리적. 친절하고 분위기 좋음</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : 런치 메뉴</span></div>
+        </div>
+        <span class="rest-loc">와이키키</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🍜</span>
+        <div class="rest-info">
+          <strong>Marugame Udon</strong>
+          <span>런치 셋트 메뉴가 합리적. 스몰이랑 라지랑 가격이 같음</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : 카레우동</span><span class="rest-menu">테이크아웃 할인</span></div>
+        </div>
+        <span class="rest-loc">와이키키</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🐟</span>
+        <div class="rest-info">
+          <strong>포케바</strong>
+          <span>와이키키 포케볼 전문점. 가성비 좋음</span>
+          <div class="rest-tags"><span class="rest-menu">포케볼</span></div>
+        </div>
+        <span class="rest-loc">와이키키</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🍽️</span>
+        <div class="rest-info">
+          <strong>El CIELO</strong>
+          <span>독특한 분위기의 레스토랑</span>
+        </div>
+        <span class="rest-loc">와이키키</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🍗</span>
+        <div class="rest-info">
+          <strong>Good Chicken</strong>
+          <span>하와이에서 판매하는 한국식 치킨집 중 탑</span>
+          <div class="rest-tags"><span class="rest-menu">한국식 치킨</span></div>
+        </div>
+        <span class="rest-loc">와이키키</span>
+      </div>
     </div>
-    <div class="rest-item">
-      <span class="rest-icon">🍺</span>
-      <div class="rest-info">
-        <strong>야드 하우스 (Yard House)</strong>
-        <span>와이키키 대형 레스토랑. 다양한 메뉴, 가족 식사 적합</span>
+
+    <div class="food-sub-label">☕ 카페 & 디저트</div>
+    <div class="rest-list">
+      <div class="rest-item">
+        <span class="rest-icon">☕</span>
+        <div class="rest-info">
+          <strong>Kona Coffee Purveyors</strong>
+          <span>커피도 맛있지만 빵이 진짜 맛집. 퀸아망으로 유명</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : Black Sesame 퀸아망</span></div>
+        </div>
+        <span class="rest-loc">인터내셔널 마켓플레이스</span>
       </div>
-      <span class="rest-loc">와이키키</span>
-    </div>
-    <div class="rest-item">
-      <span class="rest-icon">🥩</span>
-      <div class="rest-info">
-        <strong>루스크리스 스테이크 하우스</strong>
-        <span>하와이 3대 스테이크. 특별한 날 저녁으로 추천. 예약 권장</span>
+      <div class="rest-item">
+        <span class="rest-icon">🍩</span>
+        <div class="rest-info">
+          <strong>Liliha Bakery</strong>
+          <span>브런치 메뉴들 맛있음. 알라모아나점 메뉴 多, 와이키키점 분위기 好</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : 포이도넛, Coco Puff</span></div>
+        </div>
+        <span class="rest-loc">와이키키 / 알라모아나</span>
       </div>
-      <span class="rest-loc">와이키키</span>
-    </div>
-    <div class="rest-item">
-      <span class="rest-icon">🐟</span>
-      <div class="rest-info">
-        <strong>포케바</strong>
-        <span>와이키키 포케볼 전문점. 가성비 좋음</span>
+      <div class="rest-item">
+        <span class="rest-icon">🧊</span>
+        <div class="rest-info">
+          <strong>아일랜드 빈티지 쉐이브 아이스</strong>
+          <span>인공적인 맛 없이 생과일 맛이 남. 쉐이브 아이스 기피자도 OK</span>
+        </div>
+        <span class="rest-loc">와이키키</span>
       </div>
-      <span class="rest-loc">와이키키</span>
-    </div>
-    <div class="rest-item">
-      <span class="rest-icon">🍽️</span>
-      <div class="rest-info">
-        <strong>El CIELO</strong>
-        <span>독특한 분위기의 레스토랑</span>
+      <div class="rest-item">
+        <span class="rest-icon">🥣</span>
+        <div class="rest-info">
+          <strong>아일랜드 빈티지 커피</strong>
+          <span>커피보다는 아사히볼이 맛있음</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : 아사히볼</span></div>
+        </div>
+        <span class="rest-loc">와이키키</span>
       </div>
-      <span class="rest-loc">와이키키</span>
-    </div>
-    <div class="rest-item">
-      <span class="rest-icon">🛒</span>
-      <div class="rest-info">
-        <strong>알라모아나 쇼핑센터 푸드랜드</strong>
-        <span>도시락·과일·간식. 간편하게 식사 해결. 마트+푸드코트</span>
+      <div class="rest-item">
+        <span class="rest-icon">🥞</span>
+        <div class="rest-info">
+          <strong>moena café</strong>
+          <span>백종원 덕분에 유명해진 브런치 카페</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : 에그 베네딕트, 와플, 팬케이크</span></div>
+        </div>
+        <span class="rest-loc">와이키키</span>
       </div>
-      <span class="rest-loc">알라모아나</span>
     </div>
   </div>
 
-  <div style="margin: 20px 0 8px; font-size: 13px; font-weight: 700; color: var(--text-light); letter-spacing: 1px; text-transform: uppercase;">🌊 노스쇼어</div>
-  <div class="rest-list">
-    <div class="rest-item">
-      <span class="rest-icon">🍤</span>
-      <div class="rest-info">
-        <strong>갈릭쉬림프 트럭</strong>
-        <span>노스쇼어 대표 먹거리. Giovanni's 또는 Romy's 추천. 현금 지참</span>
+  <!-- ─── 알라모아나 ─── -->
+  <div class="food-region-block" id="food-alamoana">
+    <div class="rest-list">
+      <div class="rest-item">
+        <span class="rest-icon">🦞</span>
+        <div class="rest-info">
+          <strong>Fook Yuen Seafood</strong>
+          <span>한국인에게 유명한 곳. 랍스터가 정말 맛있고 가격도 합리적. 꼭 가보길 추천</span>
+          <div class="rest-tags"><span class="rest-star">★ 강추</span><span class="rest-menu">추천 : 월넛 쉬림프, Salt &amp; Pepper 랍스터, Clams Black Bean Sauce</span></div>
+        </div>
+        <span class="rest-loc">알라모아나</span>
       </div>
-      <span class="rest-loc">노스쇼어</span>
+      <div class="rest-item">
+        <span class="rest-icon">🍜</span>
+        <div class="rest-info">
+          <strong>Hale Vietnam</strong>
+          <span>오아후 최고 베트남 음식점. 현지인들이 정말 좋아하는 곳</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : 짜조, 쌀국수</span></div>
+        </div>
+        <span class="rest-loc">알라모아나</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🌅</span>
+        <div class="rest-info">
+          <strong>마리포사 (Mariposa)</strong>
+          <span>전망 좋기로 유명한 레스토랑. 알라모아나 파크&바다 뷰. 전망이 핵심</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : 식전빵 & 딸기 버터</span></div>
+        </div>
+        <span class="rest-loc">알라모아나 백화점</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🐟</span>
+        <div class="rest-info">
+          <strong>Alicia's Market</strong>
+          <span>하와이를 통틀어 최고의 포케 맛집이라는 평. Roasted Pork도 맛있음</span>
+          <div class="rest-tags"><span class="rest-star">★ 강추</span><span class="rest-menu">추천 : Spicy Ahi Poke, Roasted Pork</span></div>
+        </div>
+        <span class="rest-loc">알라모아나 인근</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🥪</span>
+        <div class="rest-info">
+          <strong>humu sandwich &amp; smoothies</strong>
+          <span>구글 평점 만점. 하와이 샌드위치 중 탑</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : 치킨 샐러드 랩, The New Yorker</span></div>
+        </div>
+        <span class="rest-loc">알라모아나</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🦞</span>
+        <div class="rest-info">
+          <strong>kickin kajun</strong>
+          <span>한국인 입맛에 굉장히 잘 맞는 곳. 소스에 밥 비벼먹기</span>
+        </div>
+        <span class="rest-loc">알라모아나 인근</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🛒</span>
+        <div class="rest-info">
+          <strong>알라모아나 쇼핑센터 푸드랜드</strong>
+          <span>도시락·과일·간식. 간편하게 식사 해결. 마트+푸드코트</span>
+        </div>
+        <span class="rest-loc">알라모아나</span>
+      </div>
     </div>
   </div>
+
+  <!-- ─── 카카아코 & 다운타운 ─── -->
+  <div class="food-region-block" id="food-kakaako">
+    <div class="food-sub-label">🍽️ 식사</div>
+    <div class="rest-list">
+      <div class="rest-item">
+        <span class="rest-icon">🦞</span>
+        <div class="rest-info">
+          <strong>fat cheeks</strong>
+          <span>로컬 맛집. 랍스터 롤이 정말 맛있는 곳</span>
+          <div class="rest-tags"><span class="rest-star">★ 강추</span><span class="rest-menu">추천 : 랍스터 롤</span></div>
+        </div>
+        <span class="rest-loc">카카아코</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🍳</span>
+        <div class="rest-info">
+          <strong>scratch kitchen</strong>
+          <span>젊은 사람들에게 핫한 곳. 브런치로 딱</span>
+        </div>
+        <span class="rest-loc">카카아코</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🍺</span>
+        <div class="rest-info">
+          <strong>Maui Brewing Co.</strong>
+          <span>카카아코 쪽 양조장 거리. Waikiki Brewery, Hana Koa Brewing 등 유사 옵션 多. 지나가다 들르기 좋음</span>
+          <div class="rest-tags"><span class="rest-menu">하우스 맥주</span></div>
+        </div>
+        <span class="rest-loc">카카아코</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🥟</span>
+        <div class="rest-info">
+          <strong>Legend Seafood Restaurant</strong>
+          <span>제대로 된 딤섬 맛집. 중국 유학파도 인정한 곳</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : 딤섬 전 메뉴</span></div>
+        </div>
+        <span class="rest-loc">차이나타운</span>
+      </div>
+    </div>
+
+    <div class="food-sub-label">☕ 카페 & 베이커리</div>
+    <div class="rest-list">
+      <div class="rest-item">
+        <span class="rest-icon">🧇</span>
+        <div class="rest-info">
+          <strong>waffle and berry</strong>
+          <span>하와이 최고의 아사히볼. 아사히볼 주문하면 와플 두 조각 포함. Fook Yuen 식사 후 후식으로 강추!</span>
+          <div class="rest-tags"><span class="rest-star">★ 강추</span><span class="rest-menu">추천 : 아사히볼, 와플</span></div>
+        </div>
+        <span class="rest-loc">카카아코</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🥯</span>
+        <div class="rest-info">
+          <strong>Lox of Bagels</strong>
+          <span>베이글 맛집. 일찍 안 가면 남아있지 않음</span>
+          <div class="rest-tags"><span class="rest-warn">⚠️ 오전 일찍 방문 권장</span></div>
+        </div>
+        <span class="rest-loc">카카아코</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🥐</span>
+        <div class="rest-info">
+          <strong>waioli kitchen &amp; bake shop</strong>
+          <span>베이커리. 스콘·크로와상 맛있음. 주택 속 특별한 분위기로 인기</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : 스콘, 크로와상</span></div>
+        </div>
+        <span class="rest-loc">마노아</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🍩</span>
+        <div class="rest-info">
+          <strong>Kamehameha Bakery</strong>
+          <span>로컬들이 좋아하는 베이커리. 가격 저렴</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : 포이 말라사다 도넛</span></div>
+        </div>
+        <span class="rest-loc">차이나타운</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── 노스쇼어 ─── -->
+  <div class="food-region-block" id="food-northshore">
+    <div class="rest-list">
+      <div class="rest-item">
+        <span class="rest-icon">🍤</span>
+        <div class="rest-info">
+          <strong>FUMI's Kahuku Shrimp</strong>
+          <span>갈릭새우는 개인적으로 여기가 제일 맛있음. 손씻는 곳·화장실·넓은 공간 구비. 양도 넉넉하고 소스도 넉넉하게 줌</span>
+          <div class="rest-tags"><span class="rest-star">★ 강추</span><span class="rest-menu">추천 : 버터갈릭 쉬림프, 스파이시 갈릭 쉬림프</span><span class="rest-cash">현금만 가능</span></div>
+        </div>
+        <span class="rest-loc">카후쿠</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🍤</span>
+        <div class="rest-info">
+          <strong>갈릭쉬림프 트럭 (Giovanni's / Romy's)</strong>
+          <span>노스쇼어 대표 먹거리. H마트 2층에도 Giovanni's 있어서 노스쇼어 안 가도 먹을 수 있음</span>
+          <div class="rest-tags"><span class="rest-cash">현금 지참 권장</span></div>
+        </div>
+        <span class="rest-loc">카후쿠 · 할레이와</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🌿</span>
+        <div class="rest-info">
+          <strong>kahuku farm</strong>
+          <span>농장에서 키운 재료로 만든 음식과 디저트. 노스쇼어의 맛집</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : 파파야 아이스크림, 릴리코이 버터 모찌</span></div>
+        </div>
+        <span class="rest-loc">카후쿠</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🍦</span>
+        <div class="rest-info">
+          <strong>waihole poi factory</strong>
+          <span>쿠알로아 랜치 가는 길목. 백종원 덕분에 유명해진 곳. 밥보다 아이스크림 추천</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : Haupia Ice Cream</span></div>
+        </div>
+        <span class="rest-loc">와이홀레 (쿠알로아 방향)</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🍜</span>
+        <div class="rest-info">
+          <strong>Hale Vietnam</strong>
+          <span>현지인들이 정말 좋아하는 베트남 음식점</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : 짜조, 쌀국수</span></div>
+        </div>
+        <span class="rest-loc">할레이와</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🍔</span>
+        <div class="rest-info">
+          <strong>kua aina sandwich</strong>
+          <span>건강한 버거. 테디스·치즈버거인파라다이스와 함께 하와이 3대 버거 맛집</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : 버거 전반</span></div>
+        </div>
+        <span class="rest-loc">할레이와</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🥧</span>
+        <div class="rest-info">
+          <strong>ted's bakery</strong>
+          <span>후피아 파이 맛집</span>
+          <div class="rest-tags"><span class="rest-menu">추천 : Chocolate Haupia Cream Pie</span></div>
+        </div>
+        <span class="rest-loc">선셋 비치 인근</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🍔</span>
+        <div class="rest-info">
+          <strong>shay's smash burgers</strong>
+          <span>푸드 트럭. 오아후 햄버거 맛집. 친절하고 저렴함</span>
+          <div class="rest-tags"><span class="rest-menu">전 메뉴 추천</span></div>
+        </div>
+        <span class="rest-loc">할레이와</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── 마트 ─── -->
+  <div class="food-region-block" id="food-mart">
+    <div class="food-sub-label">🏝️ 오아후</div>
+    <div class="rest-list">
+      <div class="rest-item">
+        <span class="rest-icon">🇰🇷</span>
+        <div class="rest-info">
+          <strong>H Mart (한인 마트)</strong>
+          <span>카카아코 지점이 크고 깨끗. 2층에 음식점 多 (Giovanni's 새우 트럭 포함 — 노스쇼어 안 가도 됨)</span>
+          <div class="rest-tags"><span class="rest-menu">한국 식재료 구비</span></div>
+        </div>
+        <span class="rest-loc">카카아코</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🛒</span>
+        <div class="rest-info">
+          <strong>Target (타겟)</strong>
+          <span>알라모아나점은 백화점처럼 정리가 잘 되어있어 쇼핑 편리</span>
+        </div>
+        <span class="rest-loc">알라모아나</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🛒</span>
+        <div class="rest-info">
+          <strong>Foodland (푸드랜드)</strong>
+          <span>하와이 현지 마트. 알라모아나점 추천. 전화번호 알려주면 일부 품목 할인</span>
+          <div class="rest-tags"><span class="rest-menu">☎ 808-520-6258 할인 번호</span></div>
+        </div>
+        <span class="rest-loc">알라모아나</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🛒</span>
+        <div class="rest-info">
+          <strong>Walmart (월마트)</strong>
+          <span>다양한 상품, 저렴</span>
+        </div>
+        <span class="rest-loc">와이키키 인근</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-icon">🏪</span>
+        <div class="rest-info">
+          <strong>Sam's Club (샘스클럽)</strong>
+          <span>월마트 운영 창고형 매장 (코스트코 유사). 멤버십 바코드만 있으면 사용 가능 — 우리 바코드 공유 OK</span>
+        </div>
+        <span class="rest-loc">오아후</span>
+      </div>
+    </div>
+
+    <div class="food-sub-label">🌋 빅아일랜드</div>
+    <div class="rest-list">
+      <div class="rest-item">
+        <span class="rest-icon">🛒</span>
+        <div class="rest-info">
+          <strong>KTA Super Stores</strong>
+          <span>빅아일랜드 현지 마트. 코나 콘도 도착 첫날 장보기 필수</span>
+        </div>
+        <span class="rest-loc">코나 알리이 드라이브 근처</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function switchFoodTab(id, btn) {
+    document.querySelectorAll('.food-tab').forEach(function(t){ t.classList.remove('active'); });
+    document.querySelectorAll('.food-region-block').forEach(function(b){ b.classList.remove('active'); });
+    if (btn) btn.classList.add('active');
+    var block = document.getElementById('food-' + id);
+    if (block) block.classList.add('active');
+  }
+  </script>
+</section>
+
+<!-- ══════════════════════════════════════ SPOTS ══ -->
+<section class="section" id="spots">
+  <h2 class="sec-title">📍 여행지 가이드</h2>
+  <p class="sec-sub">빅아일랜드 & 오아후 전체 여행지 총정리 — 일정·맛집과 연계 확인</p>
+
+  <style>
+    .spot-tab-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+    .spot-tab{padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;border:1.5px solid #d0cac0;background:white;color:var(--text-light);cursor:pointer;transition:all 0.18s;font-family:'Noto Sans KR',sans-serif;-webkit-tap-highlight-color:transparent;}
+    .spot-tab:hover{border-color:var(--teal);color:var(--teal);}
+    .spot-tab.active{background:var(--teal);border-color:var(--teal);color:white;}
+    .spot-region-block{display:none;}
+    .spot-region-block.active{display:block;}
+    .spot-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;margin-bottom:8px;}
+    .spot-card{background:white;border:1px solid #e8e3da;border-radius:16px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.05);transition:box-shadow 0.2s,transform 0.2s;}
+    .spot-card:hover{box-shadow:0 6px 24px rgba(0,0,0,0.1);transform:translateY(-2px);}
+    .spot-card-img{width:100%;height:110px;display:flex;align-items:center;justify-content:center;font-size:46px;}
+    .spot-card-body{padding:14px;}
+    .spot-card-body h3{font-size:14px;font-weight:700;margin-bottom:6px;}
+    .spot-desc{font-size:12px;color:var(--text-light);line-height:1.6;margin-bottom:8px;}
+    .spot-tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px;}
+    .spot-tag{font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;}
+    .st-beach{background:#d1ecf1;color:#0c5460;}
+    .st-snorkel{background:#cce5ff;color:#004085;}
+    .st-senior{background:#e2d9f3;color:#4a2d8a;}
+    .st-kids{background:#d4edda;color:#155724;}
+    .st-hike{background:#fde8d8;color:#9c3c00;}
+    .st-drive{background:#f0ede6;color:#5f5e5a;}
+    .st-nature{background:#d4edda;color:#2d6a4f;}
+    .st-shop{background:#f0ede6;color:#5f5e5a;}
+    .st-photo{background:#fff3cd;color:#856404;}
+    .st-reserve{background:#fde8e8;color:#c0392b;}
+    .st-event{background:#fde8d8;color:#9c3c00;}
+    .spot-meta{font-size:11px;color:var(--text-light);padding-top:8px;border-top:1px solid #f0ede6;}
+    .spot-warn{background:#fff8e6;border-left:3px solid #f0ad4e;padding:6px 10px;border-radius:0 8px 8px 0;font-size:11px;color:#856404;margin-top:8px;line-height:1.5;}
+    .spot-reserve-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px;}
+    .spot-reserve-table th{background:var(--teal);color:white;padding:10px 14px;text-align:left;font-weight:600;}
+    .spot-reserve-table td{padding:10px 14px;border-bottom:1px solid #f0ede6;vertical-align:top;}
+    .spot-reserve-table tr:last-child td{border-bottom:none;}
+    .spot-reserve-table tr:nth-child(even) td{background:#fafaf8;}
+    @media(max-width:768px){.spot-tab{font-size:11px;padding:6px 11px;}.spot-grid{grid-template-columns:1fr;}.spot-reserve-table{font-size:12px;}}
+  </style>
+
+  <div class="spot-tab-bar">
+    <button class="spot-tab active" onclick="switchSpotTab('bigisland',this)">🌋 빅아일랜드</button>
+    <button class="spot-tab" onclick="switchSpotTab('oahubeach',this)">🌊 오아후 해변</button>
+    <button class="spot-tab" onclick="switchSpotTab('activity',this)">🎭 오아후 액티비티</button>
+    <button class="spot-tab" onclick="switchSpotTab('shopping',this)">🛍️ 쇼핑</button>
+    <button class="spot-tab" onclick="switchSpotTab('reserve',this)">⚠️ 예약 필수</button>
+  </div>
+
+  <!-- ── 빅아일랜드 ── -->
+  <div class="spot-region-block active" id="spot-bigisland">
+    <div class="spot-grid">
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#0077b6 0%,#90e0ef 100%)">🐢</div>
+        <div class="spot-card-body">
+          <h3>카할루우 비치 파크</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-beach">해변</span>
+            <span class="spot-tag st-snorkel">스노클링</span>
+            <span class="spot-tag st-senior">노인OK</span>
+            <span class="spot-tag st-kids">어린이OK</span>
+          </div>
+          <p class="spot-desc">수심 얕고 잔잔한 스노클링 명소. 바다거북·열대어 다수 출몰. 초보자 최적.</p>
+          <div class="spot-meta">📍 코나 알리이 Dr (콘도에서 10분)</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#1a1a2e 0%,#374151 100%)">🖤</div>
+        <div class="spot-card-body">
+          <h3>푸날루우 블랙샌드비치</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-beach">해변</span>
+            <span class="spot-tag st-nature">자연</span>
+          </div>
+          <p class="spot-desc">검은 모래 해변. 바다거북이 올라와 쉬는 장면 관찰 가능.</p>
+          <div class="spot-meta">📍 코나 남쪽 약 1.5시간</div>
+          <div class="spot-warn">🐢 거북 2m 거리 유지 필수</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#0096c7 0%,#48cae4 100%)">🐠</div>
+        <div class="spot-card-body">
+          <h3>투스텝 비치 (호나우나우 베이)</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-beach">해변</span>
+            <span class="spot-tag st-snorkel">스노클링</span>
+          </div>
+          <p class="spot-desc">두 계단으로 입수하는 스노클링 명소. 열대어 풍성.</p>
+          <div class="spot-meta">📍 코나 남쪽 약 1.5시간</div>
+          <div class="spot-warn">⚠️ 암초 있음 — 아쿠아슈즈 필수</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#f4e2b0 0%,#e9c46a 100%)">🏖️</div>
+        <div class="spot-card-body">
+          <h3>하푸나 비치</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-beach">해변</span>
+            <span class="spot-tag st-kids">어린이OK</span>
+          </div>
+          <p class="spot-desc">빅아일랜드 최대 화이트샌드 비치. 넓은 백사장, 적당한 파도.</p>
+          <div class="spot-meta">📍 코나 북쪽 15분 · 주차 유료</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#ff7e5f 0%,#feb47b 100%)">🌅</div>
+        <div class="spot-card-body">
+          <h3>쿠아베이 (Kua Bay)</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-beach">해변</span>
+            <span class="spot-tag st-photo">선셋포인트</span>
+          </div>
+          <p class="spot-desc">코나 대표 선셋 포인트. 코발트빛 바다와 황금빛 노을.</p>
+          <div class="spot-meta">📍 코나 남서쪽 20분</div>
+          <div class="spot-warn">💡 일몰 1시간 전 도착 권장</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#e63946 0%,#c0392b 100%)">🌋</div>
+        <div class="spot-card-body">
+          <h3>킬라우에아 이키 트레일</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-hike">하이킹</span>
+            <span class="spot-tag st-nature">자연</span>
+          </div>
+          <p class="spot-desc">활화산 분화구 안을 걷는 4km 루프 트레일. 아이 페이스 3~3.5시간.</p>
+          <div class="spot-meta">📍 화산 국립공원</div>
+          <div class="spot-warn">⚠️ 운동화 필수 · 이른 출발 권장 (주차장 협소)</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#4a4e69 0%,#9a8c98 100%)">🔭</div>
+        <div class="spot-card-body">
+          <h3>킬라우에아 칼데라 전망대</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-nature">자연</span>
+            <span class="spot-tag st-senior">노인OK</span>
+          </div>
+          <p class="spot-desc">활화산 분화구 전경 감상. 주차장 바로 앞 — 체력 부담 없음.</p>
+          <div class="spot-meta">📍 화산 국립공원</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#6b6b6b 0%,#a8a8a8 100%)">🚗</div>
+        <div class="spot-card-body">
+          <h3>체인 오브 크레이터스 로드</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-drive">드라이브</span>
+            <span class="spot-tag st-senior">노인OK</span>
+            <span class="spot-tag st-kids">어린이OK</span>
+          </div>
+          <p class="spot-desc">용암 지형을 달리는 드라이브 코스 (약 1시간). 차 안에서 편안히 감상.</p>
+          <div class="spot-meta">📍 화산 국립공원</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#0f0c29 0%,#302b63 50%,#24243e 100%)">⭐</div>
+        <div class="spot-card-body">
+          <h3>마우나케아 VIS (별보기)</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-nature">자연</span>
+            <span class="spot-tag st-photo">포토스팟</span>
+          </div>
+          <p class="spot-desc">세계 최고의 별보기 명소. 해발 2,800m. 은하수 맨눈 관측 가능.</p>
+          <div class="spot-meta">📍 코나 북동쪽 약 1시간 20분</div>
+          <div class="spot-warn">🧥 기온 0~10°C — 방한복·담요 필수. 30분 이상 고산 적응 후 관측</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#1a7a6e 0%,#5ab5a8 100%)">🚶</div>
+        <div class="spot-card-body">
+          <h3>코나 알리이 드라이브</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-shop">산책</span>
+            <span class="spot-tag st-senior">노인OK</span>
+          </div>
+          <p class="spot-desc">코나 메인 해안 산책로. 기념품 가게·카페·레스토랑 밀집.</p>
+          <div class="spot-meta">📍 코나 시내 · 평지 산책</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#e63946 0%,#f4a261 100%)">🚁</div>
+        <div class="spot-card-body">
+          <h3>헬리콥터 투어 (빅아일랜드)</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-nature">액티비티</span>
+            <span class="spot-tag st-reserve">예약필수</span>
+          </div>
+          <p class="spot-desc">화산·해안선 공중 관람. 빅아일랜드에서만 가능한 압도적 경험.</p>
+          <div class="spot-meta">📍 코나 공항 인근 (빅아일랜드)</div>
+          <div class="spot-warn">⚠️ 사전 예약 필수 — Blue Hawaiian / Paradise Helicopters</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#6b2d0f 0%,#c0392b 100%)">🏡</div>
+        <div class="spot-card-body">
+          <h3>볼케이노 하우스</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-nature">역사</span>
+            <span class="spot-tag st-senior">노인OK</span>
+          </div>
+          <p class="spot-desc">화산 국립공원 내 역사적인 호텔 겸 레스토랑. 분화구 뷰 다이닝 가능.</p>
+          <div class="spot-meta">📍 화산 국립공원 입구</div>
+          <div class="spot-warn">💡 늦은 점심·이른 저녁 추천</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── 오아후 해변 ── -->
+  <div class="spot-region-block" id="spot-oahubeach">
+    <div class="spot-grid">
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#0077b6 0%,#00b4d8 100%)">🌊</div>
+        <div class="spot-card-body">
+          <h3>와이키키 해변</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-beach">해변</span>
+            <span class="spot-tag st-kids">어린이OK</span>
+          </div>
+          <p class="spot-desc">오아후 상징적인 해변. 곱고 넓은 모래사장. 파도 적당.</p>
+          <div class="spot-meta">📍 와이키키</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#48cae4 0%,#ade8f4 100%)">🏊</div>
+        <div class="spot-card-body">
+          <h3>힐튼 라군</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-beach">라군</span>
+            <span class="spot-tag st-senior">노인OK</span>
+            <span class="spot-tag st-kids">어린이OK</span>
+          </div>
+          <p class="spot-desc">파도 없는 인공 라군. 어린이·노인 물놀이 최적. 안전하고 잔잔.</p>
+          <div class="spot-meta">📍 힐튼 하와이안 빌리지 앞</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#1b4f72 0%,#2980b9 100%)">♾️</div>
+        <div class="spot-card-body">
+          <h3>쉐라톤 Infinity 수영장</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-photo">포토스팟</span>
+            <span class="spot-tag st-kids">어린이OK</span>
+          </div>
+          <p class="spot-desc">와이키키 최고 오션뷰 인피니티 풀. 슬라이드 있음. 와이키키 전망 압도적.</p>
+          <div class="spot-meta">📍 쉐라톤 와이키키 (힐튼에서 도보 10분)</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#264653 0%,#2a9d8f 100%)">🗻</div>
+        <div class="spot-card-body">
+          <h3>다이아몬드헤드</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-hike">하이킹</span>
+            <span class="spot-tag st-photo">포토스팟</span>
+            <span class="spot-tag st-reserve">예약필수</span>
+          </div>
+          <p class="spot-desc">호놀룰루 전경 파노라마. 오아후 상징적 명소. 분화구 정상 전망 탁월.</p>
+          <div class="spot-meta">📍 와이키키에서 차로 10분</div>
+          <div class="spot-warn">⚠️ 온라인 사전 예약 필수 · <strong>월~금만 운영</strong> (gostateparks.hawaii.gov)</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#52b788 0%,#b7e4c7 100%)">🌿</div>
+        <div class="spot-card-body">
+          <h3>카피올라니 공원</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-nature">공원</span>
+            <span class="spot-tag st-senior">노인OK</span>
+          </div>
+          <p class="spot-desc">다이아몬드헤드 기슭 넓은 공원. 피크닉·산책에 적합.</p>
+          <div class="spot-meta">📍 다이아몬드헤드 인근</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#1e6091 0%,#1a936f 100%)">🔭</div>
+        <div class="spot-card-body">
+          <h3>마카푸우 전망대</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-nature">전망대</span>
+            <span class="spot-tag st-senior">노인OK</span>
+            <span class="spot-tag st-kids">어린이OK</span>
+          </div>
+          <p class="spot-desc">오아후 동쪽 해안 절경. 완만한 포장도로 — 누구나 편안히 감상.</p>
+          <div class="spot-meta">📍 72번 국도 · 왕복 약 30~40분</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#023e8a 0%,#48cae4 100%)">🚗</div>
+        <div class="spot-card-body">
+          <h3>72번 국도 드라이브</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-drive">드라이브</span>
+            <span class="spot-tag st-photo">포토스팟</span>
+          </div>
+          <p class="spot-desc">오아후 동쪽 해안 절벽 드라이브. 눈에 띄는 뷰포인트 정차하며 감상.</p>
+          <div class="spot-meta">📍 와이키키 → 동쪽 해안</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#56cfe1 0%,#b5e48c 100%)">💎</div>
+        <div class="spot-card-body">
+          <h3>라니카이 비치</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-beach">해변</span>
+            <span class="spot-tag st-kids">어린이OK</span>
+            <span class="spot-tag st-photo">포토스팟</span>
+          </div>
+          <p class="spot-desc">투명한 에메랄드빛 바다. 잔잔한 파도 — 어린이 안전 최적.</p>
+          <div class="spot-meta">📍 카일루아</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#74c69d 0%,#52b788 100%)">🏖️</div>
+        <div class="spot-card-body">
+          <h3>카일루아 비치</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-beach">해변</span>
+            <span class="spot-tag st-kids">어린이OK</span>
+          </div>
+          <p class="spot-desc">넓은 백사장, 잔잔한 파도. 라니카이 옆. 로컬 분위기 가득.</p>
+          <div class="spot-meta">📍 카일루아</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#40916c 0%,#74c69d 100%)">🐢</div>
+        <div class="spot-card-body">
+          <h3>라니아케아 비치 (거북이 해변)</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-beach">해변</span>
+            <span class="spot-tag st-nature">야생동물</span>
+          </div>
+          <p class="spot-desc">바다거북 서식지. 거북이 해변에 올라와 쉬는 모습 관찰 가능.</p>
+          <div class="spot-meta">📍 노스쇼어 할레이와 근처</div>
+          <div class="spot-warn">💡 오후 2~4시 최적 · 2m 거리 유지 규정 준수</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#0077b6 0%,#023e8a 100%)">🤿</div>
+        <div class="spot-card-body">
+          <h3>샥스코브 스노클링</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-snorkel">스노클링</span>
+            <span class="spot-tag st-beach">해변</span>
+          </div>
+          <p class="spot-desc">오아후 최고 스노클링 명소. 바위 사이 열대어 풍성. 라니아케아 옆 5분.</p>
+          <div class="spot-meta">📍 노스쇼어 Pupukea</div>
+          <div class="spot-warn">⚠️ 암초 있음 — 아쿠아슈즈 필수</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#f4a261 0%,#e76f51 100%)">🌊</div>
+        <div class="spot-card-body">
+          <h3>와이메아 비치 파크</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-beach">해변</span>
+            <span class="spot-tag st-photo">선셋포인트</span>
+          </div>
+          <p class="spot-desc">노스쇼어 넓고 조용한 해변. 샥스코브 바로 옆. 선셋 감상 명소.</p>
+          <div class="spot-meta">📍 노스쇼어 · 샥스코브와 세트 방문</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── 오아후 액티비티 ── -->
+  <div class="spot-region-block" id="spot-activity">
+    <div class="spot-grid">
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#2d6a4f 0%,#52b788 100%)">🦕</div>
+        <div class="spot-card-body">
+          <h3>쿠알로아 랜치</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-nature">액티비티</span>
+            <span class="spot-tag st-senior">노인OK</span>
+            <span class="spot-tag st-reserve">예약필수</span>
+          </div>
+          <p class="spot-desc">쥬라기공원·아바타 등 헐리우드 촬영지. 차량 탑승 투어로 체력 부담 없음.</p>
+          <div class="spot-meta">📍 동북 오아후 (와이키키에서 40분)</div>
+          <div class="spot-warn">⚠️ 사전 예약 필수 (kualoa.com) · 쥬라기 어드벤처 투어 추천</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#e9c46a 0%,#f4a261 100%)">🎭</div>
+        <div class="spot-card-body">
+          <h3>PCC 폴리네시안 문화센터</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-nature">문화체험</span>
+            <span class="spot-tag st-senior">노인OK</span>
+            <span class="spot-tag st-reserve">예약필수</span>
+          </div>
+          <p class="spot-desc">하와이·피지·사모아 등 6개 섬 문화 체험. 카누 퍼레이드 + 나이트쇼.</p>
+          <div class="spot-meta">📍 라이에 (와이키키에서 1시간)</div>
+          <div class="spot-warn">⚠️ 수·일 휴무 · 사전 예약 (polynesia.com)</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#f4d03f 0%,#f39c12 100%)">🍍</div>
+        <div class="spot-card-body">
+          <h3>돌 파인애플 농장</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-nature">체험</span>
+            <span class="spot-tag st-kids">어린이OK</span>
+            <span class="spot-tag st-senior">노인OK</span>
+          </div>
+          <p class="spot-desc">미로 체험·기차·파인애플 아이스크림. 전 연령 OK. 와이켈레 아울렛과 세트.</p>
+          <div class="spot-meta">📍 와히아와 (와이키키에서 40분)</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%)">🎆</div>
+        <div class="spot-card-body">
+          <h3>힐튼 금요 불꽃놀이</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-event">이벤트</span>
+            <span class="spot-tag st-kids">어린이OK</span>
+          </div>
+          <p class="spot-desc">매주 금요일 19:40. 와이키키 해변 어디서나 잘 보임. 여행 클라이맥스.</p>
+          <div class="spot-meta">📍 힐튼 하와이안 빌리지 앞 해변</div>
+          <div class="spot-warn">💡 돗자리·접이식 의자 준비 권장 · 20분 전 도착</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#2c3e50 0%,#4ca1af 100%)">🌃</div>
+        <div class="spot-card-body">
+          <h3>프라이빗 야경 투어</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-event">투어</span>
+            <span class="spot-tag st-senior">노인OK</span>
+            <span class="spot-tag st-reserve">예약필수</span>
+          </div>
+          <p class="spot-desc">한국어 가이드. 차량 탑승 중심 — 노인·어린이 체력 부담 없음.</p>
+          <div class="spot-meta">📍 와이키키 픽업</div>
+          <div class="spot-warn">⚠️ 사전 예약 필수</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#1b4f72 0%,#2980b9 100%)">🛡️</div>
+        <div class="spot-card-body">
+          <h3>진주만 (아리조나 메모리얼)</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-nature">역사</span>
+            <span class="spot-tag st-senior">노인OK</span>
+          </div>
+          <p class="spot-desc">1941년 일본 공습의 역사적 현장. 투어 버스 이용 가능 (렌터카 없어도 OK).</p>
+          <div class="spot-meta">📍 와이키키에서 차로 20분 · 무료 입장</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── 쇼핑 ── -->
+  <div class="spot-region-block" id="spot-shopping">
+    <div class="spot-grid">
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#c0392b 0%,#e74c3c 100%)">🏪</div>
+        <div class="spot-card-body">
+          <h3>와이켈레 프리미엄 아울렛</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-shop">쇼핑</span>
+            <span class="spot-tag st-senior">노인OK</span>
+          </div>
+          <p class="spot-desc">코치·폴로·나이키 등 50+ 브랜드. 와이키키 대비 20~40% 저렴. 야외 단층.</p>
+          <div class="spot-meta">📍 와이파후 (와이키키에서 30분) · 10:00 오픈</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#2980b9 0%,#6dd5fa 100%)">🛍️</div>
+        <div class="spot-card-body">
+          <h3>알라모아나 쇼핑센터</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-shop">쇼핑</span>
+            <span class="spot-tag st-senior">노인OK</span>
+          </div>
+          <p class="spot-desc">세계 최대 야외 쇼핑몰. 평지 구조로 노약자 편안. 힐튼에서 도보 또는 셔틀.</p>
+          <div class="spot-meta">📍 알라모아나 (와이키키 도보 20분) · 일요일 단축영업 확인</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#f39c12 0%,#f1c40f 100%)">👜</div>
+        <div class="spot-card-body">
+          <h3>와이키키 칼라카우아 거리</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-shop">쇼핑</span>
+            <span class="spot-tag st-senior">노인OK</span>
+          </div>
+          <p class="spot-desc">와이키키 메인 쇼핑 거리. ABC스토어·명품·기념품 밀집. 저녁 산책 코스.</p>
+          <div class="spot-meta">📍 와이키키 중심 · 평지 도보</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#1a7a6e 0%,#5ab5a8 100%)">🏄</div>
+        <div class="spot-card-body">
+          <h3>할레이와 마을</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-shop">마을</span>
+            <span class="spot-tag st-nature">갤러리</span>
+          </div>
+          <p class="spot-desc">노스쇼어 아기자기한 서퍼 마을. 부티크·갤러리·아이스크림. 갈릭새우 트럭 코스.</p>
+          <div class="spot-meta">📍 노스쇼어 · 라니아케아&샥스코브와 세트</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#2c3e50 0%,#4a4e69 100%)">🌺</div>
+        <div class="spot-card-body">
+          <h3>코나 알리이 드라이브 (빅아일랜드)</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-shop">기념품</span>
+            <span class="spot-tag st-senior">노인OK</span>
+          </div>
+          <p class="spot-desc">코나 메인 해안가 산책로. 하와이 기념품·코나 커피·잡화 쇼핑.</p>
+          <div class="spot-meta">📍 코나 시내 · 평지 산책</div>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-card-img" style="background:linear-gradient(135deg,#7b2d8b 0%,#a855f7 100%)">⛳</div>
+        <div class="spot-card-body">
+          <h3>로얄 하와이안 골프샵</h3>
+          <div class="spot-tags">
+            <span class="spot-tag st-shop">쇼핑</span>
+            <span class="spot-tag st-photo">선물용</span>
+          </div>
+          <p class="spot-desc">로얄 하와이안 센터 내 골프 용품점. G/FORE 등 브랜드 와이키키 대비 저렴.</p>
+          <div class="spot-meta">📍 와이키키 로얄 하와이안 센터</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── 예약 필수 ── -->
+  <div class="spot-region-block" id="spot-reserve">
+    <p style="margin-bottom:16px;font-size:13px;color:var(--text-light);">아래 여행지는 <strong>사전 온라인 예약이 필수</strong>입니다. 출발 전 미리 예약하세요.</p>
+    <table class="spot-reserve-table">
+      <thead>
+        <tr>
+          <th>여행지</th>
+          <th>예약처 / 비고</th>
+          <th>주의사항</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>🗻 다이아몬드헤드</strong><br><small>오아후 · 와이키키에서 10분</small></td>
+          <td>gostateparks.hawaii.gov</td>
+          <td>⚠️ <strong>월~금만 운영</strong> (토·일 휴무)</td>
+        </tr>
+        <tr>
+          <td><strong>🎭 PCC 폴리네시안 문화센터</strong><br><small>오아후 · 와이키키에서 1시간</small></td>
+          <td>polynesia.com</td>
+          <td>⚠️ <strong>수·일 휴무</strong> — 목요일 7/16 정상 운영</td>
+        </tr>
+        <tr>
+          <td><strong>🦕 쿠알로아 랜치</strong><br><small>오아후 · 와이키키에서 40분</small></td>
+          <td>kualoa.com</td>
+          <td>투어 종류 다양 — 쥬라기 어드벤처 추천</td>
+        </tr>
+        <tr>
+          <td><strong>🚁 헬리콥터 투어</strong><br><small>빅아일랜드 · 코나 공항 인근</small></td>
+          <td>Blue Hawaiian Helicopters<br>Paradise Helicopters</td>
+          <td>일정 중 빅아일랜드 체류 시 예약</td>
+        </tr>
+        <tr>
+          <td><strong>🌃 프라이빗 야경 투어</strong><br><small>오아후 · 와이키키 픽업</small></td>
+          <td>투어사 직접 예약 (한국어 가이드)</td>
+          <td>차량 탑승 중심 — 노인·어린이 체력 부담 없음</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+  function switchSpotTab(id, btn) {
+    document.querySelectorAll('.spot-tab').forEach(function(t){ t.classList.remove('active'); });
+    document.querySelectorAll('.spot-region-block').forEach(function(b){ b.classList.remove('active'); });
+    if (btn) btn.classList.add('active');
+    var block = document.getElementById('spot-' + id);
+    if (block) block.classList.add('active');
+  }
+  </script>
 </section>
 
 <!-- ═══════════════════════════════════════ BONUS ═══ -->
@@ -2403,6 +3410,464 @@ document.querySelectorAll('.day-card').forEach((card, i) => {
   }
   </script>
 </section>
+
+<!-- ══════════════════════ 즐겨찾기 & 메모 시스템 ══════════════════════ -->
+<style>
+  /* ── 카드 액션 바 ── */
+  .card-action-bar {
+    display: flex;
+    gap: 6px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #f0ede6;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .rest-item .card-action-bar {
+    margin-top: 8px;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  /* ── 하트(즐겨찾기) 버튼 ── */
+  .btn-fave {
+    font-size: 14px;
+    padding: 4px 10px;
+    border: 1.5px solid #e8e3da;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btn-fave:hover { border-color: #e74c3c; background: #fde8e8; }
+  .btn-fave.faved { border-color: #e74c3c; background: #fde8e8; }
+
+  /* ── 메모 버튼 ── */
+  .btn-memo {
+    font-size: 13px;
+    padding: 4px 10px;
+    border: 1.5px solid #e8e3da;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    -webkit-tap-highlight-color: transparent;
+    white-space: nowrap;
+  }
+  .btn-memo:hover { border-color: var(--teal); background: var(--teal-light); }
+  .btn-memo.has-memo { border-color: #f39c12; background: #fff8e6; }
+  .memo-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: #f39c12;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  /* ── 찜 필터 버튼 ── */
+  .fave-filter-btn {
+    margin-left: auto;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1.5px solid #e8e3da;
+    background: white;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: all 0.18s;
+    font-family: 'Noto Sans KR', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    white-space: nowrap;
+  }
+  .fave-filter-btn:hover { border-color: #e74c3c; color: #c0392b; }
+  .fave-filter-btn.active { background: #fde8e8; border-color: #e74c3c; color: #c0392b; }
+  .fave-count {
+    font-weight: 700;
+    color: #c0392b;
+  }
+
+  /* ── 메모 모달 ── */
+  .memo-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    backdrop-filter: blur(4px);
+  }
+  .memo-modal-overlay.open { display: flex; }
+  .memo-modal-box {
+    background: white;
+    border-radius: 20px;
+    padding: 28px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.25);
+    animation: modalIn 0.2s ease;
+  }
+  @keyframes modalIn {
+    from { opacity:0; transform:translateY(12px) scale(0.97); }
+    to { opacity:1; transform:translateY(0) scale(1); }
+  }
+  .memo-modal-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--text);
+  }
+  .memo-modal-hint {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-bottom: 14px;
+  }
+  .memo-textarea {
+    width: 100%;
+    min-height: 140px;
+    border: 1.5px solid #e8e3da;
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.15s;
+    color: var(--text);
+    box-sizing: border-box;
+  }
+  .memo-textarea:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(26,122,110,0.1); }
+  .memo-textarea::placeholder { color: #bbb; }
+  .memo-modal-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 16px;
+  }
+  .memo-btn-cancel {
+    padding: 10px 22px;
+    border-radius: 10px;
+    border: 1.5px solid #e8e3da;
+    background: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--text-light);
+    transition: background 0.12s;
+  }
+  .memo-btn-cancel:hover { background: #f5f5f0; }
+  .memo-btn-delete {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 1.5px solid #fcc;
+    background: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    color: #c0392b;
+    margin-right: auto;
+    transition: background 0.12s;
+  }
+  .memo-btn-delete:hover { background: #fde8e8; }
+  .memo-btn-save {
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+    background: var(--teal);
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.12s;
+  }
+  .memo-btn-save:hover { background: #156a5e; }
+
+  /* ── 카드 메모 미리보기 ── */
+  .card-memo-preview {
+    margin-top: 8px;
+    padding: 8px 10px;
+    background: #fffbea;
+    border-left: 3px solid #f39c12;
+    border-radius: 0 8px 8px 0;
+    font-size: 12px;
+    color: #7a5c00;
+    line-height: 1.55;
+    word-break: break-all;
+    white-space: pre-wrap;
+  }
+  .rest-item .card-memo-preview {
+    margin-top: 6px;
+    border-radius: 0 6px 6px 0;
+  }
+
+  @media(max-width:600px) {
+    .memo-modal-box { padding: 20px; border-radius: 16px; }
+  }
+</style>
+
+<!-- 메모 모달 -->
+<div class="memo-modal-overlay" id="memo-modal">
+  <div class="memo-modal-box">
+    <div class="memo-modal-title" id="memo-modal-title">메모</div>
+    <div class="memo-modal-hint">이 장소에 대한 메모를 자유롭게 남겨두세요.</div>
+    <textarea class="memo-textarea" id="memo-textarea" placeholder="방문 계획, 가고 싶은 이유, 주의사항 등 자유롭게 적어보세요..."></textarea>
+    <div class="memo-modal-actions">
+      <button class="memo-btn-delete" id="memo-btn-delete" onclick="HawaiiApp.deleteMemo()" style="display:none">🗑 삭제</button>
+      <button class="memo-btn-cancel" onclick="HawaiiApp.closeModal()">취소</button>
+      <button class="memo-btn-save" onclick="HawaiiApp.saveMemo()">저장</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var FAVE_KEY = 'hawaii_fav_v1';
+  var MEMO_KEY = 'hawaii_memo_v1';
+
+  function load(key) {
+    try { return JSON.parse(localStorage.getItem(key) || '{}'); } catch(e) { return {}; }
+  }
+  function save(key, data) { localStorage.setItem(key, JSON.stringify(data)); }
+
+  function toId(text) {
+    return (text || '').trim().replace(/\s+/g, '_').replace(/[^가-힣A-Za-z0-9_]/g, '').substring(0, 30);
+  }
+  function getName(el) {
+    var h3 = el.querySelector('h3');
+    if (h3) return h3.textContent.trim();
+    var s = el.querySelector('strong');
+    if (s) return s.textContent.trim();
+    return '';
+  }
+  function getBody(el) {
+    return el.querySelector('.spot-card-body') || el.querySelector('.rest-info') || el;
+  }
+
+  /* ── 카드 메모 미리보기 업데이트 ── */
+  function updateMemoPreview(item, text) {
+    var body = getBody(item);
+    var preview = body.querySelector('.card-memo-preview');
+    if (text && text.trim()) {
+      var short = text.length > 80 ? text.substring(0, 78) + '…' : text;
+      if (!preview) {
+        preview = document.createElement('div');
+        preview.className = 'card-memo-preview';
+        body.appendChild(preview);
+      }
+      preview.textContent = '📝 ' + short;
+    } else {
+      if (preview) preview.remove();
+    }
+  }
+
+  /* ── 카드 정렬: 찜한 항목 맨 앞 ── */
+  function sortContainer(container) {
+    var faves = load(FAVE_KEY);
+    var children = Array.from(container.children);
+    children.sort(function(a, b) {
+      var aFaved = a.getAttribute('data-id') && faves[a.getAttribute('data-id')] ? 0 : 1;
+      var bFaved = b.getAttribute('data-id') && faves[b.getAttribute('data-id')] ? 0 : 1;
+      if (aFaved !== bFaved) return aFaved - bFaved;
+      return (parseInt(a.getAttribute('data-order')) || 0) - (parseInt(b.getAttribute('data-order')) || 0);
+    });
+    children.forEach(function(c) { container.appendChild(c); });
+  }
+
+  function initCards() {
+    var faves = load(FAVE_KEY);
+    var memos = load(MEMO_KEY);
+
+    /* 각 컨테이너 안에서 원래 순서 기록 */
+    var containers = new Set();
+    document.querySelectorAll('.spot-card, .rest-item').forEach(function(item, globalIdx) {
+      var parent = item.parentElement;
+      if (parent) {
+        var siblings = Array.from(parent.children);
+        siblings.forEach(function(sib, i) { if (!sib.getAttribute('data-order')) sib.setAttribute('data-order', i); });
+        containers.add(parent);
+      }
+    });
+
+    document.querySelectorAll('.spot-card, .rest-item').forEach(function(item) {
+      var name = getName(item);
+      if (!name) return;
+      var id = toId(name);
+      item.setAttribute('data-id', id);
+
+      var isFaved = !!faves[id];
+      var memoText = memos[id] || '';
+      var hasMemo = !!memoText.trim();
+
+      /* 액션 바 */
+      var bar = document.createElement('div');
+      bar.className = 'card-action-bar';
+      bar.innerHTML =
+        '<button class="btn-fave' + (isFaved ? ' faved' : '') + '" onclick="HawaiiApp.toggleFave(this)" title="찜하기">' +
+          (isFaved ? '❤️' : '🤍') +
+        '</button>' +
+        '<button class="btn-memo' + (hasMemo ? ' has-memo' : '') + '" onclick="HawaiiApp.openMemo(this)" title="메모 작성">' +
+          '📝 메모' + (hasMemo ? ' <span class="memo-dot"></span>' : '') +
+        '</button>';
+      getBody(item).appendChild(bar);
+
+      /* 저장된 메모 표시 */
+      if (hasMemo) updateMemoPreview(item, memoText);
+    });
+
+    /* 찜한 항목 맨 앞 정렬 (저장 상태 복원) */
+    containers.forEach(function(c) { sortContainer(c); });
+
+    /* 찜 필터 버튼 */
+    [['#food', '.food-tab-bar'], ['#spots', '.spot-tab-bar']].forEach(function(pair) {
+      var section = document.querySelector(pair[0]);
+      if (!section) return;
+      var tabBar = section.querySelector(pair[1]);
+      if (!tabBar) return;
+      var btn = document.createElement('button');
+      btn.className = 'fave-filter-btn';
+      btn.innerHTML = '🤍 찜만 보기';
+      btn.onclick = function() { HawaiiApp.toggleFilter(this, section); };
+      tabBar.appendChild(btn);
+    });
+  }
+
+  window.HawaiiApp = {
+    toggleFave: function(btn) {
+      var item = btn.closest('[data-id]');
+      var id = item.getAttribute('data-id');
+      var faves = load(FAVE_KEY);
+
+      if (faves[id]) {
+        delete faves[id];
+        btn.innerHTML = '🤍';
+        btn.classList.remove('faved');
+      } else {
+        faves[id] = true;
+        btn.innerHTML = '❤️';
+        btn.classList.add('faved');
+      }
+      save(FAVE_KEY, faves);
+
+      /* 부모 컨테이너 재정렬 */
+      var parent = item.parentElement;
+      if (parent) sortContainer(parent);
+
+      /* 필터 활성 중이면 찜 해제된 항목 숨김 */
+      var section = item.closest('.section');
+      if (section) {
+        var filterBtn = section.querySelector('.fave-filter-btn.active');
+        if (filterBtn && !faves[id]) {
+          item.style.display = 'none';
+          /* 카운트 갱신 */
+          var cnt = section.querySelectorAll('.fave-filter-btn.active').length > 0
+            ? Array.from(section.querySelectorAll('[data-id]')).filter(function(i) { return faves[i.getAttribute('data-id')]; }).length
+            : 0;
+          filterBtn.innerHTML = '❤️ 전체 보기 <span class="fave-count">(' + cnt + ')</span>';
+        }
+      }
+    },
+
+    toggleFilter: function(btn, section) {
+      var isActive = btn.classList.toggle('active');
+      var faves = load(FAVE_KEY);
+      var items = section.querySelectorAll('.spot-card, .rest-item');
+      var favCount = 0;
+
+      items.forEach(function(item) {
+        var id = item.getAttribute('data-id');
+        if (isActive) {
+          var show = !!faves[id];
+          item.style.display = show ? '' : 'none';
+          if (show) favCount++;
+        } else {
+          item.style.display = '';
+        }
+      });
+
+      btn.innerHTML = isActive
+        ? '❤️ 전체 보기 <span class="fave-count">(' + favCount + ')</span>'
+        : '🤍 찜만 보기';
+    },
+
+    openMemo: function(btn) {
+      var item = btn.closest('[data-id]');
+      var id = item.getAttribute('data-id');
+      var name = getName(item);
+      var memos = load(MEMO_KEY);
+      var existing = memos[id] || '';
+
+      var modal = document.getElementById('memo-modal');
+      document.getElementById('memo-modal-title').textContent = name;
+      document.getElementById('memo-textarea').value = existing;
+      document.getElementById('memo-btn-delete').style.display = existing ? 'block' : 'none';
+      modal._id = id;
+      modal._btn = btn;
+      modal.classList.add('open');
+      setTimeout(function() { document.getElementById('memo-textarea').focus(); }, 80);
+    },
+
+    closeModal: function() {
+      document.getElementById('memo-modal').classList.remove('open');
+    },
+
+    saveMemo: function() {
+      var modal = document.getElementById('memo-modal');
+      var id = modal._id;
+      var btn = modal._btn;
+      var text = document.getElementById('memo-textarea').value.trim();
+      var memos = load(MEMO_KEY);
+
+      if (text) { memos[id] = text; } else { delete memos[id]; }
+      save(MEMO_KEY, memos);
+
+      /* 메모 버튼 상태 */
+      if (btn) {
+        btn.innerHTML = text ? '📝 메모 <span class="memo-dot"></span>' : '📝 메모';
+        btn.classList.toggle('has-memo', !!text);
+        /* 카드에 미리보기 반영 */
+        updateMemoPreview(btn.closest('[data-id]'), text);
+      }
+      this.closeModal();
+    },
+
+    deleteMemo: function() {
+      var modal = document.getElementById('memo-modal');
+      var id = modal._id;
+      var btn = modal._btn;
+      var memos = load(MEMO_KEY);
+      delete memos[id];
+      save(MEMO_KEY, memos);
+
+      if (btn) {
+        btn.innerHTML = '📝 메모';
+        btn.classList.remove('has-memo');
+        updateMemoPreview(btn.closest('[data-id]'), '');
+      }
+      this.closeModal();
+    }
+  };
+
+  document.getElementById('memo-modal').addEventListener('click', function(e) {
+    if (e.target === this) HawaiiApp.closeModal();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') HawaiiApp.closeModal();
+  });
+
+  document.addEventListener('DOMContentLoaded', initCards);
+})();
+</script>
 
 </body>
 </html>
