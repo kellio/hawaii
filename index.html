@@ -3622,8 +3622,18 @@ document.querySelectorAll('.day-card').forEach((card, i) => {
   /* ── 동기화 모달 전용 ── */
   .sync-modal-box { max-width: 520px; }
   .sync-section-label { font-size: 13px; font-weight: 700; color: var(--text); margin: 14px 0 7px; }
-  .sync-textarea { min-height: 90px; font-size: 11px; font-family: monospace; word-break: break-all; }
-  .sync-divider { border: none; border-top: 1px solid #f0ede6; margin: 18px 0 4px; }
+  .sync-token-input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #e8e3da;
+    border-radius: 10px;
+    font-size: 13px;
+    font-family: monospace;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.15s;
+  }
+  .sync-token-input:focus { border-color: var(--teal); }
 
   /* ── 카드 메모 미리보기 ── */
   .card-memo-preview {
@@ -3657,27 +3667,23 @@ document.querySelectorAll('.day-card').forEach((card, i) => {
 <!-- 동기화 모달 -->
 <div class="memo-modal-overlay" id="sync-modal">
   <div class="memo-modal-box sync-modal-box">
-    <div class="memo-modal-title">🔄 찜 & 메모 동기화</div>
-    <div class="memo-modal-hint">다른 브라우저·기기에서도 찜 목록과 메모를 사용하려면 아래 코드를 복사해서 가져가세요.</div>
+    <div class="memo-modal-title">☁️ 자동 동기화 설정</div>
+    <div class="memo-modal-hint">GitHub 파일(<code>fav-data.json</code>)에 찜·메모를 저장해 모든 브라우저에서 자동으로 동기화합니다.</div>
 
-    <div class="sync-section-label">📤 내보내기 — 이 브라우저의 데이터</div>
-    <div class="sync-row">
-      <textarea class="memo-textarea sync-textarea" id="sync-export-code" readonly></textarea>
-    </div>
-    <div style="text-align:right;margin-top:8px">
-      <button class="memo-btn-save" id="sync-copy-btn" onclick="HawaiiApp.copyExport()">📋 코드 복사</button>
-    </div>
+    <div id="sync-status-display" style="margin:14px 0;padding:12px 14px;border-radius:12px;font-size:13px;background:#f5f5f0;"></div>
 
-    <hr class="sync-divider">
+    <div class="sync-section-label">🔑 GitHub 토큰 (최초 1회 설정)</div>
+    <p style="font-size:11px;color:var(--text-light);margin-bottom:8px;line-height:1.6;">
+      GitHub → Settings → Developer Settings → Personal access tokens → Fine-grained tokens<br>
+      Repository: <strong>kellio/hawaii</strong> &nbsp;·&nbsp; Permission: <strong>Contents → Read and write</strong>
+    </p>
+    <input type="password" class="sync-token-input" id="sync-token-input" placeholder="github_pat_...">
+    <div id="sync-token-msg" style="font-size:12px;margin-top:5px;min-height:16px;"></div>
 
-    <div class="sync-section-label">📥 가져오기 — 다른 브라우저의 코드 붙여넣기</div>
-    <div class="sync-row">
-      <textarea class="memo-textarea sync-textarea" id="sync-import-code" placeholder="다른 브라우저에서 복사한 코드를 붙여넣으세요..."></textarea>
-    </div>
-    <div id="sync-import-msg" style="font-size:13px;margin-top:6px;min-height:18px"></div>
-    <div class="memo-modal-actions" style="margin-top:10px">
+    <div class="memo-modal-actions" style="margin-top:16px">
       <button class="memo-btn-cancel" onclick="HawaiiApp.closeSync()">닫기</button>
-      <button class="memo-btn-save" onclick="HawaiiApp.doImport()">📥 가져오기</button>
+      <button class="memo-btn-save" id="sync-now-btn" onclick="HawaiiApp.syncNow()" style="background:#1b4f72">🔄 지금 가져오기</button>
+      <button class="memo-btn-save" onclick="HawaiiApp.saveToken()">💾 토큰 저장</button>
     </div>
   </div>
 </div>
@@ -3698,8 +3704,17 @@ document.querySelectorAll('.day-card').forEach((card, i) => {
 
 <script>
 (function() {
-  var FAVE_KEY = 'hawaii_fav_v1';
-  var MEMO_KEY = 'hawaii_memo_v1';
+  var FAVE_KEY  = 'hawaii_fav_v1';
+  var MEMO_KEY  = 'hawaii_memo_v1';
+  var TOKEN_KEY = 'hawaii_gh_token';
+  var GH_OWNER  = 'kellio';
+  var GH_REPO   = 'hawaii';
+  var GH_FILE   = 'fav-data.json';
+  var GH_BRANCH = 'main';
+  var GH_RAW    = 'https://raw.githubusercontent.com/' + GH_OWNER + '/' + GH_REPO + '/' + GH_BRANCH + '/' + GH_FILE;
+  var GH_API    = 'https://api.github.com/repos/' + GH_OWNER + '/' + GH_REPO + '/contents/' + GH_FILE;
+
+  var syncTimer = null;
 
   function load(key) {
     try { return JSON.parse(localStorage.getItem(key) || '{}'); } catch(e) { return {}; }
@@ -3824,6 +3839,7 @@ document.querySelectorAll('.day-card').forEach((card, i) => {
         btn.classList.add('faved');
       }
       save(FAVE_KEY, faves);
+      scheduleGHSync();
 
       /* 부모 컨테이너 재정렬 */
       var parent = item.parentElement;
@@ -3896,6 +3912,7 @@ document.querySelectorAll('.day-card').forEach((card, i) => {
 
       if (text) { memos[id] = text; } else { delete memos[id]; }
       save(MEMO_KEY, memos);
+      scheduleGHSync();
 
       /* 메모 버튼 상태 */
       if (btn) {
@@ -3914,6 +3931,7 @@ document.querySelectorAll('.day-card').forEach((card, i) => {
       var memos = load(MEMO_KEY);
       delete memos[id];
       save(MEMO_KEY, memos);
+      scheduleGHSync();
 
       if (btn) {
         btn.innerHTML = '📝 메모';
@@ -3924,26 +3942,122 @@ document.querySelectorAll('.day-card').forEach((card, i) => {
     }
   };
 
-  /* ── 내보내기 / 가져오기 ── */
-  window.HawaiiApp.exportData = function() {
-    var data = { f: load(FAVE_KEY), m: load(MEMO_KEY) };
-    return btoa(unescape(encodeURIComponent(JSON.stringify(data))));
-  };
+  /* ── FAB 상태 표시 ── */
+  function setFab(icon, label) {
+    var fi = document.getElementById('sync-fab-icon');
+    var fl = document.getElementById('sync-fab-label');
+    if (fi) fi.textContent = icon;
+    if (fl) fl.textContent = label;
+  }
 
-  window.HawaiiApp.importData = function(code) {
-    try {
-      var data = JSON.parse(decodeURIComponent(escape(atob(code.trim()))));
-      if (data.f) save(FAVE_KEY, data.f);
-      if (data.m) save(MEMO_KEY, data.m);
-      return true;
-    } catch(e) { return false; }
-  };
+  /* ── 카드 상태 전면 갱신 (GitHub에서 데이터 받은 후 호출) ── */
+  function refreshCardStates() {
+    var faves = load(FAVE_KEY);
+    var memos = load(MEMO_KEY);
+    var parents = new Set();
+
+    document.querySelectorAll('[data-id]').forEach(function(item) {
+      var id = item.getAttribute('data-id');
+      if (!id) return;
+
+      var isFaved  = !!faves[id];
+      var memoText = memos[id] || '';
+      var hasMemo  = !!memoText.trim();
+
+      var fb = item.querySelector('.btn-fave');
+      if (fb) { fb.innerHTML = isFaved ? '❤️' : '🤍'; fb.classList.toggle('faved', isFaved); }
+
+      var mb = item.querySelector('.btn-memo');
+      if (mb) {
+        mb.innerHTML = hasMemo ? '📝 메모 <span class="memo-dot"></span>' : '📝 메모';
+        mb.classList.toggle('has-memo', hasMemo);
+      }
+      updateMemoPreview(item, memoText);
+      if (item.parentElement) parents.add(item.parentElement);
+    });
+    parents.forEach(function(p) { sortContainer(p); });
+  }
+
+  /* ── GitHub 읽기 ── */
+  function pullFromGitHub() {
+    setFab('🔄', '동기화 중');
+    return fetch(GH_RAW + '?_=' + Date.now(), { cache: 'no-cache' })
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(data) {
+        if (data) {
+          if (data.f) save(FAVE_KEY, data.f);
+          if (data.m) save(MEMO_KEY, data.m);
+          refreshCardStates();
+          setFab('✅', '동기화됨');
+          setTimeout(function() { setFab('☁️', '동기화'); }, 2000);
+        } else {
+          setFab('☁️', '동기화');
+        }
+      })
+      .catch(function() { setFab('☁️', '동기화'); });
+  }
+
+  /* ── GitHub 쓰기 (debounce 2초) ── */
+  function scheduleGHSync() {
+    clearTimeout(syncTimer);
+    setFab('🔄', '저장 중');
+    syncTimer = setTimeout(function() {
+      var token = localStorage.getItem(TOKEN_KEY);
+      if (!token) { setFab('⚠️', '토큰 필요'); return; }
+
+      var data = { f: load(FAVE_KEY), m: load(MEMO_KEY) };
+      var newContent = btoa(unescape(encodeURIComponent(JSON.stringify(data))));
+
+      fetch(GH_API, {
+        headers: { 'Authorization': 'token ' + token, 'Accept': 'application/vnd.github.v3+json' }
+      })
+      .then(function(r) { return r.ok ? r.json() : {}; })
+      .then(function(info) {
+        var body = { message: '찜·메모 업데이트', content: newContent, branch: GH_BRANCH };
+        if (info.sha) body.sha = info.sha;
+        return fetch(GH_API, {
+          method: 'PUT',
+          headers: {
+            'Authorization': 'token ' + token,
+            'Content-Type': 'application/json',
+            'Accept': 'application/vnd.github.v3+json'
+          },
+          body: JSON.stringify(body)
+        });
+      })
+      .then(function(r) {
+        if (r.ok) {
+          setFab('✅', '동기화됨');
+          setTimeout(function() { setFab('☁️', '동기화'); }, 2000);
+        } else {
+          setFab('❌', '저장 실패');
+        }
+      })
+      .catch(function() { setFab('❌', '오류'); });
+    }, 2000);
+  }
+
+  /* ── 동기화 모달 ── */
+  function updateSyncStatusDisplay() {
+    var token = localStorage.getItem(TOKEN_KEY);
+    var el = document.getElementById('sync-status-display');
+    if (!el) return;
+    if (token) {
+      el.innerHTML = '✅ <strong>토큰 설정됨</strong> — 찜·메모 변경 시 자동으로 GitHub에 저장됩니다.';
+      el.style.background = '#e8f5f3';
+      el.style.color = '#1a7a6e';
+    } else {
+      el.innerHTML = '⚠️ <strong>토큰 미설정</strong> — 아래에 GitHub 토큰을 입력하면 자동 동기화가 활성화됩니다.';
+      el.style.background = '#fff8e6';
+      el.style.color = '#856404';
+    }
+  }
 
   window.HawaiiApp.openSync = function() {
-    var code = HawaiiApp.exportData();
-    document.getElementById('sync-export-code').value = code;
-    document.getElementById('sync-import-code').value = '';
-    document.getElementById('sync-import-msg').textContent = '';
+    var token = localStorage.getItem(TOKEN_KEY) || '';
+    document.getElementById('sync-token-input').value = token ? '••••••••••••••••••••' : '';
+    document.getElementById('sync-token-msg').textContent = '';
+    updateSyncStatusDisplay();
     document.getElementById('sync-modal').classList.add('open');
   };
 
@@ -3951,33 +4065,30 @@ document.querySelectorAll('.day-card').forEach((card, i) => {
     document.getElementById('sync-modal').classList.remove('open');
   };
 
-  window.HawaiiApp.copyExport = function() {
-    var ta = document.getElementById('sync-export-code');
-    ta.select();
-    document.execCommand('copy');
-    var btn = document.getElementById('sync-copy-btn');
-    btn.textContent = '✅ 복사됨!';
-    setTimeout(function() { btn.textContent = '📋 코드 복사'; }, 2000);
+  window.HawaiiApp.saveToken = function() {
+    var val = document.getElementById('sync-token-input').value.trim();
+    var msg = document.getElementById('sync-token-msg');
+    if (!val || val.startsWith('•')) {
+      msg.textContent = '새 토큰을 입력해 주세요.';
+      msg.style.color = '#c0392b';
+      return;
+    }
+    localStorage.setItem(TOKEN_KEY, val);
+    msg.textContent = '✅ 저장됐습니다. 지금 동기화를 시작합니다.';
+    msg.style.color = '#1a7a6e';
+    updateSyncStatusDisplay();
+    setFab('☁️', '동기화');
+    setTimeout(function() { HawaiiApp.closeSync(); scheduleGHSync(); }, 800);
   };
 
-  window.HawaiiApp.doImport = function() {
-    var code = document.getElementById('sync-import-code').value.trim();
-    var msg = document.getElementById('sync-import-msg');
-    if (!code) { msg.textContent = '코드를 붙여넣어 주세요.'; msg.style.color = '#c0392b'; return; }
-    if (HawaiiApp.importData(code)) {
-      msg.textContent = '✅ 가져오기 성공! 페이지를 새로고침합니다.';
-      msg.style.color = '#1a7a6e';
-      setTimeout(function() { location.reload(); }, 1200);
-    } else {
-      msg.textContent = '❌ 올바르지 않은 코드입니다.';
-      msg.style.color = '#c0392b';
-    }
+  window.HawaiiApp.syncNow = function() {
+    HawaiiApp.closeSync();
+    pullFromGitHub();
   };
 
   document.getElementById('sync-modal').addEventListener('click', function(e) {
     if (e.target === this) HawaiiApp.closeSync();
   });
-
   document.getElementById('memo-modal').addEventListener('click', function(e) {
     if (e.target === this) HawaiiApp.closeModal();
   });
@@ -3985,7 +4096,10 @@ document.querySelectorAll('.day-card').forEach((card, i) => {
     if (e.key === 'Escape') { HawaiiApp.closeModal(); HawaiiApp.closeSync(); }
   });
 
-  document.addEventListener('DOMContentLoaded', initCards);
+  document.addEventListener('DOMContentLoaded', function() {
+    initCards();
+    pullFromGitHub();
+  });
 })();
 </script>
 
