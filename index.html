@@ -3593,6 +3593,38 @@ document.querySelectorAll('.day-card').forEach((card, i) => {
   }
   .memo-btn-save:hover { background: #156a5e; }
 
+  /* ── 동기화 플로팅 버튼 ── */
+  .sync-fab {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 12px 14px 10px;
+    border-radius: 16px;
+    border: none;
+    background: var(--teal);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(26,122,110,0.4);
+    transition: transform 0.15s, box-shadow 0.15s;
+    font-family: 'Noto Sans KR', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .sync-fab:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(26,122,110,0.45); }
+  .sync-fab:active { transform: translateY(0); }
+  .sync-fab-icon { font-size: 22px; line-height: 1; }
+  .sync-fab-label { font-size: 10px; font-weight: 700; letter-spacing: 0.3px; }
+
+  /* ── 동기화 모달 전용 ── */
+  .sync-modal-box { max-width: 520px; }
+  .sync-section-label { font-size: 13px; font-weight: 700; color: var(--text); margin: 14px 0 7px; }
+  .sync-textarea { min-height: 90px; font-size: 11px; font-family: monospace; word-break: break-all; }
+  .sync-divider { border: none; border-top: 1px solid #f0ede6; margin: 18px 0 4px; }
+
   /* ── 카드 메모 미리보기 ── */
   .card-memo-preview {
     margin-top: 8px;
@@ -3615,6 +3647,40 @@ document.querySelectorAll('.day-card').forEach((card, i) => {
     .memo-modal-box { padding: 20px; border-radius: 16px; }
   }
 </style>
+
+<!-- 동기화 플로팅 버튼 -->
+<button class="sync-fab" onclick="HawaiiApp.openSync()" title="찜·메모 동기화">
+  <span class="sync-fab-icon">🔄</span>
+  <span class="sync-fab-label">동기화</span>
+</button>
+
+<!-- 동기화 모달 -->
+<div class="memo-modal-overlay" id="sync-modal">
+  <div class="memo-modal-box sync-modal-box">
+    <div class="memo-modal-title">🔄 찜 & 메모 동기화</div>
+    <div class="memo-modal-hint">다른 브라우저·기기에서도 찜 목록과 메모를 사용하려면 아래 코드를 복사해서 가져가세요.</div>
+
+    <div class="sync-section-label">📤 내보내기 — 이 브라우저의 데이터</div>
+    <div class="sync-row">
+      <textarea class="memo-textarea sync-textarea" id="sync-export-code" readonly></textarea>
+    </div>
+    <div style="text-align:right;margin-top:8px">
+      <button class="memo-btn-save" id="sync-copy-btn" onclick="HawaiiApp.copyExport()">📋 코드 복사</button>
+    </div>
+
+    <hr class="sync-divider">
+
+    <div class="sync-section-label">📥 가져오기 — 다른 브라우저의 코드 붙여넣기</div>
+    <div class="sync-row">
+      <textarea class="memo-textarea sync-textarea" id="sync-import-code" placeholder="다른 브라우저에서 복사한 코드를 붙여넣으세요..."></textarea>
+    </div>
+    <div id="sync-import-msg" style="font-size:13px;margin-top:6px;min-height:18px"></div>
+    <div class="memo-modal-actions" style="margin-top:10px">
+      <button class="memo-btn-cancel" onclick="HawaiiApp.closeSync()">닫기</button>
+      <button class="memo-btn-save" onclick="HawaiiApp.doImport()">📥 가져오기</button>
+    </div>
+  </div>
+</div>
 
 <!-- 메모 모달 -->
 <div class="memo-modal-overlay" id="memo-modal">
@@ -3858,11 +3924,65 @@ document.querySelectorAll('.day-card').forEach((card, i) => {
     }
   };
 
+  /* ── 내보내기 / 가져오기 ── */
+  window.HawaiiApp.exportData = function() {
+    var data = { f: load(FAVE_KEY), m: load(MEMO_KEY) };
+    return btoa(unescape(encodeURIComponent(JSON.stringify(data))));
+  };
+
+  window.HawaiiApp.importData = function(code) {
+    try {
+      var data = JSON.parse(decodeURIComponent(escape(atob(code.trim()))));
+      if (data.f) save(FAVE_KEY, data.f);
+      if (data.m) save(MEMO_KEY, data.m);
+      return true;
+    } catch(e) { return false; }
+  };
+
+  window.HawaiiApp.openSync = function() {
+    var code = HawaiiApp.exportData();
+    document.getElementById('sync-export-code').value = code;
+    document.getElementById('sync-import-code').value = '';
+    document.getElementById('sync-import-msg').textContent = '';
+    document.getElementById('sync-modal').classList.add('open');
+  };
+
+  window.HawaiiApp.closeSync = function() {
+    document.getElementById('sync-modal').classList.remove('open');
+  };
+
+  window.HawaiiApp.copyExport = function() {
+    var ta = document.getElementById('sync-export-code');
+    ta.select();
+    document.execCommand('copy');
+    var btn = document.getElementById('sync-copy-btn');
+    btn.textContent = '✅ 복사됨!';
+    setTimeout(function() { btn.textContent = '📋 코드 복사'; }, 2000);
+  };
+
+  window.HawaiiApp.doImport = function() {
+    var code = document.getElementById('sync-import-code').value.trim();
+    var msg = document.getElementById('sync-import-msg');
+    if (!code) { msg.textContent = '코드를 붙여넣어 주세요.'; msg.style.color = '#c0392b'; return; }
+    if (HawaiiApp.importData(code)) {
+      msg.textContent = '✅ 가져오기 성공! 페이지를 새로고침합니다.';
+      msg.style.color = '#1a7a6e';
+      setTimeout(function() { location.reload(); }, 1200);
+    } else {
+      msg.textContent = '❌ 올바르지 않은 코드입니다.';
+      msg.style.color = '#c0392b';
+    }
+  };
+
+  document.getElementById('sync-modal').addEventListener('click', function(e) {
+    if (e.target === this) HawaiiApp.closeSync();
+  });
+
   document.getElementById('memo-modal').addEventListener('click', function(e) {
     if (e.target === this) HawaiiApp.closeModal();
   });
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') HawaiiApp.closeModal();
+    if (e.key === 'Escape') { HawaiiApp.closeModal(); HawaiiApp.closeSync(); }
   });
 
   document.addEventListener('DOMContentLoaded', initCards);
