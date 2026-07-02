@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- 배경 -->
+  <rect width="32" height="32" rx="7" fill="#1a7a6e"/>
+
+  <!-- 태양 -->
+  <circle cx="16" cy="11" r="5" fill="#f4d03f"/>
+
+  <!-- 파도 1 -->
+  <path d="M2 21 Q6 17 10 21 Q14 25 18 21 Q22 17 26 21 Q28 23 30 21"
+        stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+  <!-- 파도 2 -->
+  <path d="M2 26 Q6 22 10 26 Q14 30 18 26 Q22 22 26 26 Q28 28 30 26"
+        stroke="rgba(255,255,255,0.55)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+</svg>
